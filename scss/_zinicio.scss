@@ -26,11 +26,11 @@ p, span, b {
     font-family: "Chronicle" !important;  
 }
 a{
-    font-family: "Chronicle" !important;
+    font-family: "Chronicle Light" !important;
 }
 
 $color-background: #F5F5F5;
-$color-main: #FF5252;
+$color-main: black;
 $color-active: #FFF;
 $color-link: #FFF;
 
@@ -78,7 +78,6 @@ body {
 h1 {
   position: relative;
   text-align: center;
-  font-family: 'Vollkorn', serif;
 }
 
 .button_container {
@@ -131,10 +130,33 @@ h1 {
     }
   }
 }
+.lista_menu{
+    @media (max-width: 2560px){
+        column-count:2;
+    }
+    @media (max-width: 1440px){
+        column-count:2;
+    }
+    @media (max-width: 1024px){
+        column-count:2;
+    }
+    @media (max-width: 768px){
+        column-count:2;
+    }
+    @media (max-width: 425px){
+        column-count:1;
+    }
+    @media (max-width: 375px){
+        column-count:1;
+    }
+    @media (max-width: 250px){
+        column-count:1;
+    }
+}
 
 .overlay {
   position: fixed;
-  background: $color-main;
+// background-color: black;
   top: 0;
   left: 0;
   width: 100%;
@@ -143,7 +165,30 @@ h1 {
   visibility: hidden;
   transition: opacity .35s, visibility .35s, height .35s;
   overflow: hidden;
-  
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (min-width: 2560px){
+    background-image: url('../images/2560_2320_negro.png');
+}
+@media (max-width: 1440px){
+    background-image: url('../images/1140_1288_negro.png');
+}
+@media (max-width: 1024px){
+    
+    background-image: url('../images/1160_1024_negro.png');
+}
+@media (max-width: 768px){
+    background-image: url('../images/1366_768_negro.png');
+}
+@media (max-width: 425px){
+    background-image: url('../images/425_580_negro.png');
+}
+@media (max-width: 375px){
+    background-image: url('../images/375_580_negro.png');
+}
+@media (max-width: 250px){
+    background-image: url('../images/375_580_negro.png');
+}
   &.open {
     opacity: .9;
     visibility: visible;
@@ -170,7 +215,6 @@ h1 {
     top: 50%;
     transform: translateY(-50%);
     font-size: 50px;
-    font-family: 'Vollkorn', serif;
     font-weight: 400;
     text-align: center;
   }
@@ -200,7 +244,7 @@ h1 {
         &:hover:after,
          &:focus:after,
          &:active:after {
-           width: 100%;
+           width: 65%;
          }
         
         &:after {
@@ -230,12 +274,64 @@ h1 {
   }
 }
 .cajamenudos{
-    position: absolute;
-    right: 8rem;
-    top: 3.2rem;
-    z-index: 100;
-    width: 34px;
-    display: block;
+    position: fixed;
+    top: 4%;
+    height: 2px;
+    width: 35px;
     cursor: pointer;
-    font-size: 25px;
+    z-index: 100;
+    -webkit-transition: opacity .25s ease;
+    -o-transition: opacity .25s ease;
+    transition: opacity .25s ease;
+
+    @media (min-width: 2560px){
+        right: 15%;
+    }
+    @media (max-width: 1440px){
+        right: 15%;
+    }
+    @media (max-width: 1024px){
+        right: 15%;
+   
+    }
+    @media (max-width: 768px){
+        right: 17%;
+    }
+    @media (max-width: 425px){
+        right: 21%;
+    }
+    @media (max-width: 375px){
+        right: 23%;
+    }
+    @media (max-width: 250px){
+        right: 30%;
+    }
+}
+.overlay nav{
+    @media (max-width: 425px){
+        height: initial;
+        top: 43%;
+    }
+    @media (max-width: 375px){
+        height: initial;
+        top: 43%;
+    }
+    @media (max-width: 250px){
+        height: initial;
+        top: 43%;
+    }
+}
+
+.btn2{
+    font-size: 32px;
+    border: none;
+    height: 38px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all .35s ease;
+    -o-transition: all .35s ease;
+    transition: all .35s ease;
+    cursor: pointer;
 }

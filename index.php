@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -15,9 +15,18 @@
 
     <!-- Menu de vistas -->
     <section>
-        <div class="overlay-navigation">
-            <nav role="navigation">
-                <ul>
+        <div class="container">
+        </div>
+
+        <div class="button_container" id="toggle">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+        </div>
+
+        <div class="overlay" id="overlay">
+            <nav class="overlay-menu">
+                <ul class="lista_menu">
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Demo</a></li>
                     <li><a href="#">Tienda</a></li>
@@ -27,15 +36,10 @@
                 </ul>
             </nav>
         </div>
-        <section class="home">
-            <div class="open-overlay">
-                <span class="bar-top"></span>
-                <span class="bar-middle"></span>
-                <span class="bar-bottom"></span>
-            </div>
-        </section>
+    </section>
+    <section>
         <div class="cajamenudos">
-            <i class="fas fa-th"></i>
+            <span class="fas fa-th btn2"></span>
         </div>
     </section>
     <section>
