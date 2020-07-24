@@ -8372,7 +8372,7 @@ h1 {
     .overlay {
       background-image: url("../images/375_580_negro.png"); } }
   .overlay.open {
-    opacity: .9;
+    opacity: 8;
     visibility: visible;
     height: 100%; }
     .overlay.open li {
