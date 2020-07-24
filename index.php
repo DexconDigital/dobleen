@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 </head>
 
 <body>
 
-    <!-- Menu de vistas -->
+    <!-- Menu principal -->
     <section>
         <div class="container">
         </div>
@@ -37,24 +38,70 @@
             </nav>
         </div>
     </section>
-    <section>
+    <!-- Menu Secundario -->
+    <section id="contenedor">
         <div class="cajamenudos">
-            <span class="fas fa-th btn2"></span>
+            <a href="javascript:abrir()" class="color_negro"><i class="fas fa-th btn2"></i></a>
         </div>
     </section>
-    <section>
-        <div class="container" style="display: none;">
-            <div class="col-12 border d-flex">
-                <div class="col-4 border">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, odio rerum, tempore sed repudiandae vitae dolor necessitatibus qui incidunt ut cum id ipsa officiis eos adipisci aut mollitia. Asperiores, quaerat.</p>
+    <section class="fondo_segundom">
+        <div class="container ventana animate__animated animate__bounceInDown" id="vent">
+            <div class="col-12 border d-flex flex-wrap justify-content-center">
+                <div class="col-lg-4 col-md-6 col-12 border">
+                    <div class="" style="padding: 14%;">
+                        <a href="" class="hover_menu2">
+                            <img src="images/no_image.png" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body text-center">
+                            <a href="" class="hover_menu2">
+                                <h5 class="card-title color_menu2">Método</h5>
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="col-4 border">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, odio rerum, tempore sed repudiandae vitae dolor necessitatibus qui incidunt ut cum id ipsa officiis eos adipisci aut mollitia. Asperiores, quaerat.</p>
+                <div class="col-lg-4 col-md-6 col-12 border">
+                    <div class="" style="padding: 14%;">
+                        <a href="" class="hover_menu2">
+                            <img src="images/no_image.png" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body text-center">
+                            <a href="" class="hover_menu2">
+                                <h5 class="card-title color_menu2">Tienda</h5>
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="col-4 border">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, odio rerum, tempore sed repudiandae vitae dolor necessitatibus qui incidunt ut cum id ipsa officiis eos adipisci aut mollitia. Asperiores, quaerat.</p>
+                <div class="col-lg-4 col-md-6 col-12 border">
+                    <div class="" style="padding: 14%;">
+                        <a href="" class="hover_menu2">
+                            <img src="images/no_image.png" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body text-center">
+                            <a href="" class="hover_menu2">
+                                <h5 class="card-title color_menu2">Caso de Estudio</h5>
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
+                <div class="caja_cerrar">
+                    <a href="javascript:cerrar()">
+                        <i class="fas fa-times cerrar_style"></i>
+                    </a>
+                </div>
+
             </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container border mt-4">
+            <div class="col-12 text-center border">
+                <img src="images/logo.png" style="width:60%; height:100%;" alt="">
+            </div>
+
         </div>
     </section>
 
@@ -66,6 +113,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/all.js"></script>
+<script>
+    function abrir() {
+        document.getElementById("vent").style.display = "block";
+    }
 
+    function cerrar() {
+        document.getElementById("vent").style.display = "none";
+    }
+</script>
 
 </html>
