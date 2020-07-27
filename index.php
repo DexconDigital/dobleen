@@ -46,11 +46,11 @@
     </section>
     <section class="fondo_segundom">
         <div class="container ventana animate__animated animate__bounceInDown" id="vent">
-            <div class="col-12 border d-flex flex-wrap justify-content-center">
-                <div class="col-lg-4 col-md-6 col-12 border">
-                    <div class="" style="padding: 14%;">
+            <div class="col-12  d-flex flex-wrap justify-content-center">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="text-center" style="padding: 14%;">
                         <a href="" class="hover_menu2">
-                            <img src="images/no_image.png" class="card-img-top" alt="...">
+                            <img src="images/segundo_menu1.jpg" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body text-center">
                             <a href="" class="hover_menu2">
@@ -60,10 +60,10 @@
 
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12 border">
-                    <div class="" style="padding: 14%;">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="text-center" style="padding: 14%;">
                         <a href="" class="hover_menu2">
-                            <img src="images/no_image.png" class="card-img-top" alt="...">
+                            <img src="images/caja_de_regalo.jpg" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body text-center">
                             <a href="" class="hover_menu2">
@@ -73,10 +73,10 @@
 
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12 border">
-                    <div class="" style="padding: 14%;">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="text-center" style="padding: 14%;">
                         <a href="" class="hover_menu2">
-                            <img src="images/no_image.png" class="card-img-top" alt="...">
+                            <img src="images/segundo_menu3.jpg" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body text-center">
                             <a href="" class="hover_menu2">
@@ -97,12 +97,54 @@
     </section>
 
     <section>
-        <div class="container border mt-4">
+        <div class="container border mt-4 mb-5">
             <div class="col-12 text-center border">
                 <img src="images/logo.png" style="width:60%; height:100%;" alt="">
             </div>
 
         </div>
+    </section>
+    <section>
+        <div class="container border mt-5">
+            <div class="col-12 border d-flex contenedor_contenido_inical">
+                <div class="col-7 border segundo_cont_inicio">
+                    <div class="contenedor_texto_inicio">
+                       
+                        <div class="linea_contenedor">
+                            <div class="p-4">
+                                <span class="texto_inicio">Consultora Digital  Creativa.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 border primera_imagen_inicio">
+                    <!-- <img src="images/imagen_inicio.png" alt=""> -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
     </section>
 
 </body>

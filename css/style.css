@@ -8203,22 +8203,10 @@ textarea:focus, textarea[type]:focus, input:focus, input[type]:focus {
   src: url("../fonts/OpenSans-Light.ttf"); }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 100vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  overflow-x: hidden;
-  padding: 0;
-  margin: 0;
-  padding-left: 0px;
-  font-family: "Chronicle Light" !important; }
+  font-family: "Chronicle Light"; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Chronicle" !important; }
+  font-family: "OpenSans-Light" !important; }
 
 p, span, b {
   font-family: "Chronicle" !important; }
@@ -8466,7 +8454,7 @@ h1 {
         color: #FFF;
         text-decoration: none;
         overflow: hidden;
-        font-size: 40px; }
+        font-size: 35px; }
         .overlay ul li a:hover {
           color: #3EFAC5; }
 
@@ -8570,3 +8558,32 @@ h1 {
   margin-top: 3%;
   position: absolute;
   right: 0%; }
+
+.primera_imagen_inicio {
+  background-image: url("../images/imagen_inicio.png");
+  width: 100% !important;
+  height: 100vh !important;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden; }
+
+.texto_inicio {
+  font-size: 80px !important;
+  line-height: 60pt;
+  color: white; }
+
+.contenedor_texto_inicio {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.62); }
+
+.contenedor_contenido_inical {
+  position: relative; }
+
+.segundo_cont_inicio {
+  padding: 5%; }
+
+.linea_contenedor {
+  border: 4px solid white;
+  border-radius: 5px; }
