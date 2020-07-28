@@ -25,14 +25,21 @@ body{
     }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "OpenSans-Light" !important; 
+    font-family: "Chronicle" !important; 
+    color: black;
 }
-p, span, b {
-    font-family: "Chronicle" !important;  
+span, b {
+    font-family: "Chronicle";  
 }
 a{
     font-family: "OpenSans-Light" !important;
 }
+
+p {
+  font-family: "OpenSans-Light" !important;
+  font-size: 16px !important;
+}
+
 
 $color-background: #F5F5F5;
 $color-main: black;
@@ -394,6 +401,13 @@ h1 {
     transition: all .35s ease;
     cursor: pointer;
 }
+// Inicio primera seccion
+.espacio_entre_seccion{
+  margin-bottom: 10rem;
+}
+.espacio_entre_seccion2{
+  margin-bottom: 8rem;
+}
 .ventana{
     display: none;
     position: relative;
@@ -426,34 +440,236 @@ h1 {
     right: 0%;
 }
 .primera_imagen_inicio{
+  @media (max-width: 1440px){
     background-image: url('../images/imagen_inicio.png');
-    width: 100% !important;
+      position: initial;
+      background-size: contain;
+      background-position: center ;
+      background-attachment: fixed;
+      width: 100% !important;
     height: 100vh !important;
-    background-position: center ;
-    background-size: contain;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     overflow: hidden;
+  }
+  @media (max-width: 1024px){
+    background-image: url('../images/imagen_inicio.png');
+      position: initial;
+      background-size: contain;
+      background-position: center ;
+      background-attachment: fixed;
+      width: 100% !important;
+    height: 100vh !important;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+    @media (max-width: 768px){
+      background-image: url('../images/imagen_inicio_tabled.png');
+      position: initial;
+      background-size: contain;
+      background-position: center ;
+      background-attachment: fixed;
+      width: 100% !important;
+    height: 100vh !important;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    }
+    @media (max-width: 425px){
+      background-image: url('../images/imagen_inicio_original.png');
+      position: relative;
+      background-attachment: inherit;
+      background-size: contain;
+      background-position: top;
+      
+    }
+    
     
 }
 .texto_inicio{
   font-size: 80px !important;
   line-height: 60pt;
   color: white;
-  
+  @media (max-width: 1024px){
+    font-size: 67px !important;
+    line-height: 51pt;
+  }
+  @media (max-width: 425px){
+    font-size: 36px !important;
+    line-height: 27pt;
+  }
 }
 .contenedor_texto_inicio{
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.62);
+  @media (max-width: 768px){
+    position: absolute;
+  }
 }
 .contenedor_contenido_inical{
   position: relative;
   
 }
 .segundo_cont_inicio{
-  padding: 5%;
+  padding: 1%;
+    margin: 179px 0px 10px calc((100% - 977px) * 0.5);
+    left: 126px;
+    z-index: 100; 
+    @media (max-width:1024px){
+      margin: 179px 0px 10px calc((115% - 977px) * 0.5);
+    }
+    @media (max-width:768px){
+      padding: 1%;
+      left: 126px;
+      margin: 179px 0px 10px calc((100% - 977px) * 0.5);
+      position: inherit;
+    }
+    @media (max-width:425px){
+      padding: 23%;
+      left: 249px;
+      margin: 95px 0px 10px calc((100% - 977px) * 0.5);
+      position: absolute;
+    }
+@media (max-width: 375px){
+  padding: 23%;
+    left: 273px;
+    margin: 95px 0px 10px calc((100% - 977px) * 0.5);
+    position: absolute;
+}
+@media (max-width: 270px){
+  padding: 23%;
+    left: 273px;
+    margin: 62px 0px 10px calc((100% - 977px) * 0.5);
+    position: absolute;
+}
 }
 .linea_contenedor{
   border: 4px solid rgba(255, 255, 255, 1);
   border-radius: 5px;
 }
+.logo{
+  @media (max-width: 768px){
+    margin-top: 0%;
+  }
+  @media (max-width: 425px){
+    margin-top: 8%;
+  }
+}
+.dimencion{
+  margin-left: inherit;
+  display: inline;
+  @media(max-width: 425px){
+    display: block;
+    margin-left: 0%;
+  }
+  
+}
+.contenedor_logo{
+  margin-bottom: 3rem;
+  margin-top: 1.5rem;
+  @media (max-width: 425px){
+    margin-bottom: 0% !important;
+  }
+}
+// Fin primera seccion
+
+// Inicio segunda seccion
+.container_numero{
+  position: relative;
+}
+.style_numero{
+  font-size: 150px; 
+  color:black; 
+  position:absolute;
+  margin-top: -9rem;
+}
+.container_titulo{
+  margin-bottom: 4rem;
+   margin-top:5rem;
+   
+}
+.container_contenido_text{
+  margin-bottom: 2rem;
+}
+.container_btn{
+  background-color: black;
+  color: white !important;
+  padding:2%;
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 0rem;
+  font-size: 14px !important;
+  &:hover{
+    background-color: #FDD300;
+    color: black !important;
+  }
+}
+.cont_btn{
+  margin: 20px;
+  font-family: 'OpenSans-Light' !important;
+
+  
+}
+.contendor_cont_btn{
+  margin-bottom: 15rem;
+}
+.imagen_fondo{
+  background-image: url('../images/segunda_imagen.png');
+  position: initial;
+  background-size: contain;
+  background-position: right;
+  background-attachment: fixed;
+  width: 100% !important;
+  height: 100% !important;
+  background-repeat: no-repeat;
+}
+.tamaño_texto{
+  font-size: 56px;
+}
+.espacio_entre_divs{
+  padding-left: 4%;
+}
+.imagen_puntos{
+  width: 20%; height:58%;
+  position:absolute;
+  z-index:200;
+  margin-top: 3rem;
+   margin-left:-10%;
+   
+   opacity: 0.6;
+   
+}
+.negrita{
+  
+  font-weight: 700;
+}
+.tamaño_defaul_img{
+  height: 100%;
+  width: 100%;
+}
+// Fin segunda seccion
+
+// Inicio tercera seccion
+.fondo_verde{
+  background-color: #34F0FF;
+  padding: 0%;
+}
+.contenedor_imagen{
+  margin-top:4rem;
+  // margin-bottom: 15rem;
+  margin-left: 9%;
+}
+.titulo_decrip{
+  font-size: 56px; 
+  margin-top:8rem;
+  margin-bottom: 0rem;
+}
+.imagen_numero{
+  background-image: url('../images/numero2.png');
+  background-size: contain;
+  background-position: left ;
+  background-attachment: fixed;
+  width: 200% !important;
+  height: 100vh !important;
+  background-repeat: no-repeat;
+  z-index: 200;
+  position: absolute;
+}
+// Fin tercera seccion
