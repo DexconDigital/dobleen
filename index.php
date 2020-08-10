@@ -127,8 +127,8 @@
                     <img class="uno" style="width: 80%;" src="images/imagen_inicio_original.png" alt="">
                 </div>
 
-                </div>
             </div>
+        </div>
         </div>
     </section>
     <!-- fin primera seccion -->
@@ -139,7 +139,7 @@
         <section class="cont_segunda_imagen_movil"><img class="dos" style="width: 100%;" src="images/segunda_imagen_movil.png" alt=""></section>
         <section class="cont_segunda_imagen_movil2"><img class="dos" style="width: 100%;" src="images/segunda_imagen_movil2.png" alt=""></section>
         <div class="container p-0">
-        <div class="border  col-11 container_numero2"><span class="border style_numero2">01</span></div>
+            <div class="border  col-11 container_numero2"><span class="border style_numero2">01</span></div>
             <img src="images/puntos.png" class="imagen_puntos" alt="">
             <div class="col-12 border d-flex flex-wrap">
                 <div class="col-lg-6 col-md- 12 col-12 border">
@@ -167,7 +167,7 @@
     <!-- tercera seccion -->
     <section class="border">
         <div class="espacio_entre_seccion2 espacio_especial">
-        <div class="imagen_numero2 border"> <img class="tres" style="width: 100%;" src="images/numero2_tablet.png" alt=""> </div>
+            <div class="imagen_numero2 border"> <img class="tres" style="width: 100%;" src="images/numero2_tablet.png" alt=""> </div>
             <div class="col-12 d-flex flex-wrap border contenedor_responsive pl-0">
                 <div class="imagen_numero border"></div>
                 <div class="col-lg-7  col-md-12 col-12 border fondo_verde">
@@ -187,13 +187,13 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </section>
     <!-- fin tercera seccion -->
 
     <!-- cuarta seccion -->
-    <!-- <section class="border contenedor_video ">
+    <section class="border contenedor_video ">
         <div class="my-fixed-item">
             <div class=" container cont_video">
                 <div class="ParallaxVideo">
@@ -203,14 +203,27 @@
                 </div>
             </div>
         </div>
-
-    </section> -->
+    </section>
     <!-- fin cuarta seccion -->
+
+    <!-- video tabledt y movil -->
+    <section class="border cont_movil_tabled">
+        <div class="container p-0">
+            <div class="">
+                <video autoplay muted loop style="width: 100%;height: 100%;">
+                    <source src="images/video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+    </section>
+    <!-- video tabledt y movil -->
+
     <!-- quinta seccion -->
-    <!-- <section class="border">
-        <div class="col-12  d-flex  pr-0 container espacio_entre_seccion2 espacio_especial">
-            <div class="col-5 p-0" style="margin-top: 15rem;">
-                <div style="padding-left: 7rem;">
+    <section class="border">
+        <div class="col-12  d-flex flex-wrap pr-0 container espacio_entre_seccion2 espacio_especial cont_quinta">
+            <div class="col-lg-5 col-md-12 col-12 mayor_cont">
+                <div class="cont_movil">
                     <div class="col-10 border espacio_entre_titulo_parrafo">
                         <h1 class="text-left tamaño_texto">Centrados <br>en el ser<br>humano.</h1>
                     </div>
@@ -222,27 +235,29 @@
                     </div>
                 </div>
             </div>
-            <div class="col-7" style="background-color: #FDD300;">
+            <div class="col-lg-7  col-md-12 col-12 cont_fondo" style="background-color: #FDD300;">
+                <div class="imagen_numero2 border"> <img class="tres" style="width: 100%;" src="images/numero3 - copia.png" alt=""> </div>
                 <div class="imagen_numero3 pr-4"></div>
                 <div class="contenedor_imagen2">
-                    <img class="" src="images/cafe2.jpg" alt="">
+                    <img class="tamaño_defaul_img" src="images/cafe2.jpg" alt="">
                 </div>
             </div>
         </div>
 
 
-    </section> -->
+    </section>
     <!-- fin quinta cuarta seccion -->
     <!-- sexta seccion -->
-    <!-- <section class="border">
+    <section class="border">
         <div class=" espacio_entre_seccion2">
-            <div class="col-12 border d-flex p-0">
-            <div class="imagen_numero4 border"></div>
-                <div class="col-6 p-0">
+            <div class="col-12 border d-flex flex-wrap p-0">
+                <div class="imagen_numero4 border"></div>
+                <div class="col-lg-6 col-md-12 col-12 p-0">
+                    <div class="imagen_numero2 border"> <img class="tres" style="width: 100%;" src="images/numero4_tabledt_movil.png" alt=""> </div>
                     <img src="images/image4.png" style="width: 100%; height:auto" alt="">
                 </div>
-                <div class="col-6 border p-0 posicion_div4" style="margin-bottom: -15rem;">
-                    <div style="background-color: #3EFAC5; height: 20rem;" class="border"></div>
+                <div class="col-lg-6 col-md-12 col-12 border p-0 posicion_div4" style="margin-bottom: -15rem;">
+                    <div class="border cuadro_verde"></div>
                     <div class="border espacio_entre_divs mt-4">
                         <img src="images/DOBLEEN.jpg" alt="">
                     </div>
@@ -261,7 +276,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <!--Fin sexta seccion -->
     <!-- Septima seccion -->
     <!-- <section id="footer">
