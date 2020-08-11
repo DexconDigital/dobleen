@@ -256,7 +256,7 @@
                     <div class="imagen_numero2 border"> <img class="tres" style="width: 100%;" src="images/numero4_tabledt_movil.png" alt=""> </div>
                     <img src="images/image4.png" style="width: 100%; height:auto" alt="">
                 </div>
-                <div class="col-lg-6 col-md-12 col-12 border p-0 posicion_div4" style="margin-bottom: -15rem;">
+                <div id="espacio_entre_footer" class="col-lg-6 col-md-12 col-12 border p-0 posicion_div4">
                     <div class="border cuadro_verde"></div>
                     <div class="border espacio_entre_divs mt-4">
                         <img src="images/DOBLEEN.jpg" alt="">
@@ -279,14 +279,14 @@
     </section>
     <!--Fin sexta seccion -->
     <!-- Septima seccion -->
-    <!-- <section id="footer">
+    <section id="footer">
         <div class="">
-            <div class="col-12 d-flex pt-3">
-                <div class="col-1"></div>
-                <div class="col-2 border  d-flex justify-content-star p-0">
-                    <img src="images/logoDD-blanco-app.png" style="width: 60%; height:70px" alt="">
+            <div class="col-12 d-flex flex-wrap pt-3 espacio_footer">
+                <div class="col-lg-1 col-md-1 col-1"></div>
+                <div class="col-lg-2 col-md-2 col-12 border  d-flex justify-content-star p-0">
+                    <img src="images/logoDD-blanco-app.png" class="tamaño_logo_dexc" alt="">
                 </div>
-                <div class="col-6 border">
+                <div class="col-lg-6 col-md-6 col-12 border p-0">
                     <div class="border text-center">
                         <ul class="social-nav model-1">
                             <li><a class="google-plus" href=""><i class="fab fa-instagram" aria-hidden="true"></i></i></a></li>
@@ -301,31 +301,31 @@
                         <p class="negrita">Suscríbete al newsletter para que te avise cuando se publique un nuevo episodio de nuestro Podcast:</p>
                     </div>
                 </div>
-                <div class="col-2 border  d-flex justify-content-end" style="width: 100%;height: 100%">
-                    <img src="images/LOGO-DOBLEEN-blanco.png" style="object-fit: contain; width: 90%;" alt="">
+                <div class="col-lg-2 col-md-2 col-12 border  d-flex justify-content-center" style="width: 100%;height: 100%;">
+                    <img src="images/LOGO-DOBLEEN-blanco.png" class="tamaño_logo_doblee" alt="">
                 </div>
             </div>
             <div class="container">
                 <p class="negrita pl-2">Newsletter</p>
             </div>
             <div class="container p-0">
-                <div class="col-12 p-0 border d-flex">
-                    <div class="col-3 border">
+                <div class="col-12 p-0 border d-flex flex-wrap">
+                    <div class="col-lg-3 col-md-3 col-12 border">
                         <div class="form-group">
                             <input type="text" class="form-control form hover_btn1" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre">
                         </div>
                     </div>
-                    <div class="col-3 border">
+                    <div class="col-lg-3 col-md-3 col-12 border">
                         <div class="form-group">
                             <input type="email" class="form-control form hover_btn2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
                         </div>
                     </div>
-                    <div class="col-3 border">
+                    <div class="col-lg-3 col-md-3 col-12 border">
                         <div class="form-group">
                             <input type="text" class="form-control form hover_btn3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Teléfono">
                         </div>
                     </div>
-                    <div class="col-3 border">
+                    <div class="col-lg-3 col-md-3 col-12 border">
                         <div class="form-group">
                             <button type="submit" class="form-control form negrita hover_btn_enviar" id="exampleInputEmail1" aria-describedby="emailHelp">Suscribirse</button>
                         </div>
@@ -336,7 +336,7 @@
                 <p>Copyright 2020 <a class="color_copi" href="">Dexcon Digital - Dexcon Consultores SAS</a> - Todos los derechos reservados</p>
             </div>
         </div>
-    </section> -->
+    </section>
     <!-- Septima seccion -->
 </body>
 <script src="js/jquery.min.js"></script>
