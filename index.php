@@ -276,7 +276,7 @@
                 </div>
                 <div class="col-lg-6 col-md-12 col-12 p-0 imagen_sexta2 mt-5">
                     <div class="imagen_numero2 border"> <img class="tres" style="width: 100%;" src="images/numero4_tabledt_movil.png" alt=""> </div>
-                    <img src="images/image4.png" style="width: 100%; height:auto" alt="">
+                    <img src="images/image4.png" style="width: 100%; height:100%" alt="">
                 </div>
             </div>
         </div>
