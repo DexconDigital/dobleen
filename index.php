@@ -252,7 +252,7 @@
         <div class=" espacio_entre_seccion2">
             <div class="col-12 border d-flex flex-wrap p-0">
                 <div class="imagen_numero4 border"></div>
-                <div class="col-lg-6 col-md-12 col-12 p-0">
+                <div class="col-lg-6 col-md-12 col-12 p-0 imagen_sexta">
                     <div class="imagen_numero2 border"> <img class="tres" style="width: 100%;" src="images/numero4_tabledt_movil.png" alt=""> </div>
                     <img src="images/image4.png" style="width: 100%; height:auto" alt="">
                 </div>
@@ -273,6 +273,10 @@
                     <div class="border espacio_entre_divs contendor_cont_btn">
                         <a class="container_btn negrita btn"><span class="cont_btn negrita">Demo</span></a>
                     </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12 p-0 imagen_sexta2 mt-5">
+                    <div class="imagen_numero2 border"> <img class="tres" style="width: 100%;" src="images/numero4_tabledt_movil.png" alt=""> </div>
+                    <img src="images/image4.png" style="width: 100%; height:auto" alt="">
                 </div>
             </div>
         </div>

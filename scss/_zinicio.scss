@@ -1405,15 +1405,19 @@ display: none;
   }
   @media (max-width: 768px){
     height: 10rem;
+    display: none;
   }
   @media (max-width: 425px){
     height: 10rem;
+    display: none;
   }
   @media (max-width: 375px){
     height: 10rem;
+    display: none;
   }
   @media (max-width: 230px){
     height: 10rem;
+    display: none;
   }
 }
 #espacio_entre_footer{
@@ -1437,6 +1441,52 @@ display: none;
   }
   @media (max-width: 230px){
     margin-bottom: 0rem;
+  }
+}
+.imagen_sexta{
+  @media (max-width: 2560px){
+  display: inherit;
+  }
+  @media (max-width: 1440px){
+    display: inherit;
+  }
+  @media (max-width: 1024px){
+    display: inherit;
+  }
+  @media (max-width: 768px){
+    display: none;
+  }
+  @media (max-width: 425px){
+    display: none;
+  }
+  @media (max-width: 375px){
+    display: none;
+  }
+  @media (max-width: 230px){
+    display: none;
+  }
+}
+.imagen_sexta2{
+  @media (max-width: 2560px){
+    display: none;
+  }
+  @media (max-width: 1440px){
+    display: none;
+  }
+  @media (max-width: 1024px){
+    display: none;
+  }
+  @media (max-width: 768px){
+    display: inherit;
+  }
+  @media (max-width: 425px){
+    display: inherit;
+  }
+  @media (max-width: 375px){
+    display: inherit;
+  }
+  @media (max-width: 230px){
+    display: inherit;
   }
 }
 // Fin sexta seccion
