@@ -8995,33 +8995,27 @@ h1 {
 
 @media (max-width: 2560px) {
   .contendor_cont_btn {
-    margin-bottom: 15rem;
-    text-align: inherit; } }
+    margin-bottom: 15rem; } }
 
 @media (max-width: 1440px) {
   .contendor_cont_btn {
-    margin-bottom: 15rem;
-    text-align: inherit; } }
+    margin-bottom: 15rem; } }
 
 @media (max-width: 1024px) {
   .contendor_cont_btn {
-    margin-bottom: 15rem;
-    text-align: inherit; } }
+    margin-bottom: 15rem; } }
 
 @media (max-width: 768px) {
   .contendor_cont_btn {
-    margin-bottom: 0rem;
-    text-align: inherit; } }
+    margin-bottom: 0rem; } }
 
 @media (max-width: 425px) {
   .contendor_cont_btn {
-    margin-bottom: 0rem;
-    text-align: center; } }
+    margin-bottom: 0rem; } }
 
 @media (max-width: 230px) {
   .contendor_cont_btn {
-    margin-bottom: 0rem;
-    text-align: center; } }
+    margin-bottom: 0rem; } }
 
 .imagen_fondo {
   position: initial;
@@ -9140,15 +9134,15 @@ h1 {
 
 @media (max-width: 425px) {
   .espacio_entre_divsbtn {
-    padding-left: 0%; } }
+    padding-left: 8%; } }
 
 @media (max-width: 375px) {
   .espacio_entre_divsbtn {
-    padding-left: 0%; } }
+    padding-left: 8%; } }
 
 @media (max-width: 230px) {
   .espacio_entre_divsbtn {
-    padding-left: 0%; } }
+    padding-left: 8%; } }
 
 .espacio_entre_divs2 {
   padding-left: 5%; }
@@ -10081,3 +10075,6 @@ input {
 @media (max-width: 230px) {
   .margen_dexcon {
     margin: 9% 0%; } }
+
+.borde {
+  border: 1px solid #dee2e6 !important; }
