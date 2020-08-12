@@ -545,6 +545,29 @@ h1 {
       display: none;
     } 
 }
+.tamaño_standar{
+  @media (max-width: 2560px){
+  width: 200px !important;
+  }
+  @media (max-width: 1440px){
+    width: 200px !important;
+  }
+  @media (max-width: 1024px){
+    width: 200px !important;
+  }
+  @media (max-width: 768px){
+    width: 200px !important;
+  }
+  @media (max-width: 425px){
+    width: 340px !important;
+  }
+  @media (max-width: 375px){
+    width: 293px !important;
+  }
+  @media (max-width: 360px){
+    width: 280px !important;
+  }
+}
 .segunda_imagen_inicio{
   @media (max-width: 2560px){
   display: none;
@@ -767,27 +790,33 @@ h1 {
   }
 }
 .cont_btn{
-  margin: 10px;
+  margin: 0px;
   font-family: "OpenSans-Regular";
 }
 .contendor_cont_btn{
   @media (max-width: 2560px){
     margin-bottom: 15rem;
+    text-align: inherit;
   }
   @media (max-width: 1440px){
     margin-bottom: 15rem;
+    text-align: inherit;
   }
   @media (max-width: 1024px){
     margin-bottom: 15rem;
+    text-align: inherit;
   }
   @media (max-width: 768px){
     margin-bottom: 0rem;
+    text-align: inherit;
   }
   @media (max-width: 425px){
     margin-bottom: 0rem;
+    text-align: center;
   }
   @media (max-width: 230px){
     margin-bottom: 0rem;
+    text-align: center;
   }
 }
 .imagen_fondo{
@@ -893,6 +922,29 @@ h1 {
 }
 .espacio_entre_divs{
   padding-left: 8%;
+}
+.espacio_entre_divsbtn{
+  @media (max-width: 2560px){
+    padding-left: 8%;
+  }
+  @media (max-width: 1440px){
+    padding-left: 8%;
+  }
+  @media (max-width: 1024px){
+    padding-left: 8%;
+  }
+  @media (max-width: 768px){
+    padding-left: 8%;
+  }
+  @media (max-width: 425px){
+    padding-left: 0%;
+  }
+  @media (max-width: 375px){
+    padding-left: 0%;
+  }
+  @media (max-width: 230px){
+    padding-left: 0%;
+  }
 }
 .espacio_entre_divs2{
   padding-left: 5%;
@@ -1353,7 +1405,7 @@ display: none;
 
 // Inicio sexta seccion
 .cont_btn{
-  margin: 40px;
+  margin: 0px;
   font-family: 'OpenSans-Regular';
 }
 .sub{
@@ -1549,10 +1601,10 @@ display: none;
   color: black;
 }
 .model-1 .linkedin {
-  color: black;
+  color: black !important;
 }
 .model-1 .pinterest {
-  color: black;
+  color: black !important;
 }
 
 .form{
@@ -1723,6 +1775,30 @@ input{
   @media (max-width: 230px){
     object-fit: contain;
     width: 65%;
+  }
+}
+.cont_logo_dexcon{
+  
+  @media (max-width: 2560px){
+    margin-left: inherit;
+  }
+  @media (max-width: 1440px){
+    margin-left: inherit;
+  }
+  @media (max-width: 1024px){
+    margin-left: inherit;
+  }
+  @media (max-width: 768px){
+    margin-left: inherit;
+  }
+  @media (max-width: 425px){
+    margin-left: 6rem;
+  }
+  @media (max-width: 375px){
+    margin-left: 5rem;
+  }
+  @media (max-width: 230px){
+    margin-left: 5rem;
   }
 }
 // fin footer

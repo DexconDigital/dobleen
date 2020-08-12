@@ -152,11 +152,11 @@
                     <div class="border container_titulo">
                         <h1 class="text-left tamaño_texto">Enfoque <br>único</h1>
                     </div>
-                    <div class="col-9 border container_contenido_text">
+                    <div class="col-lg-9 col-md-9 col-12 border container_contenido_text">
                         <p class="">Combinamos estrategia, creatividad y tecnología para transformar negocios, conectándolos con las marcas, basados en los momentos que más importan en la vida de las personas.</p>
                     </div>
                     <div class="border contendor_cont_btn">
-                        <a class="container_btn negrita btn"><span class="cont_btn negrita">Metodología</span></a>
+                        <a class="container_btn negrita btn tamaño_standar"><span class="cont_btn negrita">Metodología</span></a>
                     </div>
                 </div>
             </div>
@@ -179,11 +179,11 @@
                     <div class="border espacio_entre_titulo_parrafo">
                         <h1 class="text-left titulo_decrip">Objetivos <br>Comerciales</h1>
                     </div>
-                    <div class="border col-10 container_contenido_text">
+                    <div class="border col-lg-10 col-md-10 col-12 container_contenido_text">
                         <p class="">Integramos a cada proyecto de transformación tus objetivos comerciales, para crear algo novedoso que impacte a tus clientes a través de innovaciones disruptivas.</p>
                     </div>
                     <div class="border contendor_cont_btn">
-                        <a class="container_btn negrita btn"><span class="cont_btn negrita">Caso de Estudio</span></a>
+                        <a class="container_btn negrita btn tamaño_standar"><span class="cont_btn negrita">Caso de Estudio</span></a>
                     </div>
                 </div>
             </div>
@@ -227,11 +227,11 @@
                     <div class="col-10 border espacio_entre_titulo_parrafo">
                         <h1 class="text-left tamaño_texto">Centrados <br>en el ser<br>humano.</h1>
                     </div>
-                    <div class="col-9 border container_contenido_text">
+                    <div class="col-lg-9 col-md-9 col-12 border container_contenido_text">
                         <p class="">Dobleen es un proceso centrado en el ser humano, basado en años de experiencia de Dexcon Digital que permitirá impulsar tu organización hacía el siguiente nivel, mediante un trabajo creativo y colaborativo.</p>
                     </div>
-                    <div class="col-10 border contendor_cont_btn">
-                        <a class="container_btn negrita btn"><span class="cont_btn">Tienda en línea</span></a>
+                    <div class="col-lg-10 col-md-10 col-12 border contendor_cont_btn">
+                        <a class="container_btn negrita btn tamaño_standar"><span class="cont_btn">Tienda en línea</span></a>
                     </div>
                 </div>
             </div>
@@ -267,11 +267,11 @@
                     <div class="border espacio_entre_divs mt-2">
                         <p class="">¡Se dice doblin! Y se escribe dobleen.</p>
                     </div>
-                    <div class="col-9 border espacio_entre_divs mt-2">
+                    <div class="col-lg-9 col-md-9 col-12 border espacio_entre_divs mt-2">
                         <p class="">Dobleen te presenta iniciativas de innovación en un formato fácil, creativo para que tengas opciones para impulsar, transformar y hacer crecer tu negocio, en un contexto dinámico y cambiante como el que vivimos. Si estás aquí, ya nos conoces. Te invitamos a darle un vistazo a lo que tenemos para ofrecerte.</p>
                     </div>
-                    <div class="border espacio_entre_divs contendor_cont_btn">
-                        <a class="container_btn negrita btn"><span class="cont_btn negrita">Demo</span></a>
+                    <div class="border espacio_entre_divsbtn contendor_cont_btn">
+                        <a class="container_btn negrita btn tamaño_standar"><span class="cont_btn negrita">Demo</span></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-12 p-0 imagen_sexta2 mt-5">
@@ -287,8 +287,8 @@
         <div class="">
             <div class="col-12 d-flex flex-wrap pt-3 espacio_footer">
                 <div class="col-lg-1 col-md-1 col-1"></div>
-                <div class="col-lg-2 col-md-2 col-12 border  d-flex justify-content-star p-0">
-                    <img src="images/logoDD-blanco-app.png" class="tamaño_logo_dexc" alt="">
+                <div class="col-lg-2 col-md-2 col-12 border  d-flex p-0">
+                    <img src="images/logoDD-blanco-app.png" class="tamaño_logo_dexc cont_logo_dexcon" alt="">
                 </div>
                 <div class="col-lg-6 col-md-6 col-12 border p-0">
                     <div class="border text-center">
