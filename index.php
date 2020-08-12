@@ -44,11 +44,11 @@
             <a href="javascript:abrir()" class="color_negro"><i class="fas fa-th btn2"></i></a>
         </div>
     </section>
-    <section class="fondo_segundom">
+    <section class="fondo_segundom sticky-top">
         <div class="container ventana animate__animated animate__bounceInDown" id="vent">
             <div class="col-12  d-flex flex-wrap justify-content-center">
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="text-center" style="padding: 14%;">
+                <div class="col-lg-3 col-md-6 col-6">
+                    <div class="text-center margen_img_men2">
                         <a href="" class="hover_menu2">
                             <img src="images/segundo_menu1.jpg" class="card-img-top" alt="...">
                         </a>
@@ -60,8 +60,8 @@
 
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="text-center" style="padding: 14%;">
+                <div class="col-lg-3 col-md-6 col-6">
+                    <div class="text-center margen_img_men2">
                         <a href="" class="hover_menu2">
                             <img src="images/caja_de_regalo.jpg" class="card-img-top" alt="...">
                         </a>
@@ -73,8 +73,21 @@
 
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="text-center" style="padding: 14%;">
+                <div class="col-lg-3 col-md-6 col-6 ">
+                    <div class="text-center margen_img_men2">
+                        <a href="" class="hover_menu2">
+                            <img src="images/segundo_menu3.jpg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body text-center">
+                            <a href="" class="hover_menu2">
+                                <h5 class="card-title color_menu2">Caso de Estudio</h5>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6">
+                    <div class="text-center margen_img_men2">
                         <a href="" class="hover_menu2">
                             <img src="images/segundo_menu3.jpg" class="card-img-top" alt="...">
                         </a>
@@ -287,7 +300,7 @@
         <div class="">
             <div class="col-12 d-flex flex-wrap pt-3 espacio_footer">
                 <div class="col-lg-1 col-md-1 col-1"></div>
-                <div class="col-lg-2 col-md-2 col-12 border  d-flex p-0">
+                <div class="col-lg-2 col-md-2 col-12 border  d-flex p-0 margen_dexcon">
                     <img src="images/logoDD-blanco-app.png" class="tamaño_logo_dexc cont_logo_dexcon" alt="">
                 </div>
                 <div class="col-lg-6 col-md-6 col-12 border p-0">
@@ -305,7 +318,7 @@
                         <p class="negrita">Suscríbete al newsletter para que te avise cuando se publique un nuevo episodio de nuestro Podcast:</p>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-2 col-12 border  d-flex justify-content-center" style="width: 100%;height: 100%;">
+                <div class="col-lg-2 col-md-2 col-12 border  d-flex justify-content-center margen_dexcon" style="width: 100%;height: 100%;">
                     <img src="images/LOGO-DOBLEEN-blanco.png" class="tamaño_logo_doblee" alt="">
                 </div>
             </div>
