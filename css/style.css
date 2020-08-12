@@ -8648,6 +8648,34 @@ h1 {
   width: 100%;
   z-index: 700; }
 
+@media (max-width: 2560px) {
+  .cont_menu2_movil {
+    margin-bottom: inherit; } }
+
+@media (max-width: 1440px) {
+  .cont_menu2_movil {
+    margin-bottom: inherit; } }
+
+@media (max-width: 1024px) {
+  .cont_menu2_movil {
+    margin-bottom: inherit; } }
+
+@media (max-width: 768px) {
+  .cont_menu2_movil {
+    margin-bottom: 10rem; } }
+
+@media (max-width: 425px) {
+  .cont_menu2_movil {
+    margin-bottom: 10rem; } }
+
+@media (max-width: 375px) {
+  .cont_menu2_movil {
+    margin-bottom: inherit; } }
+
+@media (max-width: 230px) {
+  .cont_menu2_movil {
+    margin-bottom: inherit; } }
+
 .color_menu2 {
   color: white; }
 

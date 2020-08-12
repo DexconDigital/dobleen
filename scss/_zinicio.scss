@@ -506,6 +506,29 @@ h1 {
     z-index: 700;
     
 }
+.cont_menu2_movil{
+  @media (max-width: 2560px){
+    margin-bottom: inherit;
+  }
+  @media (max-width: 1440px){
+    margin-bottom: inherit;
+  }
+  @media (max-width: 1024px){
+    margin-bottom: inherit;
+  }
+  @media (max-width: 768px){
+    margin-bottom: 10rem;
+  }
+  @media (max-width: 425px){
+    margin-bottom: 10rem;
+  }
+  @media (max-width: 375px){
+    margin-bottom: inherit;
+  }
+  @media (max-width: 230px){
+    margin-bottom: inherit;
+  }
+}
 .color_menu2{
     color: white;
 }

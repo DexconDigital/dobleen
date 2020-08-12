@@ -45,7 +45,7 @@
         </div>
     </section>
     <section class="fondo_segundom sticky-top">
-        <div class="container ventana animate__animated animate__bounceInDown" id="vent">
+        <div class="container ventana animate__animated animate__bounceInDown cont_menu2_movil" id="vent">
             <div class="col-12  d-flex flex-wrap justify-content-center">
                 <div class="col-lg-3 col-md-6 col-6">
                     <div class="text-center margen_img_men2">
@@ -306,12 +306,12 @@
                 <div class="col-lg-6 col-md-6 col-12 border p-0">
                     <div class="border text-center">
                         <ul class="social-nav model-1">
-                            <li><a class="google-plus" href=""><i class="fab fa-instagram" aria-hidden="true"></i></i></a></li>
-                            <li><a class="twitter" href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="facebook" href=""><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                            <li><a class="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a class="pinterest"><i class="fab fa-youtube "></i></a></li>
-                            <li><a class="pinterest"><i class="fab fa-spotify"></i></a></li>
+                            <li><a class="google-plus" href="https://www.instagram.com/dexcondigital/" target="_blanck"><i class="fab fa-instagram" aria-hidden="true"></i></i></a></li>
+                            <li><a class="twitter" href="https://twitter.com/dexcondigital" target="_blanck"><i class="fab fa-twitter"></i></a></li>
+                            <li><a class="facebook" href="https://www.facebook.com/DexconDigital/" target="_blanck"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                            <li><a class="linkedin" href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQE8C7iNTBlokgAAAXPjpkroB1AlXJFFpu-_sLrNOQXj57Q13zJ24P88iVym7_9l6Cb5mDLb1rlMvM-njgNDD07Xu03n2ozN_YN1ZRWRG_dADu-9E8_fPA2ndmHW5Cd5sSkR3O0=&originalReferer=https://www.dexcondigital.com/&sessionRedirect=https%3A%2F%2Fco.linkedin.com%2Fin%2Fdexcon" target="_blanck"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a class="pinterest" href="https://www.youtube.com/channel/UCAZOEdpzzIlktWBsLOkyIZA" target="_blanck"><i class="fab fa-youtube "></i></a></li>
+                            <li><a class="pinterest" href="https://open.spotify.com/show/6E08i2bDylNUe0VYi2W6MC" target="_black"><i class="fab fa-spotify"></i></a></li>
                         </ul>
                     </div>
                     <div class="border text-center">
