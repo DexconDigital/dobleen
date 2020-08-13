@@ -2,6 +2,199 @@
     border: 1px solid #dee2e6 !important;
 }
 
-#ejemplo{
+#seccionuno{
 
+    .espacio_conte{
+        margin-top: 6rem;
+    }
+    .titulo{
+        font-size: 56px;
+        font-weight:700
+    }
+    .tamaño_iconos{
+        width: 60%;
+        height: 100%;
+    }
+    .tamaño_iconos2{
+        width: 57%;
+        height: 100%;
+    }
+    .decoracion_amarillo{
+        box-sizing: border-box;
+        border-top: 6px solid rgba(253, 211, 0, 1);
+    }
+    .decoracion_verde{
+        box-sizing: border-box;border-top: 6px solid rgba(52, 240, 255, 1);
+    }
+    .cursor{
+        cursor:pointer;
+    }
+
+}
+
+#secciondos{
+    margin-top: 7rem;
+    background-attachment: fixed;
+    background-image: url(../images/metodologia1.png);
+    position: initial;
+    background-size: contain;
+    background-position: left;
+    width: 100% !important;
+    height: 100% !important;
+    background-repeat: no-repeat;
+
+    .estop_relative{
+        position: relative;
+    }
+    .div_padre{
+        border:4px solid rgba(255, 255, 255, 1);
+        border-radius: 5px;
+        position:absolute;
+        padding: 12rem 17rem;
+        margin-top: 12rem;
+    }
+    .div_hijo{
+        padding: 1rem 5rem 1rem 0rem;
+        background-color: rgba(255, 255, 255, 0.44);
+        position: absolute;
+        margin-top: -51%;margin-left: -42%;
+    }
+    .text_div_hijo{
+        font-size:55px; color: white;
+        text-shadow:
+         #c8c8c8 1px 1px 0px,
+        #b4b4b4 0px 2px 0px,
+         #a0a0a0 0px 3px 0px,
+          rgba(140, 140, 140, 0.498039) 0px 4px 0px,
+           #787878 0px 0px 0px, 
+           rgba(0, 0, 0, 0.498039) 0px 5px 10px;
+    }
+    .espcio_secundo_div{
+        margin-top: 10rem;
+    }
+    .color_titulo{
+        background-color: #3EFAC5;
+        font-size:56px;
+    }
+    .texto_div2{
+        margin-top: 3rem;
+        margin-bottom:10rem;
+        padding-left: 33px;
+    }
+    .corte_color{
+        padding: 0rem 37px;
+    }
+}
+
+#secciontres{
+    margin-top: 4rem;
+    background-attachment: fixed;
+    background-image: url(../images/metodologia2.jpg);
+    position: initial;
+    background-size: contain;
+    background-position: right;
+    width: 100% !important;
+    height: 100% !important;
+    background-repeat: no-repeat;
+    .color_titulo{
+        background-color: #FDD300;
+        font-size:56px;
+    }
+    .texto_div2{
+        margin-top: 3rem;
+        margin-bottom:15rem;
+        padding-left: 47px;
+    }
+    .espcio_secundo_div{
+        margin-top: 10rem;
+    }
+    .corte_color{
+        padding: 0rem 53px;
+    }
+    .div_padre{
+        border:4px solid rgba(255, 255, 255, 1);
+        border-radius: 5px;
+        position:absolute;
+        padding: 12rem 17rem;
+        margin-top: 12rem;
+    }
+    .div_hijo{
+        padding: 1rem 5rem 1rem 0rem;
+        background-color: rgba(255, 255, 255, 0.44);
+        position: absolute;
+        margin-top: -51%;margin-left: -20%;
+    }
+    .text_div_hijo{
+        font-size:55px; color: white;
+        text-shadow:
+         #c8c8c8 1px 1px 0px,
+        #b4b4b4 0px 2px 0px,
+         #a0a0a0 0px 3px 0px,
+          rgba(140, 140, 140, 0.498039) 0px 4px 0px,
+           #787878 0px 0px 0px, 
+           rgba(0, 0, 0, 0.498039) 0px 5px 10px;
+    }
+}
+
+#seccioncuadtro{
+    margin-top: 4rem;
+    background-attachment: fixed;
+    background-image: url(../images/metodologia3.png);
+    position: initial;
+    background-size: contain;
+    background-position: left;
+    width: 100% !important;
+    height: 100% !important;
+    background-repeat: no-repeat;
+
+    .estop_relative{
+        position: relative;
+    }
+    .div_padre{
+        border:4px solid rgba(255, 255, 255, 1);
+        border-radius: 5px;
+        position:absolute;
+        padding: 12rem 17rem;
+        margin-top: 12rem;
+    }
+    .div_hijo{
+        padding: 1rem 12rem 1rem 0rem;
+        background-color: rgba(255, 255, 255, 0.44);
+        position: absolute;
+        margin-top: -52%;
+        margin-left: -42%;
+    }
+    .text_div_hijo{
+        font-size:55px; color: white;
+        text-shadow:
+         #c8c8c8 1px 1px 0px,
+        #b4b4b4 0px 2px 0px,
+         #a0a0a0 0px 3px 0px,
+          rgba(140, 140, 140, 0.498039) 0px 4px 0px,
+           #787878 0px 0px 0px, 
+           rgba(0, 0, 0, 0.498039) 0px 5px 10px;
+    }
+    .espcio_secundo_div{
+        margin-top: 10rem;
+    }
+    .color_titulo{
+        background-color: #3EFAC5;
+        font-size:56px;
+    }
+    .texto_div2{
+        margin-top: 3rem;
+        margin-bottom:15rem;
+        padding-left: 56px;
+    }
+    .corte_color{
+        padding: 0rem 53px;
+    }
+}
+#seccionquinta{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    .tamaño_btn_metodo{
+    width: 345px !important;
+    padding: 8px !important
+    }
 }

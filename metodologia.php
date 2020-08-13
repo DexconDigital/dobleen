@@ -16,9 +16,9 @@
 
     <!-- primera seccion -->
     <section id="seccionuno" class="borde">
-        <div class="container borde d-flex justify-content-center" style="margin-top: 6rem;">
+        <div class="container borde d-flex justify-content-center espacio_conte">
             <div class="col-11 borde d-flex justify-content-start">
-                <h1 style="font-size: 56px;font-weight:700">Nuestro <br> Método</h1>
+                <h1 class="titulo">Nuestro <br> Método</h1>
             </div>
         </div>
         <div class="container borde">
@@ -27,11 +27,11 @@
                     <div class="borde">
                         <p>IMAGINAR</p>
                     </div>
-                    <div class="borde" style="cursor:pointer;">
-                        <a onclick="ScrollTo('imaginar')"><img src="images/IMAGINAR.png" style="width: 60%;" class="h-100" alt=""></a>
+                    <div class="borde cursor">
+                        <a onclick="ScrollTo('imaginar')"><img src="images/IMAGINAR.png" class="tamaño_iconos" alt=""></a>
                     </div>
                     <div class="col-12 borde d-flex justify-content-center">
-                        <div class="col-10" style="box-sizing: border-box;border-top: 6px solid rgba(52, 240, 255, 1);"></div>
+                        <div class="col-10 decoracion_verde"></div>
                     </div>
 
                 </div>
@@ -39,26 +39,26 @@
                     <div class="borde">
                         <P>DISEÑAR</P>
                     </div>
-                    <div class="borde" style="cursor:pointer;">
-                        <a  onclick="ScrollTo('diseñar')">
-                            <img src="images/DISEÑAR.png" style="width: 57%;" class="h-100" alt="">
+                    <div class="borde cursor">
+                        <a onclick="ScrollTo('diseñar')">
+                            <img src="images/DISEÑAR.png" class="tamaño_iconos2" alt="">
                         </a>
                     </div>
                     <div class="col-12 borde d-flex justify-content-center">
-                        <div class="col-10" style="box-sizing: border-box;border-top: 6px solid rgba(253, 211, 0, 1);"></div>
+                        <div class="col-10 decoracion_amarillo"></div>
                     </div>
                 </div>
                 <div class="col-4 borde pl-0">
                     <div class="borde">
                         <P>ENTREGAR EL FUTURO</P>
                     </div>
-                    <div class="borde" style="cursor:pointer;">
+                    <div class="borde cursor">
                         <a onclick="ScrollTo('futuro')">
-                             <img src="images/ENTREGAR.png" style="width: 60%;" class="h-100" alt="">
+                            <img src="images/ENTREGAR.png" class="tamaño_iconos" alt="">
                         </a>
                     </div>
                     <div class="col-12 borde d-flex justify-content-center">
-                        <div class="col-10" style="box-sizing: border-box;border-top: 6px solid rgba(52, 240, 255, 1);"></div>
+                        <div class="col-10 decoracion_verde"></div>
                     </div>
                 </div>
             </div>
@@ -68,111 +68,107 @@
     <!-- fin primera seccion -->
 
     <!-- segunda seccion -->
-    <section class="borde" style="margin-top: 10rem;">
-        <div id="imaginar" class="container">
-            <p>Imaginar</p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+    <section id="secciondos" class="borde espaciotop">
+
+        <div id="imaginar" class="col-12 d-flex flex-wrap borde p-0">
+            <div class="col-6 borde p-0 d-flex justify-content-center estop_relative">
+                <!-- <img src="images/metodologia1.png" alt=""> -->
+
+                <div class="div_padre">
+                    <div class="col-8 div_hijo">
+                        <h1 class="text_div_hijo">
+                            Un equipo <br>
+                            talentoso.</h1>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-6 borde espcio_secundo_div">
+                <div class="borde col-6 corte_color">
+                    <h1 class="borde color_titulo">Imaginar</h1>
+                </div>
+                <div class=" col-9  borde texto_div2">
+                    <p>En esta fase, el foco se centra en el cliente, investigando e identificando nuevas formas de comprender a la audiencia obtener el enfoque correcto, combinamos el pensamiento estructurado con el diseño y métodos de prototipado para dar vida a conceptos emocionantes e innovadores. Nuestro objetivo es diseñar un futuro en el que las personas se beneficien de ecosistemas de negocio más simples e inteligentes. </p>
+                </div>
+            </div>
         </div>
+
     </section>
     <!-- fin segunda seccion -->
 
     <!-- tercera seccion -->
-    <section class="borde">
-        <div id="diseñar" class="container">
-            <p>Diseñar</p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+    <section id="secciontres" class="borde">
+
+        <div id="diseñar" class="col-12 d-flex flex-wrap borde p-0">
+            <div class="col-6 borde" style="background-color: #F4F6F1;">
+                <div class="borde col-6 corte_color espcio_secundo_div">
+                    <h1 class="borde color_titulo">Diseñar</h1>
+                </div>
+                <div class=" col-9  borde texto_div2">
+                    <p>Acertamos en el concepto, combinamos la estrategia, la creatividad con la tecnología para integrar las necesidades de las personas con las posibilidades de lo digital, con lo económicamente factible para simplificar la vida de nuestros clientes y lo más importante de sus usuarios, consumidores y clientes finales para lograr el éxito. </p>
+                </div>
+            </div>
+            <div class="col-6 borde p-0 d-flex justify-content-center estop_relative">
+                <!-- <img src="images/metodologia2.jpg" class="w-100 h-100" alt=""> -->
+
+
+                <div class="div_padre">
+                    <div class="col-8 div_hijo">
+                        <h1 class="text_div_hijo text-left">
+                            Herramientas <br>
+                            probadas
+                        </h1>
+                    </div>
+                </div>
+
+            </div>
         </div>
+
+
     </section>
     <!-- fin tercera seccion -->
 
     <!-- cuarta seccion -->
-    <section class="borde">
-        <div id="futuro" class="container">
-            <p>Entregar el futuro</p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+    <section id="seccioncuadtro" class="borde">
+        <div id="futuro" class="col-12 d-flex flex-wrap borde p-0">
+            <div class="col-6 borde p-0 d-flex justify-content-center estop_relative">
+                <!-- <img src="images/metodologia1.png" alt=""> -->
+
+                <div class="div_padre">
+                    <div class="col-8 div_hijo">
+                        <h1 class="text_div_hijo">
+                            Somos <br>
+                            Costo-<br>
+                            eficientes.
+                        </h1>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-6 borde espcio_secundo_div">
+                <div class="borde col-11 corte_color">
+                    <h1 class="borde color_titulo">Entregar el futuro</h1>
+                </div>
+                <div class=" col-9  borde texto_div2">
+                    <p>Logramos que tu negocio se impulse, mediante un enfoque único basado en el análisis, la optimización y la confiabilidad, aseguramos la sostenibilidad de nuestro trabajo a través del tiempo y la transformación del paisaje de mercados.</p>
+                </div>
+            </div>
         </div>
     </section>
     <!-- fin cuarta seccion -->
 
+    <!-- quienta secciom -->
+    <section id="seccionquinta">
+        <div  class="container">
+            <div class=" col-12 text-center">
+                <a class="container_btn negrita btn tamaño_btn_metodo" href=""><span class="cont_btn negrita">Iniciar demo Dobleen Free-Trial</span></a>
+            </div>
+        </div>
+    </section>
+    <!-- fin quinta seccion -->
+
     <!-- footer seccion -->
-    <!-- <?php include 'layout/footer.php' ?> -->
+    <?php include 'layout/footer.php' ?>
     <!-- fin footer seccion -->
 
 
