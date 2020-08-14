@@ -7,5 +7,9 @@ var image = document.getElementsByClassName('dos');
 new simpleParallax(image, {
     scale: 1.6,
 });
-var image = document.getElementsByClassName('tres');
+var image = document.getElementsByClassName('tres'); 
+new simpleParallax(image);
+
+// seccion Metodologia
+var image = document.getElementsByClassName('cuatro'); 
 new simpleParallax(image);

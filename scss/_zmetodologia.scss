@@ -16,8 +16,28 @@
         height: 100%;
     }
     .tamaño_iconos2{
-        width: 57%;
         height: 100%;
+        @media (max-width: 2560px){
+            width: 57%;
+        }
+        @media (max-width: 1440px){
+            width: 57%;
+        }
+        @media (max-width: 1024px){
+            width: 57%;
+        }
+        @media (max-width: 768px){
+            width: 56%;
+        }
+        @media (max-width: 425px){
+            width: 56%;
+        }
+        @media (max-width: 375px){
+            width: 56%;
+        }
+        @media (max-width: 230px){
+            width: 56%;
+        }
     }
     .decoracion_amarillo{
         box-sizing: border-box;
@@ -29,20 +49,157 @@
     .cursor{
         cursor:pointer;
     }
+    .tamaño_titulos{
+        font-size: 25px !important;
+    }
+    .div1{
+        @media (max-width: 2560px){
+            padding-right: 0%;
+            margin-bottom: inherit;
+        }
+        @media (max-width: 1440px){
+            padding-right: 0%;
+            margin-bottom: inherit;
+        }
+        @media (max-width: 1024px){
+            padding-right: 0%;
+            margin-bottom: inherit;
+        }
+        @media (max-width: 768px){
+            padding-right: 0%;
+            margin-bottom: 2rem;
+        }
+        @media (max-width: 425px){
+            padding-right: inherit;
+            margin-bottom: 2rem;
+        }
+        @media (max-width: 375px){
+            padding-right: inherit;
+            margin-bottom: 2rem;
+        }
+        @media (max-width: 230px){
+            padding-right: inherit;
+            margin-bottom: 2rem;
+        }
+    }
+    .div2{
+        
+        @media (max-width: 2560px){
+            padding: 0%;
+            margin-bottom: inherit;
+        }
+        @media (max-width: 1440px){
+            padding: 0%;
+            margin-bottom: inherit;
+        }
+        @media (max-width: 1024px){
+            padding: 0%;
+            margin-bottom: inherit;
+        }
+        @media (max-width: 768px){
+            padding: 0%;
+            margin-bottom: 2rem;
+        }
+        @media (max-width: 425px){
+            padding: inherit;
+            margin-bottom: 2rem;
+        }
+        @media (max-width: 375px){
+            padding: inherit;
+            margin-bottom: 2rem;
+        }
+        @media (max-width: 230px){
+            padding: inherit;
+            margin-bottom: 2rem;
+        }
+    }
+    .div3{
+        
+        @media (max-width: 2560px){
+            padding-left: 0%;
+        }
+        @media (max-width: 1440px){
+            padding-left: 0%;
+        }
+        @media (max-width: 1024px){
+            padding-left: 0%;
+        }
+        @media (max-width: 768px){
+            padding-left: 0%;
+        }
+        @media (max-width: 425px){
+            padding-left: inherit;
+        }
+        @media (max-width: 375px){
+            padding-left: inherit;
+        }
+        @media (max-width: 230px){
+            padding-left: inherit;
+        }
+    }
 
 }
 
 #secciondos{
     margin-top: 7rem;
-    background-attachment: fixed;
-    background-image: url(../images/metodologia1.png);
     position: initial;
     background-size: contain;
     background-position: left;
     width: 100% !important;
     height: 100% !important;
     background-repeat: no-repeat;
+    @media (max-width: 2560px){
+        background-attachment: fixed;
+        background-image: url(../images/metodologia1.png);
+    }
+    @media (max-width: 1440px){
+        background-attachment: fixed;
+        background-image: url(../images/metodologia1.png);
+    }
+    @media (max-width: 1024px){
+        background-attachment: inherit;
+        background-image: inherit;
+    }
+    @media (max-width: 768px){
+        background-attachment: inherit;
+        background-image: inherit;
+    }
+    @media (max-width: 425px){
+        background-attachment: inherit;
+        background-image: inherit;
+    }
+    @media (max-width: 375px){
+        background-attachment: inherit;
+        background-image: inherit;
+    }
+    @media (max-width: 230px){
+        background-attachment: inherit;
+        background-image: inherit;
+    }
 
+    .imagen_tabled{
+        @media (max-width: 2560px){
+        display: none;
+        }
+        @media (max-width: 1440px){
+        display: none;
+        }
+        @media (max-width: 1024px){
+        display: inherit;
+        }
+        @media (max-width: 768px){
+        display: inherit;
+        }
+        @media (max-width: 425px){
+        display: inherit;
+        }
+        @media (max-width: 375px){
+        display: inherit;
+        }
+        @media (max-width: 230px){
+        display: inherit;
+        }
+    }
     .estop_relative{
         position: relative;
     }
@@ -50,14 +207,60 @@
         border:4px solid rgba(255, 255, 255, 1);
         border-radius: 5px;
         position:absolute;
-        padding: 12rem 17rem;
-        margin-top: 12rem;
+        @media (max-width: 2560px){
+            padding: 12rem 17rem;
+            margin-top: 12rem;
+        }
+        @media (max-width: 1440px){
+            padding: 12rem 17rem;
+            margin-top: 12rem;
+        }
+        @media (max-width: 1024px){
+            padding: 12rem 17rem;
+            margin-top: 12rem;
+        }
+        @media (max-width: 768px){
+            padding: 12rem 17rem;
+            margin-top: 12rem;
+        }
+        @media (max-width: 425px){
+            padding: 11rem 12rem;
+            margin-top: 1rem;
+        }
+        @media (max-width: 375px){
+            padding: 48% 10rem;
+            margin-top: 0rem;
+        }
+        @media (max-width: 230px){
+            padding: 48% 10rem;
+            margin-top: 0rem;
+        }
     }
     .div_hijo{
-        padding: 1rem 5rem 1rem 0rem;
         background-color: rgba(255, 255, 255, 0.44);
         position: absolute;
         margin-top: -51%;margin-left: -42%;
+        @media (max-width: 2560px){
+            padding: 1rem 5rem 1rem 0rem;
+        }
+        @media (max-width: 1440px){
+            padding: 1rem 5rem 1rem 0rem;
+        }
+        @media (max-width: 1024px){
+            padding: 1rem 5rem 1rem 0rem;
+        }
+        @media (max-width: 768px){
+            padding: 1rem 5rem 1rem 0rem;
+        }
+        @media (max-width: 425px){
+            padding: 1rem 11rem 1rem 0rem;
+        }
+        @media (max-width: 375px){
+            padding: 1rem 11rem 1rem 0rem;
+        }
+        @media (max-width: 230px){
+            padding: 1rem 11rem 1rem 0rem;
+        }
     }
     .text_div_hijo{
         font-size:55px; color: white;
@@ -70,7 +273,27 @@
            rgba(0, 0, 0, 0.498039) 0px 5px 10px;
     }
     .espcio_secundo_div{
-        margin-top: 10rem;
+        @media (max-width: 2560px){
+            margin-top: 10rem;
+        }
+        @media (max-width: 1440px){
+            margin-top: 10rem;
+        }
+        @media (max-width: 1024px){
+            margin-top: 5rem;
+        }
+        @media (max-width: 768px){
+            margin-top: 5rem;
+        }
+        @media (max-width: 425px){
+            margin-top: 5rem;
+        }
+        @media (max-width: 375px){
+            margin-top: 5rem;
+        }
+        @media (max-width: 230px){
+            margin-top: 5rem;   
+        }
     }
     .color_titulo{
         background-color: #3EFAC5;
@@ -78,54 +301,262 @@
     }
     .texto_div2{
         margin-top: 3rem;
-        margin-bottom:10rem;
-        padding-left: 33px;
+        @media (max-width: 2560px){
+            margin-bottom:10rem;
+            padding-left: 33px;
+        }
+        @media (max-width: 1440px){
+            margin-bottom:10rem;
+            padding-left: 33px;
+        }
+        @media (max-width: 1024px){
+            margin-bottom:10rem;
+            padding-left: 33px;
+        }
+        @media (max-width: 768px){
+            margin-bottom:0rem;
+            padding-left: 58px;
+        }
+        @media (max-width: 425px){
+            margin-bottom:0rem;
+            padding-left: 22px;
+        }
+        @media (max-width: 375px){
+            margin-bottom:0rem;
+            padding-left: 6px;
+        }
+        @media (max-width: 230px){
+            margin-bottom:0rem;
+            padding-left: 6px;  
+        }
     }
     .corte_color{
-        padding: 0rem 37px;
+        @media (max-width: 2560px){
+            padding: 0rem 37px;
+        }
+        @media (max-width: 1440px){
+            padding: 0rem 37px;
+        }
+        @media (max-width: 1024px){
+            padding: 0rem 37px;
+        }
+        @media (max-width: 768px){
+            padding: 0rem 59px;
+        }
+        @media (max-width: 425px){
+            padding: 0rem 24px;
+        }
+        @media (max-width: 375px){
+            padding: 0rem 5px;
+        }
+        @media (max-width: 230px){
+            padding: 0rem 5px;
+        }
     }
 }
 
 #secciontres{
     margin-top: 4rem;
-    background-attachment: fixed;
-    background-image: url(../images/metodologia2.jpg);
     position: initial;
     background-size: contain;
     background-position: right;
     width: 100% !important;
     height: 100% !important;
     background-repeat: no-repeat;
+    @media (max-width: 2560px){
+        background-attachment: fixed;
+        background-image: url(../images/metodologia2.jpg);
+    }
+    @media (max-width: 1440px){
+        background-attachment: fixed;
+        background-image: url(../images/metodologia2.jpg);
+    }
+    @media (max-width: 1024px){
+        background-attachment: inherit;
+        background-image: inherit;
+    }
+    @media (max-width: 768px){
+        background-attachment: inherit;
+        background-image: inherit;
+    }
+    @media (max-width: 425px){
+        background-attachment: inherit;
+        background-image: inherit;
+    }
+    @media (max-width: 375px){
+        background-attachment: inherit;
+        background-image: inherit;
+    }
+    @media (max-width: 230px){
+        background-attachment: inherit;
+        background-image: inherit;
+    }
+    .imagen_tabled{
+        @media (max-width: 2560px){
+        display: none;
+        }
+        @media (max-width: 1440px){
+        display: none;
+        }
+        @media (max-width: 1024px){
+        display: inherit;
+        }
+        @media (max-width: 768px){
+        display: inherit;
+        }
+        @media (max-width: 425px){
+        display: inherit;
+        }
+        @media (max-width: 375px){
+        display: inherit;
+        }
+        @media (max-width: 230px){
+        display: inherit;
+        }
+    }
     .color_titulo{
         background-color: #FDD300;
         font-size:56px;
     }
     .texto_div2{
         margin-top: 3rem;
-        margin-bottom:15rem;
-        padding-left: 47px;
+        @media (max-width: 2560px){
+            margin-bottom:15rem;
+            padding-left: 47px;
+        }
+        @media (max-width: 1440px){
+            margin-bottom:15rem;
+            padding-left: 47px;
+        }
+        @media (max-width: 1024px){
+            margin-bottom:15rem;
+            padding-left: 47px;
+        }
+        @media (max-width: 768px){
+            margin-bottom:0rem;
+            padding-left: 69px;
+        }
+        @media (max-width: 425px){
+            margin-bottom:0rem;
+            padding-left: 23px;
+        }
+        @media (max-width: 375px){
+            margin-bottom:0rem;
+            padding-left: 13px;
+        }
+        @media (max-width: 230px){
+            margin-bottom:0rem;
+            padding-left: 13px;
+        }
     }
     .espcio_secundo_div{
-        margin-top: 10rem;
+        @media (max-width: 2560px){
+            margin-top: 10rem;
+        }
+        @media (max-width: 1440px){
+            margin-top: 10rem;
+        }
+        @media (max-width: 1024px){
+            margin-top: 10rem;
+        }
+        @media (max-width: 768px){
+            margin-top: 5rem;
+        }
+        @media (max-width: 425px){
+            margin-top: 5rem;
+        }
+        @media (max-width: 375px){
+            margin-top: 5rem;
+        }
+        @media (max-width: 230px){
+            margin-top: 5rem;
+        }
     }
     .corte_color{
-        padding: 0rem 53px;
+        @media (max-width: 2560px){
+            padding: 0rem 53px;
+        }
+        @media (max-width: 1440px){
+            padding: 0rem 53px;
+        }
+        @media (max-width: 1024px){
+            padding: 0rem 53px;
+        }
+        @media (max-width: 768px){
+            padding: 0rem 62px;
+        }
+        @media (max-width: 425px){
+            padding: 0rem 25px;
+        }
+        @media (max-width: 375px){
+            padding: 0rem 8px;
+        }
+        @media (max-width: 230px){
+            padding: 0rem 8px;
+        }
     }
     .div_padre{
         border:4px solid rgba(255, 255, 255, 1);
         border-radius: 5px;
         position:absolute;
-        padding: 12rem 17rem;
-        margin-top: 12rem;
+        @media (max-width: 2560px){
+            padding: 12rem 17rem;
+            margin-top: 12rem;
+        }
+        @media (max-width: 1440px){
+            padding: 12rem 17rem;
+            margin-top: 12rem;
+        }
+        @media (max-width: 1024px){
+            padding: 12rem 17rem;
+            margin-top: 12rem;
+        }
+        @media (max-width: 768px){
+            padding: 12rem 17rem;
+            margin-top: 12rem;
+        }
+        @media (max-width: 425px){
+            padding: 11rem 12rem;
+            margin-top: 1rem;
+        }
+        @media (max-width: 375px){
+            padding: 10rem 11rem;
+            margin-top: 1rem;
+        }
+        @media (max-width: 230px){
+            padding: 10rem 11rem;
+            margin-top: 1rem;
+        }
     }
     .div_hijo{
         padding: 1rem 5rem 1rem 0rem;
         background-color: rgba(255, 255, 255, 0.44);
         position: absolute;
-        margin-top: -51%;margin-left: -20%;
+        margin-top: -51%;
+        @media (max-width: 2560px){
+            margin-left: -20%;
+        }
+        @media (max-width: 1440px){
+            margin-left: -20%;
+        }
+        @media (max-width: 1024px){
+            margin-left: -20%;
+        }
+        @media (max-width: 768px){
+            margin-left: -50%;
+        }
+        @media (max-width: 425px){
+            margin-left: -50%;
+        }
+        @media (max-width: 375px){
+            margin-left: -50%;
+        }
+        @media (max-width: 230px){
+            margin-left: -50%;
+        }
     }
     .text_div_hijo{
-        font-size:55px; color: white;
+        color: white;
         text-shadow:
          #c8c8c8 1px 1px 0px,
         #b4b4b4 0px 2px 0px,
@@ -133,6 +564,75 @@
           rgba(140, 140, 140, 0.498039) 0px 4px 0px,
            #787878 0px 0px 0px, 
            rgba(0, 0, 0, 0.498039) 0px 5px 10px;
+        @media (max-width: 2560px){
+            font-size:55px; 
+        }
+        @media (max-width: 1440px){
+            font-size:55px; 
+        }
+        @media (max-width: 1024px){
+            font-size:55px; 
+        }
+        @media (max-width: 768px){
+            font-size:55px; 
+        }
+        @media (max-width: 425px){
+            font-size:55px; 
+        }
+        @media (max-width: 375px){
+            font-size:53px; 
+        }
+        @media (max-width: 230px){
+            font-size:53px; 
+        }
+       
+    }
+    #div_tabled{
+        @media (max-width: 2560px){
+            display: inherit !important;
+        }
+        @media (max-width: 1440px){
+            display: inherit !important;
+        }
+        @media (max-width: 1024px){
+            display: inherit !important;
+        }
+        @media (max-width: 768px){
+            display: none !important;
+        }
+        @media (max-width: 425px){
+            display: none !important;
+        }
+        @media (max-width: 375px){
+            display: none !important;
+        }
+        @media (max-width: 230px){
+            display: none !important;
+        }
+       
+    }
+    #div_movil{
+        @media (max-width: 2560px){
+            display: none !important;
+        }
+        @media (max-width: 1440px){
+            display: none !important;
+        }
+        @media (max-width: 1024px){
+            display: none !important;
+        }
+        @media (max-width: 768px){
+            display: inherit !important;
+        }
+        @media (max-width: 425px){
+            display: inherit !important;
+        }
+        @media (max-width: 375px){
+            display: inherit !important;
+        }
+        @media (max-width: 230px){
+            display: inherit !important;
+        }
     }
 }
 
@@ -146,16 +646,94 @@
     width: 100% !important;
     height: 100% !important;
     background-repeat: no-repeat;
+    @media (max-width: 2560px){
+        background-attachment: fixed;
+        background-image: url(../images/metodologia3.png);
+    }
+    @media (max-width: 1440px){
+        background-attachment: fixed;
+        background-image: url(../images/metodologia3.png);
+    }
+    @media (max-width: 1024px){
+        background-attachment: inherit;
+        background-image: inherit;
+    }
+    @media (max-width: 768px){
+        background-attachment: inherit;
+        background-image: inherit;
+    }
+    @media (max-width: 425px){
+        background-attachment: inherit;
+        background-image: inherit;
+    }
+    @media (max-width: 375px){
+        background-attachment: inherit;
+        background-image: inherit;
+    }
+    @media (max-width: 230px){
+        background-attachment: inherit;
+        background-image: inherit;
+    }
+    .imagen_tabled{
+        @media (max-width: 2560px){
+        display: none;
+        }
+        @media (max-width: 1440px){
+        display: none;
+        }
+        @media (max-width: 1024px){
+        display: inherit;
+        }
+        @media (max-width: 768px){
+        display: inherit;
+        }
+        @media (max-width: 425px){
+        display: inherit;
+        }
+        @media (max-width: 375px){
+        display: inherit;
+        }
+        @media (max-width: 230px){
+        display: inherit;
+        }
+    }
 
     .estop_relative{
         position: relative;
     }
+    
     .div_padre{
         border:4px solid rgba(255, 255, 255, 1);
         border-radius: 5px;
         position:absolute;
-        padding: 12rem 17rem;
-        margin-top: 12rem;
+        @media (max-width: 2560px){
+            padding: 12rem 17rem;
+            margin-top: 12rem;
+        }
+        @media (max-width: 1440px){
+            padding: 12rem 17rem;
+            margin-top: 12rem;
+        }
+        @media (max-width: 1024px){
+            padding: 12rem 17rem;
+            margin-top: 12rem;
+        }
+        @media (max-width: 768px){
+            padding: 12rem 17rem;
+            margin-top: 12rem;
+        }
+        @media (max-width: 425px){
+            padding: 11rem 12rem;
+            margin-top: 1rem;
+        }
+        @media (max-width: 375px){
+            padding: 48% 10rem;
+            margin-top: 0rem;
+        }
+        @media (max-width: 230px){
+            padding: 48% 10rem;
+            margin-top: 0rem;
+        }
     }
     .div_hijo{
         padding: 1rem 12rem 1rem 0rem;
@@ -175,26 +753,121 @@
            rgba(0, 0, 0, 0.498039) 0px 5px 10px;
     }
     .espcio_secundo_div{
-        margin-top: 10rem;
+        @media (max-width: 2560px){
+            margin-top: 10rem;
+        }
+        @media (max-width: 1440px){
+            margin-top: 10rem;
+        }
+        @media (max-width: 1024px){
+            margin-top: 5rem;
+        }
+        @media (max-width: 768px){
+            margin-top: 5rem;
+        }
+        @media (max-width: 425px){
+            margin-top: 5rem;
+        }
+        @media (max-width: 375px){
+            margin-top: 5rem;
+        }
+        @media (max-width: 230px){
+            margin-top: 5rem;   
+        }
     }
     .color_titulo{
         background-color: #3EFAC5;
         font-size:56px;
     }
-    .texto_div2{
+    
+        .texto_div2{
         margin-top: 3rem;
-        margin-bottom:15rem;
-        padding-left: 56px;
+        @media (max-width: 2560px){
+            margin-bottom:15rem;
+            padding-left: 33px;
+        }
+        @media (max-width: 1440px){
+            margin-bottom:15rem;
+            padding-left: 33px;
+        }
+        @media (max-width: 1024px){
+            margin-bottom:15rem;
+            padding-left: 33px;
+        }
+        @media (max-width: 768px){
+            margin-bottom:0rem;
+            padding-left: 58px;
+        }
+        @media (max-width: 425px){
+            margin-bottom:0rem;
+            padding-left: 22px;
+        }
+        @media (max-width: 375px){
+            margin-bottom:0rem;
+            padding-left: 6px;
+        }
+        @media (max-width: 230px){
+            margin-bottom:0rem;
+            padding-left: 6px;  
+        }
     }
     .corte_color{
-        padding: 0rem 53px;
+        @media (max-width: 2560px){
+            padding: 0rem 53px;
+        }
+        @media (max-width: 1440px){
+            padding: 0rem 53px;
+        }
+        @media (max-width: 1024px){
+            padding: 0rem 53px;
+        }
+        @media (max-width: 768px){
+            padding: 0rem 56px;
+        }
+        @media (max-width: 425px){
+            padding: 0rem 16px;
+        }
+        @media (max-width: 375px){
+            padding: 0rem 9px;
+        }
+        @media (max-width: 230px){
+            padding: 0rem 9px;
+        }
     }
 }
 #seccionquinta{
     margin-top: 3rem;
     margin-bottom: 2rem;
     .tamaño_btn_metodo{
-    width: 345px !important;
-    padding: 8px !important
+    @media (max-width: 2560px){
+        width: 345px !important;
+        padding: 8px !important;
+    }
+    @media (max-width: 1440px){
+        width: 345px !important;
+        padding: 8px !important;
+    }
+    @media (max-width: 1024px){
+        width: 345px !important;
+        padding: 8px !important;
+    }
+    @media (max-width: 768px){
+        width: 345px !important;
+        padding: 8px !important;
+    }
+    @media (max-width: 425px){
+        width: 345px !important;
+        padding: 8px !important;
+    }
+    @media (max-width: 375px){
+        width: inherit !important;
+        padding: 8px !important;
+    }
+    @media (max-width: 230px){
+        width: inherit !important;
+        padding: 8px !important;
+    }
+   
+
     }
 }
