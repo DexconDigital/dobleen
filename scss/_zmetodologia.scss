@@ -1,5 +1,5 @@
 .borde{
-    border: 1px solid #dee2e6 !important;
+    // border: 1px solid #dee2e6 !important;
 }
 
 #seccionuno{
@@ -474,13 +474,13 @@
     }
     .corte_color{
         @media (max-width: 2560px){
-            padding: 0rem 53px;
+            padding: 0rem 45px;
         }
         @media (max-width: 1440px){
-            padding: 0rem 53px;
+            padding: 0rem 45px;
         }
         @media (max-width: 1024px){
-            padding: 0rem 53px;
+            padding: 0rem 45px;
         }
         @media (max-width: 768px){
             padding: 0rem 62px;
@@ -813,25 +813,32 @@
     }
     .corte_color{
         @media (max-width: 2560px){
-            padding: 0rem 53px;
+            padding: 0rem 55px;
+            left: -4%;
         }
         @media (max-width: 1440px){
-            padding: 0rem 53px;
+            padding: 0rem 55px;
+            left: -4%;
         }
         @media (max-width: 1024px){
-            padding: 0rem 53px;
+            padding: 0rem 55px;
+            left: -4%;
         }
         @media (max-width: 768px){
             padding: 0rem 56px;
+            
         }
         @media (max-width: 425px){
             padding: 0rem 16px;
+            
         }
         @media (max-width: 375px){
             padding: 0rem 9px;
+            
         }
         @media (max-width: 230px){
             padding: 0rem 9px;
+            
         }
     }
 }

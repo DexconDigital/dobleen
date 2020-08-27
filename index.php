@@ -101,7 +101,7 @@
                         <p class="">Integramos a cada proyecto de transformación tus objetivos comerciales, para crear algo novedoso que impacte a tus clientes a través de innovaciones disruptivas.</p>
                     </div>
                     <div class=" contendor_cont_btn">
-                        <a class="container_btn negrita btn tamaño_standar"><span class="cont_btn negrita">Caso de Estudio</span></a>
+                        <a class="container_btn negrita btn tamaño_standar" href="casos.php"><span class="cont_btn negrita">Caso de Estudio</span></a>
                     </div>
                 </div>
             </div>

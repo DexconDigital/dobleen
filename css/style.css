@@ -10076,9 +10076,6 @@ input {
   .margen_dexcon {
     margin: 9% 0%; } }
 
-.borde {
-  border: 1px solid #dee2e6 !important; }
-
 #seccionuno .espacio_conte {
   margin-top: 6rem; }
 
@@ -10538,13 +10535,13 @@ input {
       margin-top: 5rem; } }
   @media (max-width: 2560px) {
     #secciontres .corte_color {
-      padding: 0rem 53px; } }
+      padding: 0rem 45px; } }
   @media (max-width: 1440px) {
     #secciontres .corte_color {
-      padding: 0rem 53px; } }
+      padding: 0rem 45px; } }
   @media (max-width: 1024px) {
     #secciontres .corte_color {
-      padding: 0rem 53px; } }
+      padding: 0rem 45px; } }
   @media (max-width: 768px) {
     #secciontres .corte_color {
       padding: 0rem 62px; } }
@@ -10841,13 +10838,16 @@ input {
         padding-left: 6px; } }
   @media (max-width: 2560px) {
     #seccioncuadtro .corte_color {
-      padding: 0rem 53px; } }
+      padding: 0rem 55px;
+      left: -4%; } }
   @media (max-width: 1440px) {
     #seccioncuadtro .corte_color {
-      padding: 0rem 53px; } }
+      padding: 0rem 55px;
+      left: -4%; } }
   @media (max-width: 1024px) {
     #seccioncuadtro .corte_color {
-      padding: 0rem 53px; } }
+      padding: 0rem 55px;
+      left: -4%; } }
   @media (max-width: 768px) {
     #seccioncuadtro .corte_color {
       padding: 0rem 56px; } }
@@ -10892,3 +10892,30 @@ input {
     #seccionquinta .tamaño_btn_metodo {
       width: inherit !important;
       padding: 8px !important; } }
+
+.borde {
+  border: 1px solid #dee2e6 !important; }
+
+#seccionuno {
+  background-color: #34F0FF; }
+  #seccionuno .titulo_principal {
+    padding-left: 12rem;
+    margin-bottom: 3rem; }
+  #seccionuno .titulo {
+    font-size: 56px;
+    font-weight: 700; }
+  #seccionuno .imagen_uno {
+    padding-left: 11rem; }
+  #seccionuno .negrita {
+    font-weight: bold;
+    color: #000000; }
+  #seccionuno .tamaño_span {
+    font-size: 16px; }
+  #seccionuno .colornegro {
+    color: #000000; }
+  #seccionuno .negrita2 {
+    font-weight: bold; }
+  #seccionuno .espacio_especial_casos {
+    margin-bottom: 0rem !important; }
+  #seccionuno .espacio_top_casos {
+    margin-top: 4rem; }

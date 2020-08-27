@@ -1,0 +1,37 @@
+.borde{
+    border: 1px solid #dee2e6 !important;
+}
+
+#seccionuno{
+    background-color: #34F0FF;
+    .titulo_principal{
+        padding-left: 12rem;
+        margin-bottom:3rem;
+    }
+    .titulo{
+        font-size: 56px;
+         font-weight:700
+    }
+    .imagen_uno{
+        padding-left: 11rem;
+    }
+    .negrita{
+        font-weight:bold;
+        color:#000000
+    }
+    .tamaño_span{
+        font-size:16px;
+    }
+    .colornegro{
+        color: #000000;
+    }
+    .negrita2{
+        font-weight:bold;
+    }
+    .espacio_especial_casos{
+        margin-bottom: 0rem !important;
+    }
+    .espacio_top_casos{
+        margin-top: 4rem;
+    }
+}

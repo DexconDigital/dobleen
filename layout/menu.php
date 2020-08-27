@@ -16,7 +16,7 @@
                     <li><a href="prueba.php">Demo</a></li>
                     <li><a href="#">Tienda</a></li>
                     <li><a href="metodologia.php">Método</a></li>
-                    <li><a class="text-break" href="#">Caso de Estudio</a></li>
+                    <li><a class="text-break" href="casos.php">Caso de Estudio</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
@@ -59,11 +59,11 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-6 ">
                     <div class="text-center margen_img_men2">
-                        <a href="" class="hover_menu2">
+                        <a href="casos.php" class="hover_menu2">
                             <img src="images/segundo_menu3.jpg" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body text-center">
-                            <a href="" class="hover_menu2">
+                            <a href="casos.php" class="hover_menu2">
                                 <h5 class="card-title color_menu2">Caso de Estudio</h5>
                             </a>
                         </div>
