@@ -2,7 +2,7 @@
     border: 1px solid #dee2e6 !important;
 }
 
-#seccionuno{
+#seccionuno_casos{
     background-color: #34F0FF;
     .titulo_principal{
         padding-left: 12rem;
@@ -34,4 +34,216 @@
     .espacio_top_casos{
         margin-top: 4rem;
     }
+}
+#secciondos_casos{
+    .div_mayor{
+        margin-top: 2rem;
+         margin-bottom:3rem
+    }
+    .div_cont_text{
+        padding-left: 11rem;
+        height:30rem
+    }
+    .style_titulo{
+        font-size: 56px;
+        font-weight:700;
+        margin-bottom:1rem;
+    }
+    .div_videos{
+        padding: 0%;
+    }
+    .div_video_principal{
+        height:56%
+    }
+    .tamaño_videos{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#secciontres_casos{
+        margin-bottom: 3rem;
+
+    .linea_azul_div{
+        padding-left: 15rem;margin-top:3rem;
+        border-right: 6px solid rgba(62, 250, 197, 1);
+        height: 100%
+    }
+    .linea_amarilla{
+        padding-left: 15rem;
+        margin-top:3rem;
+        border-right: 6px solid rgb(253, 211,0);
+        height: 100%
+    }
+    .tama_img_casos{
+        width: 150px;
+        height: 149px;
+    }
+    .titulo_uno_casos{
+        margin-bottom: 1rem;
+        margin-top:5rem;
+        font-weight:700;
+        color:black;
+    }
+    .titulo_dos_casos{
+        margin-bottom: 1rem;
+        margin-top:3rem;
+        font-weight:700;
+        color:black;
+    }
+    .titulo_tres_casos{
+        margin-bottom: 1rem;
+        margin-top:40px;
+        font-weight:700;
+        color:black;
+    }
+    .espacios_entre_parrafo{
+        margin-bottom: 0%;
+    }
+    
+}
+#seccioncuatro_casos{
+    background-color: #73FBD5;
+    position: initial;
+    background-size: contain;
+    background-position: right;
+    width: 100% !important;
+    height: 100% !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(../images/caso4.png);
+
+    .div_mayor_cont{
+        padding: 0%;
+        // padding-bottom:4rem;
+    }
+    .cont_texto_casos{
+        margin-top: 6rem;
+        padding:6rem
+    }
+    .titulo_principal_casos{
+        font-weight: 700;
+        color:black
+    }
+    .cont_img_casos{
+        padding: 0%;
+    }
+    .tamaño_img_casos{
+        width: 100%;
+         height:100%
+    }
+}
+#seccionquinta_casos{
+    background-color: #73FBD5;
+    position: initial;
+    background-size: contain;
+    background-position: left;
+    width: 100% !important;
+    height: 100% !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(../images/caso5.jpg);
+    background-color: #73FBD5;
+
+    .div_mayor_cont{
+        padding: 0%;
+        // padding-bottom:4rem;
+    }
+    .cont_img_casos{
+        padding: 0%;
+    }
+    .tamaño_img_casos{
+        width: 100%;
+         height:100%
+    }
+    .cont_texto_casos{
+        margin-top: 6rem;
+        padding:6rem
+    }
+    .titulo_principal_casos{
+        font-weight: 700;
+        color:black
+    }
+}
+
+#seccionsexta_casos{
+    background-color: #73FBD5;
+    position: initial;
+    background-size: contain;
+    background-position: right;
+    width: 100% !important;
+    height: 100% !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(../images/caso6.jpg);
+    background-color: #73FBD5;
+
+    .div_mayor_cont{
+        padding: 0%;
+        // padding-bottom:4rem;
+    }
+
+    .cont_texto_casos{
+        margin-top: 8rem;
+        padding:6rem
+    }
+
+    .titulo_principal_casos{
+        font-weight: 700;
+        color:black
+    }
+    .cont_img_casos{
+        padding: 0%;
+    }
+    .tamaño_img_casos{
+        width: 100%;
+         height:100%
+    }
+}
+
+#seccionseptima_casos{
+    .tamaño_btn_casos{
+        width: 345px !important;
+        padding: 8px !important;
+    }
+    .primer_titulo{
+        text-align: center;
+        margin-top: 5rem;
+    }
+    .tamaño_primer_titulo{
+        font-weight: 700;
+         font-size:44px;
+    }
+    .cont_seg_cont{
+        text-align: center;
+    }
+    .tamaño_segundo_titulo{
+        font-weight: 700;
+        font-size:25px !important;
+        margin: 0% 23%;
+        color:black;
+        margin-top: 3%;
+    }
+    .cont_btn_casos{
+        text-align: center;
+        margin-top: 4%;
+        margin-bottom:5rem;
+    }
+    .container_btn_casos{
+    background-color: black;
+    color: white !important;
+    padding: 1%;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 0rem;
+    font-size: 14px !important;
+    font-family: "OpenSans-Regular";
+    &:hover{
+        background-color: white;
+        color: black !important;
+    }
+    }
+}
+#seccion_intermedia{
+    background-color:#73FBD5;
+    padding: 0%;
 }

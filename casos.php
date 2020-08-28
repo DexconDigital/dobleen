@@ -15,7 +15,7 @@
     <!-- menu -->
 
     <!-- primera seccion -->
-    <section id="seccionuno" class="borde">
+    <section id="seccionuno_casos" class="borde">
         <div class="col-12 espacio_top_casos">
             <div class="col-12 borde titulo_principal">
                 <h1 class="text-left borde titulo">Caso de Estudio</h1>
@@ -37,21 +37,21 @@
     <!-- fin primera seccion -->
 
     <!-- segunda seccion -->
-    <section id="secciondos_casos" class="borde" style="background-color: #B7FF5E;">
-        <div class="col-12 d-flex flex-wrap borde" style="margin-top: 2rem; margin-bottom:3rem">
-            <div class="col-5 borde" style="padding-left: 11rem; height:30rem">
-                <h1 class="text-left borde" style="font-size: 56px; font-weight:700;margin-bottom:1rem;">Videos</h1>
+    <section id="secciondos_casos" class="borde">
+        <div class="col-12 d-flex flex-wrap borde div_mayor">
+            <div class="col-5 borde div_cont_text">
+                <h1 class="text-left borde style_titulo">Videos</h1>
                 <p>Periódicamente presentamos contenido que consideramos excelente para que tengas herramientas que te permitan aplicar la innovación en tu empresa. </p>
             </div>
-            <div class="col-7 d-flex flex-wrap borde" style="">
-                <div class="col-12" style="height:56%">
-                    <iframe class="w-100 h-100" src="https://www.youtube.com/embed/5SNbcHbjpP4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="col-7 d-flex flex-wrap borde div_videos">
+                <div class="col-12 div_video_principal">
+                    <iframe class="tamaño_videos" src="https://www.youtube.com/embed/5SNbcHbjpP4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="col-6 borde">
-                <iframe class="w-100 h-100" src="https://www.youtube.com/embed/5SNbcHbjpP4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="tamaño_videos" src="https://www.youtube.com/embed/5SNbcHbjpP4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="col-6 borde">
-                <iframe class="w-100 h-100" src="https://www.youtube.com/embed/5SNbcHbjpP4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="tamaño_videos" src="https://www.youtube.com/embed/5SNbcHbjpP4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -59,46 +59,154 @@
     <!-- fin segunda seccion -->
 
     <!-- tercera seccion -->
-    <section>
-        <div class="col-12">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+    <section id="secciontres_casos">
+        <div class="col-12 borde d-flex flex-wrap">
+            <div class="col-4 linea_azul_div">
+                <img src="images/caso1.png" class="tama_img_casos" alt="">
+            </div>
+            <div class="col-6 borde">
+                <p class="titulo_uno_casos">La ambición</p>
+                <p>Ayudar a Edumedia a crear un modelo de gestión de calidad centrado en la experiencia del cliente para impulsar sus ventas y optimizar sus operaciones. </p>
+            </div>
+        </div>
+        <div class="col-12 borde d-flex flex-wrap">
+            <div class="col-4 linea_azul_div">
+                <img src="images/caso2.png" class="tama_img_casos" alt="">
+            </div>
+            <div class="col-6 borde">
+                <p class="titulo_dos_casos">La Solución</p>
+                <p>Se redefinió la plataforma estratégica, se diseñó el mapa de experiencia del cliente mediante innovación abierta, se idenficaron canales de comercialización, se implementó un dashboard para seguimiento en línea de todos los proyectos del cliente. </p>
+            </div>
+        </div>
+        <div class="col-12 borde d-flex flex-wrap">
+            <div class="col-4 linea_amarilla">
+                <img src="images/caso3.png" class="tama_img_casos" alt="">
+            </div>
+            <div class="col-6 borde">
+                <p class="titulo_tres_casos">El impacto</p>
+                <p class="espacios_entre_parrafo">8 procesos implementados</p>
+                <p class="espacios_entre_parrafo">100% de optimización en línea base y reducción de costos de no calidad</p>
+                <p class="espacios_entre_parrafo">8% de mejoramiento en operaciones primarias</p>
+                <p class="espacios_entre_parrafo">Creación del área de marketing digital y comercial orientado al cliente y su experiencia de compra.</p>
+            </div>
         </div>
     </section>
     <!-- fin tercera seccion -->
 
     <!-- cuarta seccion -->
-
+    <section id="seccioncuatro_casos" class="borde">
+        <div class="col-12 borde d-flex flex-wrap div_mayor_cont">
+            <div class="col-4 borde cont_texto_casos">
+                <p class="titulo_principal_casos">El comienzo</p>
+                <p>Conformamos un equipo multidisciplinario, que analiza la situación actual, investiga y descubre formas de relacionamiento novedosas con los clientes, con ideas robustas, que trabaja colaborativamente contigo para crear innovaciones que impulsen los resultados.</p>
+            </div>
+            <div class="col-8 borde cont_img_casos">
+                <!-- <img src="images/caso4.png" class="tamaño_img_casos" alt=""> -->
+            </div>
+        </div>
+    </section>
     <!-- fin cuarta seccion -->
 
-    <!-- quienta secciom -->
+    <!-- seccion intermedia -->
+    <section id="seccion_intermedia">
+        <br>
+        <br>
+        <br>
+    </section>
+    <!-- fin seccion intermedia -->
 
+    <!-- quienta secciom -->
+    <section id="seccionquinta_casos" class="borde">
+        <div class="col-12 borde d-flex flex-wrap div_mayor_cont">
+            <div class="col-8 borde cont_img_casos">
+                <!-- <img src="images/caso5.jpg" class="tamaño_img_casos" alt=""> -->
+            </div>
+            <div class="col-4 borde cont_texto_casos">
+                <p class="titulo_principal_casos">Brainstorming</p>
+                <p>Conjuntamente con nuestros clientes, les apoyamos en la creación de innovaciones con métodos y tecnicas de ideación, usamos todas nuestras herramientas, enfoques y metodologías, incluyendo Dobleen y nuestro kit de iniciativas de innovación para el éxito.</p>
+            </div>
+        </div>
+    </section>
     <!-- fin quinta seccion -->
 
+    <!-- seccion intermedia -->
+    <section id="seccion_intermedia">
+        <br>
+        <br>
+        <br>
+    </section>
+    <!-- fin seccion intermedia -->
+
+    <!-- sexta seccion -->
+    <section id="seccionsexta_casos" class="borde">
+        <div class="col-12 borde d-flex flex-wrap div_mayor_cont">
+            <div class="col-4 borde cont_texto_casos">
+                <p class="titulo_principal_casos">Entregamos resultados</p>
+                <p>Una vez definidas las iniciativas de innovación, plasmamos los planes de acción de seguimiento para asegurar el logro de la ambición, entregando así resultados de alto impacto.</p>
+            </div>
+            <div class="col-8 borde cont_img_casos">
+                <!-- <img src="images/caso6.jpg" class="tamaño_img_casos" alt=""> -->
+            </div>
+        </div>
+    </section>
+    <!-- fin sexta seccion -->
+
+    <!-- seccion intermedia -->
+    <section id="seccion_intermedia">
+        <br>
+        <br>
+        <br>
+    </section>
+    <!-- fin seccion intermedia -->
+
+    <!-- septima seccion -->
+    <section id="seccionseptima_casos" class="borde">
+        <div class="col-12 borde primer_titulo">
+            <h1 class="tamaño_primer_titulo">El kit de iniciativas innovadoras para el éxito</h1>
+        </div>
+        <div class="col-12 cont_seg_cont">
+            <p class="tamaño_segundo_titulo">En Dexcon Digital, realizamos cada proyecto como único,
+                unimos nuestras capacidades y equipo de trabajo, para crear
+                contigo los negocios del futuro.
+            </p>
+        </div>
+        <div class="col-12 borde cont_btn_casos">
+            <a class="container_btn_casos negrita btn tamaño_btn_casos" href=""><span class="cont_btn negrita">Comprar</span></a>
+        </div>
+    </section>
+    <!-- fin septima seccion -->
+
     <!-- footer seccion -->
-    <!-- <?php include 'layout/footer.php' ?> -->
+    <?php include 'layout/footer.php' ?>
     <!-- fin footer seccion -->
 
 
 </body>
 <?php include 'layout/archivosfooter.php' ?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll > 300) {
+                $("#secciondos_casos").css("background", "#B7FF5E");
+            } else {
+                $("#secciondos_casos").css("background", "WHITE");
+            }
+        })
+    })
+</script>
+<script>
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll < 3370) {
+                $("#seccionseptima_casos").css("background", "WHITE");
+            } else {
+                $("#seccionseptima_casos").css("background", "#FDD300");
+            }
+        })
+    })
+</script>
 
 </html>
