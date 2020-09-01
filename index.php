@@ -145,7 +145,7 @@
                     <div class="col-10  espacio_entre_titulo_parrafo">
                         <h1 class="text-left tamaño_texto">Centrados <br>en el ser<br>humano.</h1>
                     </div>
-                    <div class="col-lg-9 col-md-9 col-12  container_contenido_text">
+                    <div class="col-lg-9 col-md-9 col-12  container_contenido_text_humano">
                         <p class="">Dobleen es un proceso centrado en el ser humano, basado en años de experiencia de Dexcon Digital que permitirá impulsar tu organización hacía el siguiente nivel, mediante un trabajo creativo y colaborativo.</p>
                     </div>
                     <div class="col-lg-10 col-md-10 col-12  contendor_cont_btn">

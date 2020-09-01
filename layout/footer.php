@@ -31,22 +31,22 @@
                 <div class="col-12 p-0 d-flex flex-wrap">
                     <div class="col-lg-3 col-md-3 col-12">
                         <div class="form-group">
-                            <input type="text" class="form-control form hover_btn1" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre">
+                            <input type="text" class="form-control form hover_btn1"  aria-describedby="emailHelp" placeholder="Nombre">
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-12">
                         <div class="form-group">
-                            <input type="email" class="form-control form hover_btn2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                            <input type="email" class="form-control form hover_btn2"  aria-describedby="emailHelp" placeholder="Email">
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-12">
                         <div class="form-group">
-                            <input type="text" class="form-control form hover_btn3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Teléfono">
+                            <input type="text" class="form-control form hover_btn3"  aria-describedby="emailHelp" placeholder="Teléfono">
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-12">
                         <div class="form-group">
-                            <button type="submit" class="form-control form negrita hover_btn_enviar" id="exampleInputEmail1" aria-describedby="emailHelp">Suscribirse</button>
+                            <button type="submit" class="form-control form negrita hover_btn_enviar"  aria-describedby="emailHelp">Suscribirse</button>
                         </div>
                     </div>
                 </div>

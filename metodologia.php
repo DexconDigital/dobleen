@@ -17,7 +17,7 @@
     <!-- primera seccion -->
     <section id="seccionuno" class="borde">
         <div class="container borde d-flex justify-content-center espacio_conte">
-            <div class="col-11 borde d-flex justify-content-start">
+            <div class="col-11 borde d-flex justify-content-start mb-3">
                 <h1 class="titulo">Nuestro<br>Método</h1>
             </div>
         </div>
