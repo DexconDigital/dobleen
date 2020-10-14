@@ -41,7 +41,7 @@
                     </div>
                     <div class="borde cursor">
                         <a onclick="ScrollTo('diseñar')">
-                            <img src="images/DISEÑAR.png" class="tamaño_iconos2" alt="">
+                            <img src="images/DISE.png" class="tamaño_iconos2" alt="">
                         </a>
                     </div>
                     <div class="col-12 borde d-flex justify-content-center">
@@ -58,7 +58,7 @@
                         </a>
                     </div>
                     <div class="col-12 borde d-flex justify-content-center">
-                        <div class="col-10 decoracion_verde"></div>
+                        <div class="col-10 decoracion_azul"></div>
                     </div>
                 </div>
             </div>
@@ -174,7 +174,7 @@
     <section id="seccionquinta">
         <div class="container">
             <div class=" col-12 text-center">
-                <a class="container_btn negrita btn tamaño_btn_metodo" href=""><span class="cont_btn negrita">Iniciar demo Dobleen Free-Trial</span></a>
+                <a class="container_btn negrita btn tamaño_btn_metodo" href=""><span class="cont_btn negrita">Iniciar Demo Dobleen Free-Trial</span></a>
             </div>
         </div>
     </section>

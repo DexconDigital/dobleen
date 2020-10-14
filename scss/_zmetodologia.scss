@@ -43,8 +43,12 @@
         box-sizing: border-box;
         border-top: 6px solid rgba(253, 211, 0, 1);
     }
-    .decoracion_verde{
+    .decoracion_azul{
         box-sizing: border-box;border-top: 6px solid rgba(52, 240, 255, 1);
+    }
+     .decoracion_verde{
+        box-sizing: border-box;border-top: 6px solid rgba(62, 250, 197,1 );
+        
     }
     .cursor{
         cursor:pointer;
@@ -776,7 +780,7 @@
         }
     }
     .color_titulo{
-        background-color: #3EFAC5;
+        background-color: #34F0FF;
         font-size:56px;
     }
     

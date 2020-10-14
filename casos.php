@@ -61,7 +61,7 @@
     <!-- tercera seccion -->
     <section id="secciontres_casos">
         <div class="col-12 borde d-flex flex-wrap">
-            <div class="col-lg-4 col-md-4 col-12 linea_azul_div">
+            <div class="col-lg-4 col-md-4 col-12 linea_verde_div">
                 <img src="images/caso1.png" class="tama_img_casos" alt="">
             </div>
             <div class="col-lg-6 col-md-8 col-12 borde">
@@ -70,7 +70,7 @@
             </div>
         </div>
         <div class="col-12 borde d-flex flex-wrap">
-            <div class="col-lg-4 col-md-4 col-12 linea_azul_div">
+            <div class="col-lg-4 col-md-4 col-12 linea_amarilla">
                 <img src="images/caso2.png" class="tama_img_casos" alt="">
             </div>
             <div class="col-lg-6 col-md-8 borde">
@@ -79,7 +79,7 @@
             </div>
         </div>
         <div class="col-12 borde d-flex flex-wrap">
-            <div class="col-lg-4 col-md-4 col-12 linea_amarilla">
+            <div class="col-lg-4 col-md-4 col-12 linea_azul_div">
                 <img src="images/caso3.png" class="tama_img_casos" alt="">
             </div>
             <div class="col-lg-6 col-md-8 borde">
@@ -119,11 +119,14 @@
     <section id="seccionquinta_casos" class="borde">
         <div class="col-12 borde d-flex flex-wrap div_mayor_cont">
             <div class="col-lg-8 col-md-12 col-12 cont_img_casos">
-                <img src="images/caso5.jpg" class="tamaño_img_casos imagen_tabled_caos cuatro" alt="">
+                <img src="images/caso5.jpg" class="caso_especial_img tamaño_img_casos imagen_tabled_caos cuatro" alt="">
             </div>
             <div class="col-lg-4 col-md-12 col-12 borde cont_texto_casos">
                 <p class="titulo_principal_casos">Brainstorming</p>
                 <p>Conjuntamente con nuestros clientes, les apoyamos en la creación de innovaciones con métodos y tecnicas de ideación, usamos todas nuestras herramientas, enfoques y metodologías, incluyendo Dobleen y nuestro kit de iniciativas de innovación para el éxito.</p>
+            </div>
+            <div class="col-lg-8 col-md-12 col-12 cont_img_casos">
+                <img src="images/caso5.jpg" class="caso_especial_img2 tamaño_img_casos imagen_tabled_caos cuatro" alt="">
             </div>
         </div>
     </section>
@@ -188,10 +191,51 @@
     $(document).ready(function() {
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
-            if (scroll > 300) {
-                $("#secciondos_casos").css("background", "#B7FF5E");
-            } else {
+
+            if (scroll > 200) {
                 $("#secciondos_casos").css("background", "WHITE");
+            }
+            if (scroll > 250) {
+                $("#secciondos_casos").css("background", "#D9FFAA");
+            }
+            if (scroll > 290) {
+                $("#secciondos_casos").css("background", "#CDFF90");
+            }
+            if (scroll > 330) {
+                $("#secciondos_casos").css("background", "#C3FF78");
+            }
+            if (scroll > 370) {
+                $("#secciondos_casos").css("background", "#B7FF5E");
+            }
+
+        })
+    })
+</script>
+<script>
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll > 370) {
+                $("#seccioncuatro_casos").css("background-color", "white");
+            }
+            if (scroll > 1200) {
+                $("#seccioncuatro_casos").css("background-color", "#E2FEF6");
+            }
+            if (scroll > 1300) {
+                $("#seccioncuatro_casos").css("background-color", "#C0FDEC");
+            }
+            if (scroll > 1400) {
+                $("#seccioncuatro_casos").css("background-color", "#9FFDE2");
+            }
+            if (scroll > 1500) {
+                $("#seccioncuatro_casos").css("background-color", "#68FBD2");
+            }
+            if (scroll > 1600) {
+                $("#seccioncuatro_casos").css("background-color", "#3FFAC5");
+            }
+            
+            if(scroll > 3000 ){
+                $("#seccionseptima_casos").css("background", "white");
             }
         })
     })
@@ -200,13 +244,31 @@
     $(document).ready(function() {
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
-            if (scroll < 3370) {
-                $("#seccionseptima_casos").css("background", "WHITE");
-            } else {
+            if (scroll > 3330) {
+                $("#seccionseptima_casos").css("background", "white");
+            }
+            if (scroll > 3370) {
+                $("#seccionseptima_casos").css("background", "#FEEB8D");
+            }
+            if (scroll > 3410) {
+                $("#seccionseptima_casos").css("background", "#FEE66E");
+            }
+            if (scroll > 3450) {
+                $("#seccionseptima_casos").css("background", "#FEDF45");
+            }
+            if (scroll > 3490) {
                 $("#seccionseptima_casos").css("background", "#FDD300");
             }
         })
     })
 </script>
-
+<script>
+    $(window).scroll(function(event) {
+  var scrollLeft = $(window).scrollLeft();
+  var scrollTop = $(window).scrollTop();
+  console.log("Vertical "+scrollTop);
+  console.log("Horizontal "+scrollLeft);
+});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </html>

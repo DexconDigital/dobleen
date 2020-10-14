@@ -13,8 +13,8 @@
             <nav class="overlay-menu ">
                 <ul class="lista_menu">
                     <li><a href="index.php">Inicio</a></li>
-                    <li><a href="prueba.php">Demo</a></li>
-                    <li><a href="#">Tienda</a></li>
+                    <!-- <li><a href="demo.php">Demo</a></li> -->
+                    <li><a href="https://www.dexcondigital.com/tiendavirtual" target="_blanck">Tienda</a></li>
                     <li><a href="metodologia.php">Método</a></li>
                     <li><a class="text-break" href="casos.php">Caso de Estudio</a></li>
                     <li><a href="#">Contacto</a></li>
@@ -46,11 +46,11 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-6">
                     <div class="text-center margen_img_men2">
-                        <a href="" class="hover_menu2">
+                        <a href="https://www.dexcondigital.com/tiendavirtual" target="_blank" class="hover_menu2">
                             <img src="images/caja_de_regalo.jpg" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body text-center">
-                            <a href="" class="hover_menu2">
+                            <a href="https://www.dexcondigital.com/tiendavirtual" target="_blank" class="hover_menu2">
                                 <h5 class="card-title color_menu2">Tienda</h5>
                             </a>
                         </div>

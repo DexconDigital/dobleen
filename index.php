@@ -149,7 +149,7 @@
                         <p class="">Dobleen es un proceso centrado en el ser humano, basado en años de experiencia de Dexcon Digital que permitirá impulsar tu organización hacía el siguiente nivel, mediante un trabajo creativo y colaborativo.</p>
                     </div>
                     <div class="col-lg-10 col-md-10 col-12  contendor_cont_btn">
-                        <a class="container_btn negrita btn tamaño_standar"><span class="cont_btn">Tienda en línea</span></a>
+                        <a href="https://www.dexcondigital.com/tiendavirtual" target="_blank" class="container_btn negrita btn tamaño_standar"><span class="cont_btn">Tienda en línea</span></a>
                     </div>
                 </div>
             </div>
@@ -189,7 +189,7 @@
                         <p class="">Dobleen te presenta iniciativas de innovación en un formato fácil, creativo para que tengas opciones para impulsar, transformar y hacer crecer tu negocio, en un contexto dinámico y cambiante como el que vivimos. Si estás aquí, ya nos conoces. Te invitamos a darle un vistazo a lo que tenemos para ofrecerte.</p>
                     </div>
                     <div class=" espacio_entre_divsbtn contendor_cont_btn">
-                        <a class="container_btn negrita btn tamaño_standar"><span class="cont_btn negrita">Demo</span></a>
+                        <a class="container_btn negrita btn tamaño_standar" data-toggle="modal" data-target="#exampleModal"><span class="cont_btn negrita">Demo</span></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-12 p-0 imagen_sexta2 mt-5">
@@ -200,6 +200,47 @@
         </div>
     </section>
     <!--Fin sexta seccion -->
+    <!-- modal demo -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title sub" id="exampleModalLabel">Description</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form action="  " method="POST" autocomplete="off">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="sub">Nombres:</label>
+                            <input type="text" class="form-control" name="nombres" aria-describedby="emailHelp" placeholder="Nombre Completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="sub">Número de Contacto:</label>
+                            <input type="text" class="form-control" name="telefono" aria-describedby="emailHelp" placeholder="Fijo ó Celular" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="sub">Correo Electrónico:</label>
+                            <input type="email" class="form-control" name="correo" aria-describedby="emailHelp" placeholder="ejemplo@dominio.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="sub">Nombre de la Empresa:</label>
+                            <input type="text" class="form-control" name="nomempresa" aria-describedby="emailHelp" placeholder="Nombre Completo" required>
+                        </div>
+
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                    <button type="submit" class="container_btn negrita btn tamaño_standar">Seguir</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- modal demo -->
     <!-- Septima seccion -->
     <?php include 'layout/footer.php' ?>
     <!-- Septima seccion -->

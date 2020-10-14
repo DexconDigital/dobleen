@@ -1,5 +1,5 @@
 .borde{
-    border: 1px solid #dee2e6 !important;
+    // border: 1px solid #dee2e6 !important;
 }
 
 #seccionuno_casos{
@@ -306,7 +306,7 @@
 #secciontres_casos{
         margin-bottom: 3rem;
 
-    .linea_azul_div{
+    .linea_verde_div{
         margin-top:3rem;
         height: 100%;
 
@@ -378,6 +378,43 @@
           }
 
     }
+    .linea_azul_div{
+      margin-top:3rem;
+      height: 100%;
+
+      @media (max-width: 2560px){
+          padding-left: 15rem;    
+          border-right: 6px solid rgba(52, 240, 255, 1);
+          text-align: initial;
+        }
+        @media (max-width: 1440px){
+          padding-left: 15rem;
+          border-right: 6px solid rgba(52, 240, 255, 1);
+          text-align: initial;
+        }
+        @media (max-width: 1024px){
+          padding-left: 9rem;
+          border-right: 6px solid rgba(52, 240, 255, 1);
+          text-align: initial;
+        }
+        @media (max-width: 768px){
+          padding-left: 8%;
+          border-right: 6px solid rgba(62, 250, 197, 1);
+          text-align: center;
+        }
+        @media (max-width: 425px){
+          padding-left: initial;
+          border-right: initial;
+          text-align: center;
+        }
+        @media (max-width: 360px){
+          padding-left: initial;
+          border-right: initial;
+          text-align: center;
+          
+        }
+  }
+   
     .tama_img_casos{
         width: 150px;
         height: 149px;
@@ -476,7 +513,7 @@
     
 }
 #seccioncuatro_casos{
-    background-color: #73FBD5;
+    // background-color: #73FBD5;
         position: initial;
         background-size: contain;
         background-position: right;
@@ -584,7 +621,7 @@
     }
 }
 #seccionquinta_casos{
-    background-color: #73FBD5;
+    background-color: #3FFAC5;
     position: initial;
     background-size: contain;
     background-position: left;
@@ -593,7 +630,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-image: url(../images/caso5.jpg);
-    background-color: #73FBD5;
+    background-color: #3FFAC5;
     @media (max-width: 2560px){
         background-attachment: fixed;
         background-image: url(../images/caso5.jpg);
@@ -675,15 +712,15 @@
         }
         @media (max-width: 425px){
             padding:1rem;
-            margin-top: 3rem;
+            margin-top: 0rem;
         }
         @media (max-width: 375px){
             padding:1rem;
-            margin-top: 3rem;
+            margin-top: 0rem;
         }
         @media (max-width: 230px){
             padding:1rem;
-            margin-top: 3rem;
+            margin-top: 0rem;
         }
     }
     .titulo_principal_casos{
@@ -693,7 +730,7 @@
 }
 
 #seccionsexta_casos{
-    background-color: #73FBD5;
+    background-color: #3FFAC5;
     position: initial;
     background-size: contain;
     background-position: right;
@@ -702,7 +739,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-image: url(../images/caso6.jpg);
-    background-color: #73FBD5;
+    background-color: #3FFAC5;
     @media (max-width: 2560px){
         background-attachment: fixed;
         background-image: url(../images/caso6.jpg);
@@ -906,6 +943,52 @@
     }
 }
 #seccion_intermedia{
-    background-color:#73FBD5;
+    background-color:#3FFAC5;
     padding: 0%;
+}
+.caso_especial_img{
+  @media (max-width: 2560px){
+    display: inherit;
+}
+@media (max-width: 1440px){
+  display: inherit;
+}
+@media (max-width: 1024px){
+    display: none;
+}
+@media (max-width: 768px){
+  display: none !important;
+}
+@media (max-width: 425px){
+  display: none !important;
+}
+@media (max-width: 375px){
+  display: none !important;
+}
+@media (max-width: 230px){
+  display: none !important;
+}
+}
+.caso_especial_img2{
+  @media (max-width: 2560px){
+    display: none !important;
+}
+@media (max-width: 1440px){
+  display: none !important;
+}
+@media (max-width: 1024px){
+  display: none !important;
+}
+@media (max-width: 768px){
+  display: inherit !important;
+}
+@media (max-width: 425px){
+  display: inherit !important;
+}
+@media (max-width: 375px){
+  display: inherit !important;
+}
+@media (max-width: 230px){
+  display: inherit !important;
+}
 }
