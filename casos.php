@@ -174,7 +174,7 @@
             </p>
         </div>
         <div class="col-12 borde cont_btn_casos">
-            <a class="container_btn_casos negrita btn tamaño_btn_casos" href=""><span class="cont_btn negrita">Comprar</span></a>
+            <a class="container_btn_casos negrita btn tamaño_btn_casos" href="https://www.dexcondigital.com/tiendavirtual" target="_blank"><span class="cont_btn negrita">Comprar</span></a>
         </div>
     </section>
     <!-- fin septima seccion -->
@@ -233,8 +233,8 @@
             if (scroll > 1600) {
                 $("#seccioncuatro_casos").css("background-color", "#3FFAC5");
             }
-            
-            if(scroll > 3000 ){
+
+            if (scroll > 3000) {
                 $("#seccionseptima_casos").css("background", "white");
             }
         })
@@ -264,11 +264,12 @@
 </script>
 <script>
     $(window).scroll(function(event) {
-  var scrollLeft = $(window).scrollLeft();
-  var scrollTop = $(window).scrollTop();
-  console.log("Vertical "+scrollTop);
-  console.log("Horizontal "+scrollLeft);
-});
+        var scrollLeft = $(window).scrollLeft();
+        var scrollTop = $(window).scrollTop();
+        console.log("Vertical " + scrollTop);
+        console.log("Horizontal " + scrollLeft);
+    });
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 </html>

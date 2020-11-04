@@ -376,8 +376,8 @@ $(document).ready(function(){
 	
 	// Display error if any else submit form
 	if(error_message) {
-		$('.alert-danger').removeClass('hide').html(error_message);
-		return false;
+    $('.alert-danger').removeClass('hide ocultar').html(error_message);
+    return false;
 	} else {
 		return true;	
 	}    
@@ -389,55 +389,55 @@ function confiM(){
 	if($("#Premium option:selected").val() == 0) {
 		error_message+="Configuración / Modelo de Ganancias / Premium se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Liderazgoencostos option:selected").val() == 0) {
 		error_message+="<br>Configuración / Modelo de Ganancias / Liderazgo en costos se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Transaccionesaescala option:selected").val() == 0) {
 		error_message+="<br>Configuración / Modelo de Ganancias / Transacciones a escala se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Microtransacciones option:selected").val() == 0) {
 		error_message+="<br>Configuración / Modelo de Ganancias / Microtransacciones se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Escasezforzada option:selected").val() == 0) {
 		error_message+="<br>Configuración / Modelo de Ganancias / Escasez forzada se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Suscripcion option:selected").val() == 0) {
 		error_message+="<br>Configuración / Modelo de Ganancias / Suscripción se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Membresias option:selected").val() == 0) {
 		error_message+="<br>Configuración / Modelo de Ganancias / Membresías se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Capacidadinstalada option:selected").val() == 0) {
 		error_message+="<br>Configuración / Modelo de Ganancias / Capacidad instalada se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Conexiones option:selected").val() == 0) {
 		error_message+="<br>Configuración / Modelo de Ganancias / Conexiones se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Subasta option:selected").val() == 0) {
 		error_message+="<br>Configuración / Modelo de Ganancias / Subasta se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if(error_message) {
-		$('.alert-danger').removeClass('hide').html(error_message);
+		$('.alert-danger').removeClass('hide ocultar').html(error_message);
 		return false;
 	} else {
 		return true;	
@@ -504,7 +504,7 @@ function confMD(){
     }
 
     if(error_message) {
-      $('.alert-danger').removeClass('hide').html(error_message);
+      $('.alert-danger').removeClass('hide ocultar').html(error_message);
       return false;
     } else {
       return true;	
@@ -517,61 +517,61 @@ function confR(){
     if($("#Colaboracion option:selected").val() == 0) {
       error_message+="Configuración / Red / Colaboración se encuentra Vacio";
     }else{
-      $('.alert-danger').addClass('hide').html(error_message);
+      $('.alert-danger').addClass('hide ocultar').html(error_message);
     }
     if($("#Fusionesyadquisiciones option:selected").val() == 0) {
       error_message+="<br>Configuración / Red / Fusiones y adquisiciones se encuentra Vacio";
     }else{
-      $('.alert-danger').addClass('hide').html(error_message);
+      $('.alert-danger').addClass('hide ocultar').html(error_message);
     }
     if($("#Consolidacion option:selected").val() == 0) {
       error_message+="<br>Configuración / Red / Consolidación se encuentra Vacio";
     }else{
-      $('.alert-danger').addClass('hide').html(error_message);
+      $('.alert-danger').addClass('hide ocultar').html(error_message);
     }
     if($("#Innovacionabierta option:selected").val() == 0) {
       error_message+="<br>Configuración / Red / Innovación abierta se encuentra Vacio";
     }else{
-      $('.alert-danger').addClass('hide').html(error_message);
+      $('.alert-danger').addClass('hide ocultar').html(error_message);
     }
     if($("#Mercadossecundarios option:selected").val() == 0) {
       error_message+="<br>Configuración / Red / Mercados secundarios se encuentra Vacio";
     }else{
-      $('.alert-danger').addClass('hide').html(error_message);
+      $('.alert-danger').addClass('hide ocultar').html(error_message);
     }
     if($("#Integraciondelacadenadesuministros option:selected").val() == 0) {
       error_message+="<br>Configuración / Red / Integración de la cadena de suministros se encuentra Vacio";
     }else{
-      $('.alert-danger').addClass('hide').html(error_message);
+      $('.alert-danger').addClass('hide ocultar').html(error_message);
     }
     if($("#Participacioncomplementaria option:selected").val() == 0) {
       error_message+="<br>Configuración / Red / Participación complementaria se encuentra Vacio";
     }else{
-      $('.alert-danger').addClass('hide').html(error_message);
+      $('.alert-danger').addClass('hide ocultar').html(error_message);
     }
     if($("#Alianzas option:selected").val() == 0) {
       error_message+="<br>Configuración / Red / Alianzas se encuentra Vacio";
     }else{
-      $('.alert-danger').addClass('hide').html(error_message);
+      $('.alert-danger').addClass('hide ocultar').html(error_message);
     }
     if($("#Franquiciamiento option:selected").val() == 0) {
       error_message+="<br>Configuración / Red / Franquiciamiento se encuentra Vacio";
     }else{
-      $('.alert-danger').addClass('hide').html(error_message);
+      $('.alert-danger').addClass('hide ocultar').html(error_message);
     }
     if($("#Cooperacion option:selected").val() == 0) {
       error_message+="<br>Configuración / Red / Cooperacion se encuentra Vacio";
     }else{
-      $('.alert-danger').addClass('hide').html(error_message);
+      $('.alert-danger').addClass('hide ocultar').html(error_message);
     }
     if($("#Lanzamientodeplataformasdelacompetencia option:selected").val() == 0) {
       error_message+="<br>Configuración / Red / Lanzamiento de plataformas de la competencia se encuentra Vacio";
     }else{
-      $('.alert-danger').addClass('hide').html(error_message);
+      $('.alert-danger').addClass('hide ocultar').html(error_message);
     }
 
     if(error_message) {
-      $('.alert-danger').removeClass('hide').html(error_message);
+      $('.alert-danger').removeClass('hide ocultar').html(error_message);
       return false;
     } else {
       return true;	
@@ -585,57 +585,57 @@ function confE(){
   if($("#Disenoorganizacional option:selected").val() == 0) {
     error_message+="Configuración / Estructura / Diseño organizacional se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Sistemadeincentivos option:selected").val() == 0) {
     error_message+="<br>Configuración / Estructura / Sistema de incentivos se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#IntegraciondeTI option:selected").val() == 0) {
     error_message+="<br>Configuración / Estructura / Integración de TI se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Centrodecompetencias option:selected").val() == 0) {
     error_message+="<br>Configuración / Estructura / Centro de competencias se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Tercerizacion option:selected").val() == 0) {
     error_message+="<br>Configuración / Estructura / Tercerización se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Universidadcorporativa option:selected").val() == 0) {
     error_message+="<br>Configuración / Estructura / Universidad corporativa se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Gerenciadescentralizada option:selected").val() == 0) {
     error_message+="<br>Configuración / Estructura / Gerencia descentralizada se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Gestiondelconocimiento option:selected").val() == 0) {
     error_message+="<br>Configuración / Estructura / Gestión del conocimiento se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Aprovechamientodeactivos option:selected").val() == 0) {
     error_message+="<br>Configuración / Estructura / Aprovechamiento de activos de otras compañías se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Estandarizaciondeactivos option:selected").val() == 0) {
     error_message+="<br>Configuración / Estructura / Estandarización de activos compañías se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   
 
   if(error_message) {
-    $('.alert-danger').removeClass('hide').html(error_message);
+    $('.alert-danger').removeClass('hide ocultar').html(error_message);
     return false;
   } else {
     return true;	
@@ -649,72 +649,72 @@ function confP(){
   if($("#Estandarizaciondeprocesos option:selected").val() == 0) {
     error_message+="Configuración / Procesos / Estandarización de procesos se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Localizacion option:selected").val() == 0) {
     error_message+="<br>Configuración / Procesos / Localización se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Eficienciadeprocesos option:selected").val() == 0) {
     error_message+="<br>Configuración / Procesos / Eficiencia de procesos se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Manufacturaflexible option:selected").val() == 0) {
     error_message+="<br>Configuración / Procesos / Manufactura flexible se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Automatizaciondeprocesos option:selected").val() == 0) {
     error_message+="<br>Configuración / Procesos / Automatización de procesos se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Crowdsourcing option:selected").val() == 0) {
     error_message+="<br>Configuración / Procesos / Crowdsourcing se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Produccionbajodemanda option:selected").val() == 0) {
     error_message+="<br>Configuración / Procesos / Producción bajo demanda se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Produccionlimpia option:selected").val() == 0) {
     error_message+="<br>Configuración / Procesos / Producción limpia se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Sistemaslogisticos option:selected").val() == 0) {
     error_message+="<br>Configuración / Procesos / Sistemas logísticos se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Disenoestrategico option:selected").val() == 0) {
     error_message+="<br>Configuración / Procesos / Diseño estratégico se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Propiedadintelectual option:selected").val() == 0) {
     error_message+="<br>Configuración / Procesos / Propiedad intelectual se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Generacionporelusuario option:selected").val() == 0) {
     error_message+="<br>Configuración / Procesos / Generación por el usuario se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Analisispredictivo option:selected").val() == 0) {
     error_message+="<br>Configuración / Procesos / Análisis predictivo se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   
 
   if(error_message) {
-    $('.alert-danger').removeClass('hide').html(error_message);
+    $('.alert-danger').removeClass('hide ocultar').html(error_message);
     return false;
   } else {
     return true;	
@@ -728,68 +728,68 @@ function ofertaD(){
   if($("#Productossuperiores option:selected").val() == 0) {
     error_message+="Oferta / Desempeño del Producto / Productos superiores se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Facilidaddeuso option:selected").val() == 0) {
     error_message+="<br>Oferta / Desempeño del Producto / Facilidad de uso se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Funcionalidadatractiva option:selected").val() == 0) {
     error_message+="<br>Oferta / Desempeño del Producto / Funcionalidad atractiva se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Seguridad option:selected").val() == 0) {
     error_message+="<br>Oferta / Desempeño del Producto / Seguridad se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Agregacionfutura option:selected").val() == 0) {
     error_message+="<br>Oferta / Desempeño del Producto / Agregación futura se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Adiciondefuncionalidades option:selected").val() == 0) {
     error_message+="<br>Oferta / Desempeño del Producto / Adición de funcionalidades se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Simplificaciondeldesempeno option:selected").val() == 0) {
     error_message+="<br>Oferta / Desempeño del Producto / Simplificación del desempeño se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Sensibilidadambiental option:selected").val() == 0) {
     error_message+="<br>Oferta / Desempeño del Producto / Sensibilidad ambiental se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Conservacion option:selected").val() == 0) {
     error_message+="<br>Oferta / Desempeño del Producto / Conservación se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Customizacion option:selected").val() == 0) {
     error_message+="<br>Oferta / Desempeño del Producto / Customización se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Enfoque option:selected").val() == 0) {
     error_message+="<br>Oferta / Desempeño del Producto / Enfoque se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Estilo option:selected").val() == 0) {
     error_message+="<br>Oferta / Desempeño del Producto / Estilo se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   
 
 
   if(error_message) {
-    $('.alert-danger').removeClass('hide').html(error_message);
+    $('.alert-danger').removeClass('hide ocultar').html(error_message);
     return false;
   } else {
     return true;	
@@ -803,38 +803,38 @@ function ofertaS(){
   if($("#Complementos option:selected").val() == 0) {
     error_message+="Oferta / Sistema de Productos / Complementos se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Extensionesplugins option:selected").val() == 0) {
     error_message+="<br>Oferta / Sistema de Productos / Extensiones plug-ins se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Construcciondeproductos option:selected").val() == 0) {
     error_message+="<br>Oferta / Sistema de Productos / Construcción de productos se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Sistemasmodulares option:selected").val() == 0) {
     error_message+="<br>Oferta / Sistema de Productos / Sistemas modulares se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Plataformasdeproductos option:selected").val() == 0) {
     error_message+="<br>Oferta / Sistema de Productos / Plataformas de productos / servicios se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Ofertasintegradas option:selected").val() == 0) {
     error_message+="<br>Oferta / Sistema de Productos / Ofertas integradas se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   
 
 
   if(error_message) {
-    $('.alert-danger').removeClass('hide').html(error_message);
+    $('.alert-danger').removeClass('hide ocultar').html(error_message);
     return false;
   } else {
     return true;	
@@ -848,69 +848,69 @@ function expeS(){
   if($("#Probarantesdecomprar option:selected").val() == 0) {
     error_message+="Experiencias / Servicios / Probar antes de comprar se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Garantias option:selected").val() == 0) {
     error_message+="<br>Experiencias / Servicios / Garantías se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Programasdefidelizacion option:selected").val() == 0) {
     error_message+="<br>Experiencias / Servicios / Programas de fidelización se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Adiciondevalor  option:selected").val() == 0) {
     error_message+="<br>Experiencias / Servicios / Adicion de valor se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Consejeria option:selected").val() == 0) {
     error_message+="<br>Experiencias / Servicios / Consejería se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Gestiontotaldelaexperiencia option:selected").val() == 0) {
     error_message+="<br>Experiencias / Servicios / Gestión total de la experiencia se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Serviciossuplementarios option:selected").val() == 0) {
     error_message+="<br>Experiencias / Servicios / Servicios suplementarios se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#ServicioSuperior option:selected").val() == 0) {
     error_message+="<br>Experiencias / Servicios / Servicio Superior se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Serviciopersonalizado option:selected").val() == 0) {
     error_message+="<br>Experiencias / Servicios / Servicio personalizado se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Comunidaddeusuarios option:selected").val() == 0) {
     error_message+="<br>Experiencias / Servicios / Comunidad de usuarios / soporte de sistemas se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Arrendamientooprestamo option:selected").val() == 0) {
     error_message+="<br>Experiencias / Servicios / Arrendamiento o préstamo se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Autoservicio option:selected").val() == 0) {
     error_message+="<br>Experiencias / Servicios / Autoservicio se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   
   
 
 
   if(error_message) {
-    $('.alert-danger').removeClass('hide').html(error_message);
+    $('.alert-danger').removeClass('hide ocultar').html(error_message);
     return false;
   } else {
     return true;	
@@ -924,64 +924,64 @@ function expeC(){
   if($("#Diversificacion option:selected").val() == 0) {
     error_message+="Experiencias / Canales / Diversificación se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#IrDirecto option:selected").val() == 0) {
     error_message+="<br>Experiencias / Canales / Ir Directo se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Tiendaprincipal option:selected").val() == 0) {
     error_message+="<br>Experiencias / Canales / Tienda principal se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Canalesnotradicionales option:selected").val() == 0) {
     error_message+="<br>Experiencias / Canales / Canales no tradicionales se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Presenciapopup option:selected").val() == 0) {
     error_message+="<br>Experiencias / Canales / Presencia pop-up se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Distribucionindirecta option:selected").val() == 0) {
     error_message+="<br>Experiencias / Canales / Distribución indirecta se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Marketingmultinivel option:selected").val() == 0) {
     error_message+="<br>Experiencias / Canales / Marketing multinivel se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Ventacruzada option:selected").val() == 0) {
     error_message+="<br>Experiencias / Canales / Venta cruzada se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Bajodemanda option:selected").val() == 0) {
     error_message+="<br>Experiencias / Canales / Bajo demanda se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Contextoespecifico option:selected").val() == 0) {
     error_message+="<br>Experiencias / Canales / Contexto específico se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Centrodeexperiencias option:selected").val() == 0) {
     error_message+="<br>Experiencias / Canales / Centro de experiencias se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   
   
 
 
   if(error_message) {
-    $('.alert-danger').removeClass('hide').html(error_message);
+    $('.alert-danger').removeClass('hide ocultar').html(error_message);
     return false;
   } else {
     return true;	
@@ -995,42 +995,42 @@ function expeM(){
   if($("#Marcacompartida option:selected").val() == 0) {
     error_message+="Experiencias / Marcas / Marca compartida se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Apalancamientodemarca option:selected").val() == 0) {
     error_message+="<br>Experiencias / Marcas / Apalancamiento de marca se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Etiquetaprivada option:selected").val() == 0) {
     error_message+="<br>Experiencias / Marcas / Etiqueta privada se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Extensiondemarca option:selected").val() == 0) {
     error_message+="<br>Experiencias / Marcas / Extensión de marca se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Componentesdemarca option:selected").val() == 0) {
     error_message+="<br>Experiencias / Marcas / Componentes de marca se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Transparencia option:selected").val() == 0) {
     error_message+="<br>Experiencias / Marcas / Transparencia se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Alineaciondevalores option:selected").val() == 0) {
     error_message+="<br>Experiencias / Marcas / Alineación de valores se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   if($("#Certificacion option:selected").val() == 0) {
     error_message+="<br>Experiencias / Marcas / Certificación se encuentra Vacio";
   }else{
-    $('.alert-danger').addClass('hide').html(error_message);
+    $('.alert-danger').addClass('hide ocultar').html(error_message);
   }
   
   
@@ -1038,7 +1038,7 @@ function expeM(){
 
 
   if(error_message) {
-    $('.alert-danger').removeClass('hide').html(error_message);
+    $('.alert-danger').removeClass('hide ocultar').html(error_message);
     return false;
   } else {
     return true;	

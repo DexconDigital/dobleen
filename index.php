@@ -1,11 +1,18 @@
+<?php
+require_once 'variables/captcha.php';
+$WebK = Web_Key;
+
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio | Dobleen</title>
     <?php include 'layout/archivosheader.php' ?>
+    <?php include 'variables/validaterminar.php' ?>
+
 </head>
 
 <body>
@@ -203,33 +210,46 @@
     <!-- modal demo -->
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title sub" id="exampleModalLabel">Description</h5>
+                    <h5 class="modal-title sub text-center tipo_regular" id="exampleModalLabel">Para vivir la experiencia Dobleen necesitamos que nos proporciones los siguientes datos, los cuales protegeremos y trataremos conforme a nuestra política de datos personales. Sin estos datos no podrás continuar.</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
 
                 <div class="modal-body">
-                    <form action="  " method="POST" autocomplete="off">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1" class="sub">Nombres:</label>
-                            <input type="text" class="form-control" name="nombres" aria-describedby="emailHelp" placeholder="Nombre Completo" required>
+                    <form action="insert/empresa.php" method="POST" autocomplete="off">
+                        <div class="col-12 d-flex flex-wrap mb-4">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1" class="sub tipo_regular">Nombres:</label>
+                                    <input type="text" class="form-control" name="nombres" aria-describedby="emailHelp" placeholder="Nombre Completo" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1" class="sub tipo_regular">Número de Contacto:</label>
+                                    <input type="text" class="form-control" name="telefono" aria-describedby="emailHelp" placeholder="Fijo ó Celular" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1" class="sub tipo_regular">Correo Electrónico:</label>
+                                    <input type="email" class="form-control" name="correo" aria-describedby="emailHelp" placeholder="ejemplo@dominio.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1" class="sub tipo_regular">Nombre de la Empresa:</label>
+                                    <input type="text" class="form-control" name="empresa" aria-describedby="emailHelp" placeholder="Nombre Completo" required>
+                                </div>
+                                <input type="hidden" id="fecha" name="fecha">
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1" class="sub">Número de Contacto:</label>
-                            <input type="text" class="form-control" name="telefono" aria-describedby="emailHelp" placeholder="Fijo ó Celular" required>
+                        <div class="d-flex align-items-baseline mb-2 mt-2">
+                            <input type="checkbox" class="d-flex align-items-center justify-content-center mr-2" required>
+                            <p>Confirmo que he leído, entendido y acepto la <a class="ml-1 color_a_contacto" href="archivos/Política_de_Privacidad_para_el_Tratamiento_de_Datos_Personales.pdf" target="_blank"> política de tratamiento de datos personales.</a></p>
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1" class="sub">Correo Electrónico:</label>
-                            <input type="email" class="form-control" name="correo" aria-describedby="emailHelp" placeholder="ejemplo@dominio.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1" class="sub">Nombre de la Empresa:</label>
-                            <input type="text" class="form-control" name="nomempresa" aria-describedby="emailHelp" placeholder="Nombre Completo" required>
-                        </div>
+                        <div class="g-recaptcha" data-sitekey="<?php echo $WebK ?>" required></div>
+                        <div class="col-12 mb-4"><small id="tituloHepl" class="form-text text-muted tipo_regular">Este campo es obligatorio</small></div>
 
                 </div>
                 <div class="modal-footer">
@@ -246,5 +266,7 @@
     <!-- Septima seccion -->
 </body>
 <?php include 'layout/archivosfooter.php' ?>
+<!-- composer require google/recaptcha -->
+<script src="https://www.google.com/recaptcha/api.js"></script>
 
 </html>

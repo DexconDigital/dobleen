@@ -1,5 +1,5 @@
 .borde{
-    border: 1px solid #dee2e6 !important;
+    // border: 1px solid #dee2e6 !important;
 }
 
 #primera_seccion_demo{
@@ -387,7 +387,7 @@
     }
     .btn_option_descrip_demo{
         text-decoration:none; 
-        color:black; 
+        color:black !important; 
     }
     .card-body{
         font-family: "OpenSans-Regular" !important;

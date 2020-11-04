@@ -6,15 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo | Dobleen</title>
     <?php include 'layout/archivosheader.php' ?>
+    <?php include 'variables/seguridad.php' ?>
+
 
 </head>
 <style type="text/css">
     #register_form fieldset:not(:first-of-type) {
         display: none;
     }
+
+    .ocultar {
+        display: none;
+
+    }
+
+    .mostrar {
+        display: inherit;
+    }
 </style>
 
 <body>
+
+
+
+
 
     <!-- menu -->
     <?php include 'layout/menu.php' ?>
@@ -104,8 +119,8 @@
             <div class="progress mb-5" style="height:20px">
                 <div class="progress-bar progress-bar-striped  progress-bar-animated" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
             </div>
-            <div class="alert alert-danger hide"></div>
-            <form id="register_form" name="register_form" novalidate action="form.php" method="post">
+            <div class="alert alert-danger ocultar hide"></div>
+            <form id="register_form" name="register_form" novalidate action="insert/form.php" method="post">
                 <!-- CONFIGURACION / Modelo de Ganancias -->
                 <fieldset>
                     <div class="col-12 borde d-flex justify-content-center mb-4">
@@ -2538,17 +2553,17 @@
                 <!-- OFERTA / Desempeño del Producto -->
                 <fieldset class="text-center">
 
-                    <div class="col-12 borde d-flex justify-content-center mb-4">
-                        <div class="col-lg-4 col-md-6 col-lg-4 borde">
+                    <div class="col-12  d-flex justify-content-center mb-4">
+                        <div class="col-lg-4 col-md-6 col-lg-4 ">
                             <h1 class="text-center">Oferta</h1>
                             <div class="col-12 decoracion_verde"></div>
                         </div>
                     </div>
                     <div class="col-12 d-flex flex-wrap align-items-center div_especial_manuel">
-                        <div class="col-lg-5 col-md-5 col-5 borde text-right">
+                        <div class="col-lg-5 col-md-5 col-5  text-right">
                             <img src="iconos/desempeño producto.png" class="icono_demo" width="12%" alt="">
                         </div>
-                        <div class="col-lg-7 col-md-7 col-7 borde text-left">
+                        <div class="col-lg-7 col-md-7 col-7  text-left">
                             <h3>Desempeño del Producto</h3>
                         </div>
 
@@ -2578,7 +2593,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -2619,9 +2634,9 @@
                                 </div>
                             </div>
                         </div>
-                       <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -2662,9 +2677,9 @@
                                 </div>
                             </div>
                         </div>
-                       <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -2705,15 +2720,15 @@
                                 </div>
                             </div>
                         </div>
-                       <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
 
                                 <div class="form-group col-lg-9 col-md-9 col-12">
-                                      <select class="form-control tipografia_demo_option" required id="Seguridad" name="Seguridad">
+                                    <select class="form-control tipografia_demo_option" required id="Seguridad" name="Seguridad">
                                         <option value="0"> - Calificación -</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -2748,15 +2763,15 @@
                                 </div>
                             </div>
                         </div>
-                       <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
 
                                 <div class="form-group col-lg-9 col-md-9 col-12">
-                                   <select class="form-control tipografia_demo_option" required id="Agregacionfutura" name="Agregacionfutura">
+                                    <select class="form-control tipografia_demo_option" required id="Agregacionfutura" name="Agregacionfutura">
                                         <option value="0"> - Calificación -</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -2791,15 +2806,15 @@
                                 </div>
                             </div>
                         </div>
-                       <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
 
                                 <div class="form-group col-lg-9 col-md-9 col-12">
-                                     <select class="form-control tipografia_demo_option" required id="Adiciondefuncionalidades" name="Adiciondefuncionalidades">
+                                    <select class="form-control tipografia_demo_option" required id="Adiciondefuncionalidades" name="Adiciondefuncionalidades">
                                         <option value="0"> - Calificación -</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -2834,15 +2849,15 @@
                                 </div>
                             </div>
                         </div>
-                       <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
 
                                 <div class="form-group col-lg-9 col-md-9 col-12">
-                                   <select class="form-control tipografia_demo_option" required id="Simplificaciondeldesempeno" name="Simplificaciondeldesempeno">
+                                    <select class="form-control tipografia_demo_option" required id="Simplificaciondeldesempeno" name="Simplificaciondeldesempeno">
                                         <option value="0"> - Calificación -</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -2877,15 +2892,15 @@
                                 </div>
                             </div>
                         </div>
-                       <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
 
                                 <div class="form-group col-lg-9 col-md-9 col-12">
-                                   <select class="form-control tipografia_demo_option" required id="Sensibilidadambiental" name="Sensibilidadambiental">
+                                    <select class="form-control tipografia_demo_option" required id="Sensibilidadambiental" name="Sensibilidadambiental">
                                         <option value="0"> - Calificación -</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -2920,9 +2935,9 @@
                                 </div>
                             </div>
                         </div>
-                       <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -2963,15 +2978,15 @@
                                 </div>
                             </div>
                         </div>
-                       <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
 
                                 <div class="form-group col-lg-9 col-md-9 col-12">
-                                     <select class="form-control tipografia_demo_option" required id="Customizacion" name="Customizacion">
+                                    <select class="form-control tipografia_demo_option" required id="Customizacion" name="Customizacion">
                                         <option value="0"> - Calificación -</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -3006,9 +3021,9 @@
                                 </div>
                             </div>
                         </div>
-                       <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -3051,7 +3066,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -3120,13 +3135,13 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-12 cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
 
                                 <div class="form-group col-lg-9 col-md-9 col-12">
-                                     <select class="form-control tipografia_demo_option" required id="Complementos" name="Complementos">
+                                    <select class="form-control tipografia_demo_option" required id="Complementos" name="Complementos">
                                         <option value="0"> - Calificación -</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -3161,15 +3176,15 @@
                                 </div>
                             </div>
                         </div>
-                       <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
 
                                 <div class="form-group col-lg-9 col-md-9 col-12">
-                                      <select class="form-control tipografia_demo_option" required id="Extensionesplugins" name="Extensionesplugins">
+                                    <select class="form-control tipografia_demo_option" required id="Extensionesplugins" name="Extensionesplugins">
                                         <option value="0"> - Calificación -</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -3204,15 +3219,15 @@
                                 </div>
                             </div>
                         </div>
-                       <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
 
                                 <div class="form-group col-lg-9 col-md-9 col-12">
-                                     <select class="form-control tipografia_demo_option" required id="Construcciondeproductos" name="Construcciondeproductos">
+                                    <select class="form-control tipografia_demo_option" required id="Construcciondeproductos" name="Construcciondeproductos">
                                         <option value="0"> - Calificación -</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -3247,15 +3262,15 @@
                                 </div>
                             </div>
                         </div>
-                       <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
 
                                 <div class="form-group col-lg-9 col-md-9 col-12">
-                                     <select class="form-control tipografia_demo_option" required id="Sistemasmodulares" name="Sistemasmodulares">
+                                    <select class="form-control tipografia_demo_option" required id="Sistemasmodulares" name="Sistemasmodulares">
                                         <option value="0"> - Calificación -</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -3290,15 +3305,15 @@
                                 </div>
                             </div>
                         </div>
-                       <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
 
                                 <div class="form-group col-lg-9 col-md-9 col-12">
-                                   <select class="form-control tipografia_demo_option" required id="Plataformasdeproductos" name="Plataformasdeproductos">
+                                    <select class="form-control tipografia_demo_option" required id="Plataformasdeproductos" name="Plataformasdeproductos">
                                         <option value="0"> - Calificación -</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -3335,7 +3350,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-12  cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -3403,7 +3418,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -3444,9 +3459,9 @@
                                 </div>
                             </div>
                         </div>
-                          <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -3487,15 +3502,15 @@
                                 </div>
                             </div>
                         </div>
-                          <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
 
                                 <div class="form-group col-lg-9 col-md-9 col-12">
-                                  <select class="form-control tipografia_demo_option" required id="Programasdefidelizacion" name="Programasdefidelizacion">
+                                    <select class="form-control tipografia_demo_option" required id="Programasdefidelizacion" name="Programasdefidelizacion">
                                         <option value="0"> - Calificación -</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -3530,9 +3545,9 @@
                                 </div>
                             </div>
                         </div>
-                          <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -3573,15 +3588,15 @@
                                 </div>
                             </div>
                         </div>
-                          <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
 
                                 <div class="form-group col-lg-9 col-md-9 col-12">
-                                   <select class="form-control tipografia_demo_option" required id="Consejeria" name="Consejeria">
+                                    <select class="form-control tipografia_demo_option" required id="Consejeria" name="Consejeria">
                                         <option value="0"> - Calificación -</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -3616,9 +3631,9 @@
                                 </div>
                             </div>
                         </div>
-                          <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -3659,15 +3674,15 @@
                                 </div>
                             </div>
                         </div>
-                          <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
 
                                 <div class="form-group col-lg-9 col-md-9 col-12">
-                                   <select class="form-control tipografia_demo_option" required id="Serviciossuplementarios" name="Serviciossuplementarios">
+                                    <select class="form-control tipografia_demo_option" required id="Serviciossuplementarios" name="Serviciossuplementarios">
                                         <option value="0"> - Calificación -</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -3702,9 +3717,9 @@
                                 </div>
                             </div>
                         </div>
-                          <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -3745,15 +3760,15 @@
                                 </div>
                             </div>
                         </div>
-                          <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
 
                                 <div class="form-group col-lg-9 col-md-9 col-12">
-                                   <select class="form-control tipografia_demo_option" required id="Serviciopersonalizado" name="Serviciopersonalizado">
+                                    <select class="form-control tipografia_demo_option" required id="Serviciopersonalizado" name="Serviciopersonalizado">
                                         <option value="0"> - Calificación -</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -3788,9 +3803,9 @@
                                 </div>
                             </div>
                         </div>
-                          <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -3831,15 +3846,15 @@
                                 </div>
                             </div>
                         </div>
-                          <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
 
                                 <div class="form-group col-lg-9 col-md-9 col-12">
-                                   <select class="form-control tipografia_demo_option" required id="Arrendamientooprestamo" name="Arrendamientooprestamo">
+                                    <select class="form-control tipografia_demo_option" required id="Arrendamientooprestamo" name="Arrendamientooprestamo">
                                         <option value="0"> - Calificación -</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -3876,7 +3891,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -3941,15 +3956,15 @@
                                 </div>
                             </div>
                         </div>
-                         <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
 
                                 <div class="form-group col-lg-9 col-md-9 col-12">
-                                   <select class="form-control tipografia_demo_option" required id="Diversificacion" name="Diversificacion">
+                                    <select class="form-control tipografia_demo_option" required id="Diversificacion" name="Diversificacion">
                                         <option value="0"> - Calificación -</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -3984,9 +3999,9 @@
                                 </div>
                             </div>
                         </div>
-                         <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -4027,15 +4042,15 @@
                                 </div>
                             </div>
                         </div>
-                         <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
 
                                 <div class="form-group col-lg-9 col-md-9 col-12">
-                                  <select class="form-control tipografia_demo_option" required id="IrDirecto" name="IrDirecto">
+                                    <select class="form-control tipografia_demo_option" required id="IrDirecto" name="IrDirecto">
                                         <option value="0"> - Calificación -</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -4070,15 +4085,15 @@
                                 </div>
                             </div>
                         </div>
-                         <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
 
                                 <div class="form-group col-lg-9 col-md-9 col-12">
-                                  <select class="form-control tipografia_demo_option" required id="Canalesnotradicionales" name="Canalesnotradicionales">
+                                    <select class="form-control tipografia_demo_option" required id="Canalesnotradicionales" name="Canalesnotradicionales">
                                         <option value="0"> - Calificación -</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -4113,9 +4128,9 @@
                                 </div>
                             </div>
                         </div>
-                         <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -4156,9 +4171,9 @@
                                 </div>
                             </div>
                         </div>
-                         <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -4199,9 +4214,9 @@
                                 </div>
                             </div>
                         </div>
-                         <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -4242,9 +4257,9 @@
                                 </div>
                             </div>
                         </div>
-                         <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -4285,9 +4300,9 @@
                                 </div>
                             </div>
                         </div>
-                         <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -4328,15 +4343,15 @@
                                 </div>
                             </div>
                         </div>
-                         <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
 
                                 <div class="form-group col-lg-9 col-md-9 col-12">
-                                   <select class="form-control tipografia_demo_option" required id="Contextoespecifico" name="Contextoespecifico">
+                                    <select class="form-control tipografia_demo_option" required id="Contextoespecifico" name="Contextoespecifico">
                                         <option value="0"> - Calificación -</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -4373,7 +4388,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -4440,15 +4455,15 @@
                                 </div>
                             </div>
                         </div>
-                           <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
 
                                 <div class="form-group col-lg-9 col-md-9 col-12">
-                                   <select class="form-control tipografia_demo_option" required id="Marcacompartida" name="Marcacompartida">
+                                    <select class="form-control tipografia_demo_option" required id="Marcacompartida" name="Marcacompartida">
                                         <option value="0"> - Calificación -</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -4483,9 +4498,9 @@
                                 </div>
                             </div>
                         </div>
-                           <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -4526,9 +4541,9 @@
                                 </div>
                             </div>
                         </div>
-                           <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -4569,9 +4584,9 @@
                                 </div>
                             </div>
                         </div>
-                           <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -4612,9 +4627,9 @@
                                 </div>
                             </div>
                         </div>
-                           <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -4655,9 +4670,9 @@
                                 </div>
                             </div>
                         </div>
-                           <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -4698,9 +4713,9 @@
                                 </div>
                             </div>
                         </div>
-                           <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -4743,7 +4758,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -4810,9 +4825,9 @@
                                 </div>
                             </div>
                         </div>
-                           <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -4853,9 +4868,9 @@
                                 </div>
                             </div>
                         </div>
-                           <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -4896,9 +4911,9 @@
                                 </div>
                             </div>
                         </div>
-                           <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -4939,9 +4954,9 @@
                                 </div>
                             </div>
                         </div>
-                           <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -4982,9 +4997,9 @@
                                 </div>
                             </div>
                         </div>
-                           <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -5025,9 +5040,9 @@
                                 </div>
                             </div>
                         </div>
-                           <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -5068,9 +5083,9 @@
                                 </div>
                             </div>
                         </div>
-                           <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -5111,9 +5126,9 @@
                                 </div>
                             </div>
                         </div>
-                           <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -5154,9 +5169,9 @@
                                 </div>
                             </div>
                         </div>
-                           <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
+                        <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
@@ -5199,13 +5214,13 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-12  borde cont_optiones_demo">
 
-                            <div class="col-12 d-flex flex-wrap border p-0">
+                            <div class="col-12 d-flex flex-wrap  p-0">
                                 <div class="col-lg-3 col-md-3 col-12 calificacion_demo">
                                     <p>Calificación:</p>
                                 </div>
 
                                 <div class="form-group col-lg-9 col-md-9 col-12">
-                                  <select class="form-control tipografia_demo_option" required id="Estatusyreconocimiento" name="Estatusyreconocimiento">
+                                    <select class="form-control tipografia_demo_option" required id="Estatusyreconocimiento" name="Estatusyreconocimiento">
                                         <option value="0"> - Calificación -</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -5214,13 +5229,14 @@
                                         <option value="5">5</option>
                                     </select>
                                 </div>
+                                <input type="hidden" id="fecha" name="fecha">
                             </div>
                         </div>
                     </div>
 
-                    <input type="button" name="previous" onclick="ScrollTo('cuarta_seccion_demo')" class="previous-form btn btn-default tamaño_btn_pre_azul" value="Anterior" />
+                    <input type="button" name="previous" onclick="ScrollTo('cuarta_seccion_demo');expeCli();" class="previous-form btn btn-default tamaño_btn_pre_azul" value="Anterior" />
 
-                    <input type="submit" name="submit" class="submit container_btn_azul negrita btn tamaño_btn_metodo" value="Enviar" />
+                    <input type="submit" name="submit" class="submit container_btn_azul negrita btn tamaño_btn_metodo" value="Ver Resultados" />
                     <!-- <button class="btn submit container_btn_azul negrita tamaño_btn_metodo" type="submit" value="Submit">Enviar</button> -->
 
 
@@ -5230,17 +5246,6 @@
         </div>
 
     </section>
-    <!-- Quinta seccion -->
-
-    <!-- Sexta seccion -->
-    <!-- <section id="sexta_seccion_demo" class="mb-4">
-        <div class="container">
-            <div class=" col-12 text-center">
-                <a class="container_btn negrita btn tamaño_btn_metodo" href=""><span class="cont_btn negrita">Siguiente</span></a>
-            </div>
-        </div>
-    </section> -->
-    <!-- Fin Sexta seccion -->
 
     <!-- Septima seccion -->
     <?php include 'layout/footer.php' ?>
