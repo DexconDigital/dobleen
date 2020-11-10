@@ -1,0 +1,284 @@
+#contacto {
+  margin-top: 5rem;
+  .borde {
+    // border: 1px solid #dee2e6 !important;
+  }
+  .titulo_contacto {
+    font-size: 65px;
+    // font-weight: 400;
+  }
+  .cont-form {
+    padding: 3rem 1rem 1rem;
+  }
+  #formulariocontacto {
+    background-color: #34f0ff;
+    /* form starting stylings ------------------------------- */
+    .group {
+      position: relative;
+      margin-bottom: 30px;
+    }
+    .iper_cont {
+      text-decoration: none;
+    }
+    .form-control {
+      background-color: white;
+    }
+    input[type]:focus {
+      border-color: #34f0ff !important;
+      -webkit-box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset,
+        0 0 8px #34f0ff !important;
+      box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px #34f0ff !important;
+      outline: 0 none;
+    }
+    textarea:focus,
+    textarea[type]:focus,
+    input:focus,
+    input[type]:focus {
+      border-color: #34f0ff !important;
+      -webkit-box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset,
+        0 0 8px #34f0ff !important;
+      box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px #34f0ff !important;
+      outline: 0 none;
+    }
+    input {
+      font-size: 18px;
+      padding: 10px 10px 10px 5px;
+      display: block;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid white;
+      background-color: #34f0ff;
+      color: black;
+    }
+    textarea {
+      font-size: 18px;
+      padding: 10px 10px 10px 5px;
+      display: block;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid white;
+      background-color: #34f0ff;
+      color: black;
+      font-family: "OpenSans-Regular" !important;
+    }
+
+    input:focus {
+      outline: none;
+    }
+    textarea:focus {
+      outline: none;
+    }
+
+    /* LABEL ======================================= */
+    label {
+      color: #605e5e;
+      font-size: 15px;
+      font-weight: normal;
+      position: absolute;
+      pointer-events: none;
+      left: 5px;
+      top: 10px;
+      transition: 0.2s ease all;
+      -moz-transition: 0.2s ease all;
+      -webkit-transition: 0.2s ease all;
+      font-family: "OpenSans-Regular" !important;
+    }
+
+    /* active state */
+    input:focus ~ label,
+    input:valid ~ label {
+      top: -20px;
+      font-size: 14px;
+      color: black;
+    }
+    textarea:focus ~ label,
+    textarea:valid ~ label {
+      top: -20px;
+      font-size: 14px;
+      color: black;
+    }
+
+    /* BOTTOM BARS ================================= */
+    .bar {
+      position: relative;
+      display: block;
+      width: 100%;
+    }
+
+    .bar:before,
+    .bar:after {
+      content: "";
+      height: 2px;
+      width: 0;
+      bottom: 1px;
+      position: absolute;
+      background: black;
+      transition: 0.2s ease all;
+      -moz-transition: 0.2s ease all;
+      -webkit-transition: 0.2s ease all;
+    }
+
+    .bar:before {
+      left: 50%;
+    }
+
+    .bar:after {
+      right: 50%;
+    }
+
+    /* active state */
+    input:focus ~ .bar:before,
+    input:focus ~ .bar:after {
+      width: 50%;
+    }
+    /* active state */
+    textarea:focus ~ .bar:before,
+    textarea:focus ~ .bar:after {
+      width: 50%;
+    }
+
+    /* HIGHLIGHTER ================================== */
+    .highlight {
+      position: absolute;
+      height: 60%;
+      width: 100px;
+      top: 25%;
+      left: 0;
+      pointer-events: none;
+      opacity: 0.5;
+    }
+
+    /* active state */
+    input:focus ~ .highlight {
+      -webkit-animation: inputHighlighter 0.3s ease;
+      -moz-animation: inputHighlighter 0.3s ease;
+      animation: inputHighlighter 0.3s ease;
+    }
+    textarea:focus ~ .highlight {
+      -webkit-animation: inputHighlighter 0.3s ease;
+      -moz-animation: inputHighlighter 0.3s ease;
+      animation: inputHighlighter 0.3s ease;
+    }
+    .container_btn_contacto {
+      background-color: #34f0ff !important;
+      color: black !important;
+      padding: 1%;
+      border: 1px solid rgba(255, 255, 255, 0);
+      border-radius: 0rem;
+      font-size: 16px !important;
+      font-family: "OpenSans-Regular";
+    }
+    .btn:focus,
+    .btn.focus {
+      outline: 0;
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+      box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
+    }
+
+    /* ANIMATIONS ================ */
+    @-webkit-keyframes inputHighlighter {
+      from {
+        background: black;
+      }
+
+      to {
+        width: 0;
+        background: transparent;
+      }
+    }
+
+    @-moz-keyframes inputHighlighter {
+      from {
+        background: black;
+      }
+
+      to {
+        width: 0;
+        background: transparent;
+      }
+    }
+
+    @keyframes inputHighlighter {
+      from {
+        background: black;
+      }
+
+      to {
+        width: 0;
+        background: transparent;
+      }
+    }
+  }
+  .img_contacto {
+    @media (max-width: 2560px) {
+      height: 753px;
+      width: 100%;
+    }
+    @media (max-width: 1440px) {
+      height: 753px;
+      width: 100%;
+    }
+    @media (max-width: 1024px) {
+      height: 775px;
+      width: 100%;
+    }
+    @media (max-width: 768px) {
+      height: 774px;
+      width: 100%;
+    }
+    @media (max-width: 425px) {
+      height: 774px;
+      width: 100%;
+    }
+    @media (max-width: 360px) {
+      height: 774px;
+      width: 100%;
+    }
+  }
+  .check {
+    width: inherit !important;
+  }
+  .img_contacto {
+    @media (max-width: 2560px) {
+      display: inherit;
+    }
+    @media (max-width: 1440px) {
+      display: inherit;
+    }
+    @media (max-width: 1024px) {
+      display: inherit;
+    }
+    @media (max-width: 768px) {
+      display: inherit;
+    }
+    @media (max-width: 425px) {
+      display: none;
+    }
+    @media (max-width: 360px) {
+      display: none;
+    }
+  }
+  .cont_captcha {
+    @media (max-width: 2560px) {
+      margin-left: inherit;
+    }
+    @media (max-width: 1440px) {
+      margin-left: inherit;
+    }
+    @media (max-width: 1024px) {
+      margin-left: inherit;
+    }
+    @media (max-width: 768px) {
+      margin-left: inherit;
+    }
+    @media (max-width: 425px) {
+      margin-left: 9%;
+    }
+    @media (max-width: 360px) {
+      margin-left: inherit;
+    }
+    @media (max-width: 320px) {
+      margin-left: inherit;
+    }
+  }
+}

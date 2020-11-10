@@ -1,934 +1,865 @@
-.borde{
-    // border: 1px solid #dee2e6 !important;
+.borde {
+  // border: 1px solid #dee2e6 !important;
 }
 
-#seccionuno_casos{
-    background-color: #34F0FF;
-    .titulo_principal{
-        
-        margin-bottom:3rem;
-        @media (max-width: 2560px){
-            padding-left: 12rem;   
-            text-align-last: inherit;
-          }
-          @media (max-width: 1440px){
-            padding-left: 12rem;
-            text-align-last: inherit;
-          }
-          @media (max-width: 1024px){
-            padding-left: inherit;
-            text-align-last: center;
-          }
-          @media (max-width: 768px){
-            padding-left: inherit;
-            text-align-last: center;
-          }
-          @media (max-width: 425px){
-            padding-left: inherit;
-            text-align-last: center;
-          }
-          @media (max-width: 375px){
-            padding-left: inherit;
-            text-align-last: center;
-          }
-        
+#seccionuno_casos {
+  background-color: #34f0ff;
+  .titulo_principal {
+    margin-bottom: 3rem;
+    @media (max-width: 2560px) {
+      padding-left: 12rem;
+      text-align-last: inherit;
     }
-    .espacio_div_tabled{
-        @media (max-width: 2560px){
-            margin-top: initial;
-            padding: initial;
-          }
-          @media (max-width: 1440px){
-            margin-top: initial;
-            padding: 0% 1%;
-          }
-          @media (max-width: 1024px){
-            margin-top: initial;
-            padding: initial;
-          }
-          @media (max-width: 768px){
-            margin-top: 2rem;
-            padding: 0% 16%;
-          }
-          @media (max-width: 425px){
-            margin-top: 2rem;
-            padding: 0% 2%;
-          }
-          @media (max-width: 340px){
-            margin-top: 2rem;
-            padding: 0% 16%;
-          }
-        
+    @media (max-width: 1440px) {
+      padding-left: 12rem;
+      text-align-last: inherit;
     }
-    .titulo{
-        font-size: 56px;
-         font-weight:700;
-         @media (max-width: 2560px){
-           text-align: left;
-          }
-          @media (max-width: 1440px){
-            text-align: left;
-           
-          }
-          @media (max-width: 1024px){
-            text-align: left;
-           
-          }
-          @media (max-width: 768px){
-            text-align: center;
-            
-          }
-          @media (max-width: 425px){
-            text-align: center;
-            
-          }
-          @media (max-width: 360px){
-            text-align: center;
-            
-          }
-
+    @media (max-width: 1024px) {
+      padding-left: inherit;
+      text-align-last: center;
     }
-    .cont_tam_img{
-        @media (max-width: 2560px){
-            width: initial;
-          }
-          @media (max-width: 1440px){
-            width: initial;
-            
-          }
-          @media (max-width: 1024px){
-            width: initial;
-          }
-          @media (max-width: 768px){
-            
-            width: initial;
-          }
-          @media (max-width: 425px){
-            width: 100%;
-            
-          }
-          @media (max-width: 360px){
-            width: 100%;
-            
-            
-          }
-
+    @media (max-width: 768px) {
+      padding-left: inherit;
+      text-align-last: center;
     }
-    .imagen_uno{
-        @media (max-width: 2560px){
-            padding-left: 11rem;    
-            padding-right: initial;
-          }
-          @media (max-width: 1440px){
-            padding-left: 11rem;
-            padding-right: initial;
-          }
-          @media (max-width: 1024px){
-            padding-left: initial;
-            padding-right: initial;
-          }
-          @media (max-width: 768px){
-            padding-left: 11rem;
-            padding-right: initial;
-          }
-          @media (max-width: 425px){
-            padding-left: 0%;
-            padding-right: 0%;
-          }
-          @media (max-width: 360px){
-            padding-left: 0%;
-            padding-right: 0%;
-            
-          }
-
+    @media (max-width: 425px) {
+      padding-left: inherit;
+      text-align-last: center;
     }
-    .negrita{
-        font-weight:bold;
-        color:#000000
+    @media (max-width: 375px) {
+      padding-left: inherit;
+      text-align-last: center;
     }
-    .tamaño_span{
-        font-size:16px;
-    }
-    .colornegro{
-        color: #000000;
-    }
-    .negrita2{
-        font-weight:bold;
-    }
-    .espacio_especial_casos{
-        margin-bottom: 0rem !important;
-    }
-    .espacio_top_casos{
-        margin-top: 4rem;
-    }
-}
-#secciondos_casos{
-    .div_mayor{
-        margin-top: 2rem;
-         @media (max-width: 2560px){
-            
-         margin-bottom:3rem;
-         
-          }
-          @media (max-width: 1440px){
-         margin-bottom:3rem;
-         
-            
-          }
-          @media (max-width: 1024px){
-            margin-bottom:3rem;
-            
-          }
-          @media (max-width: 768px){
-           
-           margin-bottom:13rem;
-            
-          }
-          @media (max-width: 425px){
-            
-            margin-bottom:20rem;
-            
-          }
-          @media (max-width: 360px){
-            
-            margin-bottom:20rem;
-            
-            
-          }
-    }
-    .div_cont_text{
-        @media (max-width: 2560px){
-            
-            padding-left: 11rem;
-            height:30rem;
-            text-align: initial;
-          }
-          @media (max-width: 1440px){
-            padding-left: 11rem;
-            height:30rem;
-            text-align: initial;
-            
-          }
-          @media (max-width: 1024px){
-            padding-left: 1rem;
-            height:30rem;
-            text-align: initial;
-            
-          }
-          @media (max-width: 768px){
-           padding-left: initial;
-            height:12rem;
-            text-align: center;
-            
-          }
-          @media (max-width: 425px){
-            padding-left: initial;
-            height:15rem;
-            text-align: center;
-            
-          }
-          @media (max-width: 360px){
-            padding-left: initial;
-            height:15rem;
-            text-align: center;
-            
-            
-          }
-
-    }
-    .style_titulo{
-        font-size: 56px;
-        font-weight:700;
-        margin-bottom:1rem;
-        @media (max-width: 2560px){
-            
-            text-align: left;
-          }
-          @media (max-width: 1440px){
-            text-align: left;
-            
-          }
-          @media (max-width: 1024px){
-            text-align: left;
-            
-          }
-          @media (max-width: 768px){
-            text-align: center;
-            
-          }
-          @media (max-width: 425px){
-            text-align: center;
-            
-          }
-          @media (max-width: 360px){
-            text-align: center;
-            
-            
-          }
-    }
-    .div_videos{
-        padding: 0%;
-    }
-    .div_video_principal{
-        
-        @media (max-width: 2560px){
-            height:56%;    
-            margin-bottom: initial;
-          }
-          @media (max-width: 1440px){
-            height:48%;
-            margin-bottom: initial;
-          }
-          @media (max-width: 1024px){
-            height:42%;
-            margin-bottom: initial;
-          }
-          @media (max-width: 768px){
-            margin-bottom: 2rem;
-            height:70%;
-          }
-          @media (max-width: 425px){
-            height:46%;
-            margin-bottom: 2rem;
-          }
-          @media (max-width: 360px){
-            height:46%;
-            margin-bottom: 2rem;
-            
-          }
-    }
-    .tamaño_videos{
-        width: 100%;
-        height: 100%;
-    }
-}
-
-#secciontres_casos{
-        margin-bottom: 3rem;
-
-    .linea_verde_div{
-        margin-top:3rem;
-        height: 100%;
-
-        @media (max-width: 2560px){
-            padding-left: 15rem;    
-            border-right: 6px solid rgba(62, 250, 197, 1);
-            text-align: initial;
-          }
-          @media (max-width: 1440px){
-            padding-left: 15rem;
-            border-right: 6px solid rgba(62, 250, 197, 1);
-            text-align: initial;
-          }
-          @media (max-width: 1024px){
-            padding-left: 9rem;
-            border-right: 6px solid rgba(62, 250, 197, 1);
-            text-align: initial;
-          }
-          @media (max-width: 768px){
-            padding-left: 8%;
-            border-right: 6px solid rgba(62, 250, 197, 1);
-            text-align: center;
-          }
-          @media (max-width: 425px){
-            padding-left: initial;
-            border-right: initial;
-            text-align: center;
-          }
-          @media (max-width: 360px){
-            padding-left: initial;
-            border-right: initial;
-            text-align: center;
-            
-          }
-    }
-    .linea_amarilla{
-        margin-top:3rem;
-        height: 100%;
-        @media (max-width: 2560px){
-            padding-left: 15rem;    
-            border-right: 6px solid rgb(253, 211,0);
-            text-align: initial;
-          }
-          @media (max-width: 1440px){
-            padding-left: 15rem;
-            border-right: 6px solid rgb(253, 211,0);
-            text-align: initial;
-          }
-          @media (max-width: 1024px){
-            padding-left: 9rem;
-            border-right: 6px solid rgb(253, 211,0);
-            text-align: initial;
-          }
-          @media (max-width: 768px){
-            padding-left: 8%;
-            border-right: 6px solid rgb(253, 211,0);
-            text-align: center;
-          }
-          @media (max-width: 425px){
-            padding-left: initial;
-            border-right: initial;
-            text-align: center;
-          }
-          @media (max-width: 360px){
-            padding-left: initial;
-            border-right: initial;
-            text-align: center;
-            
-          }
-
-    }
-    .linea_azul_div{
-      margin-top:3rem;
-      height: 100%;
-
-      @media (max-width: 2560px){
-          padding-left: 15rem;    
-          border-right: 6px solid rgba(52, 240, 255, 1);
-          text-align: initial;
-        }
-        @media (max-width: 1440px){
-          padding-left: 15rem;
-          border-right: 6px solid rgba(52, 240, 255, 1);
-          text-align: initial;
-        }
-        @media (max-width: 1024px){
-          padding-left: 9rem;
-          border-right: 6px solid rgba(52, 240, 255, 1);
-          text-align: initial;
-        }
-        @media (max-width: 768px){
-          padding-left: 8%;
-          border-right: 6px solid rgba(62, 250, 197, 1);
-          text-align: center;
-        }
-        @media (max-width: 425px){
-          padding-left: initial;
-          border-right: initial;
-          text-align: center;
-        }
-        @media (max-width: 360px){
-          padding-left: initial;
-          border-right: initial;
-          text-align: center;
-          
-        }
   }
-   
-    .tama_img_casos{
-        width: 150px;
-        height: 149px;
+  .espacio_div_tabled {
+    @media (max-width: 2560px) {
+      margin-top: initial;
+      padding: initial;
     }
-    .titulo_uno_casos{
-        margin-bottom: 1rem;
-        font-weight:700;
-        color:black;
-        @media (max-width: 2560px){
-            margin-top:5rem;    
-            
-          }
-          @media (max-width: 1440px){
-            margin-top:5rem;
-            
-          }
-          @media (max-width: 1024px){
-            margin-top:5rem;
-            
-          }
-          @media (max-width: 768px){
-            margin-top:1rem;
-            
-          }
-          @media (max-width: 425px){
-            margin-top:1rem;
-            
-          }
-          @media (max-width: 360px){
-            margin-top:1rem;
-            
-          }
+    @media (max-width: 1440px) {
+      margin-top: initial;
+      padding: 0% 1%;
+    }
+    @media (max-width: 1024px) {
+      margin-top: initial;
+      padding: initial;
+    }
+    @media (max-width: 768px) {
+      margin-top: 2rem;
+      padding: 0% 16%;
+    }
+    @media (max-width: 425px) {
+      margin-top: 2rem;
+      padding: 0% 2%;
+    }
+    @media (max-width: 340px) {
+      margin-top: 2rem;
+      padding: 0% 16%;
+    }
+  }
+  .titulo {
+    font-size: 56px;
+    font-weight: 700;
+    @media (max-width: 2560px) {
+      text-align: left;
+    }
+    @media (max-width: 1440px) {
+      text-align: left;
+    }
+    @media (max-width: 1024px) {
+      text-align: left;
+    }
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+    @media (max-width: 425px) {
+      text-align: center;
+    }
+    @media (max-width: 360px) {
+      text-align: center;
+    }
+  }
+  .cont_tam_img {
+    @media (max-width: 2560px) {
+      width: initial;
+    }
+    @media (max-width: 1440px) {
+      width: initial;
+    }
+    @media (max-width: 1024px) {
+      width: initial;
+    }
+    @media (max-width: 768px) {
+      width: initial;
+    }
+    @media (max-width: 425px) {
+      width: 100%;
+    }
+    @media (max-width: 360px) {
+      width: 100%;
+    }
+  }
+  .imagen_uno {
+    @media (max-width: 2560px) {
+      padding-left: 11rem;
+      padding-right: initial;
+    }
+    @media (max-width: 1440px) {
+      padding-left: 11rem;
+      padding-right: initial;
+    }
+    @media (max-width: 1024px) {
+      padding-left: initial;
+      padding-right: initial;
+    }
+    @media (max-width: 768px) {
+      padding-left: 11rem;
+      padding-right: initial;
+    }
+    @media (max-width: 425px) {
+      padding-left: 0%;
+      padding-right: 0%;
+    }
+    @media (max-width: 360px) {
+      padding-left: 0%;
+      padding-right: 0%;
+    }
+  }
 
-    }
-    .titulo_dos_casos{
-        margin-bottom: 1rem;
-        font-weight:700;
-        color:black;
-        @media (max-width: 2560px){
-            margin-top:3rem;    
-            
-          }
-          @media (max-width: 1440px){
-            margin-top:3rem;
-            
-          }
-          @media (max-width: 1024px){
-            margin-top:3rem;
-            
-          }
-          @media (max-width: 768px){
-            margin-top:1rem;
-            
-          }
-          @media (max-width: 425px){
-            margin-top:1rem;
-            
-          }
-          @media (max-width: 360px){
-            margin-top:1rem;
-            
-          }
-    }
-    .titulo_tres_casos{
-        margin-bottom: 1rem;
-        font-weight:700;
-        color:black;
-        @media (max-width: 2560px){
-            margin-top:40px;
-            
-          }
-          @media (max-width: 1440px){
-            margin-top:40px;
-            
-          }
-          @media (max-width: 1024px){
-            margin-top:40px;
-            
-          }
-          @media (max-width: 768px){
-            margin-top:1rem;
-            
-          }
-          @media (max-width: 425px){
-            margin-top:1rem;
-            
-          }
-          @media (max-width: 360px){
-            margin-top:1rem;
-            
-          }
-    }
-    .espacios_entre_parrafo{
-        margin-bottom: 0%;
-    }
-    
+  .negrita {
+    font-weight: bold;
+    color: #000000;
+  }
+  .tamaño_span {
+    font-size: 16px;
+  }
+  .colornegro {
+    color: #000000;
+  }
+  .negrita2 {
+    font-weight: bold;
+  }
+  .espacio_especial_casos {
+    margin-bottom: 0rem !important;
+  }
+  .espacio_top_casos {
+    margin-top: 4rem;
+  }
 }
-#seccioncuatro_casos{
-    // background-color: #73FBD5;
-        position: initial;
-        background-size: contain;
-        background-position: right;
-        width: 100% !important;
-        height: 100% !important;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-image: url(../images/caso4.png);
+#secciondos_casos {
+  .div_mayor {
+    margin-top: 2rem;
+    @media (max-width: 2560px) {
+      margin-bottom: 3rem;
+    }
+    @media (max-width: 1440px) {
+      margin-bottom: 3rem;
+    }
+    @media (max-width: 1024px) {
+      margin-bottom: 3rem;
+    }
+    @media (max-width: 768px) {
+      margin-bottom: 13rem;
+    }
+    @media (max-width: 425px) {
+      margin-bottom: 20rem;
+    }
+    @media (max-width: 360px) {
+      margin-bottom: 20rem;
+    }
+  }
+  .div_cont_text {
+    @media (max-width: 2560px) {
+      padding-left: 11rem;
+      height: 30rem;
+      text-align: initial;
+    }
+    @media (max-width: 1440px) {
+      padding-left: 11rem;
+      height: 30rem;
+      text-align: initial;
+    }
+    @media (max-width: 1024px) {
+      padding-left: 1rem;
+      height: 30rem;
+      text-align: initial;
+    }
+    @media (max-width: 768px) {
+      padding-left: initial;
+      height: 12rem;
+      text-align: center;
+    }
+    @media (max-width: 425px) {
+      padding-left: initial;
+      height: 15rem;
+      text-align: center;
+    }
+    @media (max-width: 360px) {
+      padding-left: initial;
+      height: 15rem;
+      text-align: center;
+    }
+  }
+  .style_titulo {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    @media (max-width: 2560px) {
+      text-align: left;
+    }
+    @media (max-width: 1440px) {
+      text-align: left;
+    }
+    @media (max-width: 1024px) {
+      text-align: left;
+    }
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+    @media (max-width: 425px) {
+      text-align: center;
+    }
+    @media (max-width: 360px) {
+      text-align: center;
+    }
+  }
+  .div_videos {
+    padding: 0%;
+  }
+  .div_video_principal {
+    @media (max-width: 2560px) {
+      height: 56%;
+      margin-bottom: initial;
+    }
+    @media (max-width: 1440px) {
+      height: 48%;
+      margin-bottom: initial;
+    }
+    @media (max-width: 1024px) {
+      height: 42%;
+      margin-bottom: initial;
+    }
+    @media (max-width: 768px) {
+      margin-bottom: 2rem;
+      height: 70%;
+    }
+    @media (max-width: 425px) {
+      height: 46%;
+      margin-bottom: 2rem;
+    }
+    @media (max-width: 360px) {
+      height: 46%;
+      margin-bottom: 2rem;
+    }
+  }
+  .tamaño_videos {
+    width: 100%;
+    height: 100%;
+  }
+}
 
-    @media (max-width: 2560px){
-        background-attachment: fixed;
-        background-image: url(../images/caso4.png);
+#secciontres_casos {
+  margin-bottom: 3rem;
+
+  .linea_verde_div {
+    margin-top: 3rem;
+    height: 100%;
+
+    @media (max-width: 2560px) {
+      padding-left: 15rem;
+      border-right: 6px solid rgba(62, 250, 197, 1);
+      text-align: initial;
     }
-    @media (max-width: 1440px){
-        background-attachment: fixed;
-        background-image: url(../images/caso4.png);
+    @media (max-width: 1440px) {
+      padding-left: 15rem;
+      border-right: 6px solid rgba(62, 250, 197, 1);
+      text-align: initial;
     }
-    @media (max-width: 1024px){
-        background-attachment: inherit;
-        background-image: inherit;
+    @media (max-width: 1024px) {
+      padding-left: 9rem;
+      border-right: 6px solid rgba(62, 250, 197, 1);
+      text-align: initial;
     }
-    @media (max-width: 768px){
-        background-attachment: inherit;
-        background-image: inherit;
+    @media (max-width: 768px) {
+      padding-left: 8%;
+      border-right: 6px solid rgba(62, 250, 197, 1);
+      text-align: center;
     }
-    @media (max-width: 425px){
-        background-attachment: inherit;
-        background-image: inherit;
+    @media (max-width: 425px) {
+      padding-left: initial;
+      border-right: initial;
+      text-align: center;
     }
-    @media (max-width: 375px){
-        background-attachment: inherit;
-        background-image: inherit;
+    @media (max-width: 360px) {
+      padding-left: initial;
+      border-right: initial;
+      text-align: center;
     }
-    @media (max-width: 230px){
-        background-attachment: inherit;
-        background-image: inherit;
+  }
+  .linea_amarilla {
+    margin-top: 3rem;
+    height: 100%;
+    @media (max-width: 2560px) {
+      padding-left: 15rem;
+      border-right: 6px solid rgb(253, 211, 0);
+      text-align: initial;
     }
-    .imagen_tabled_caos{
-        @media (max-width: 2560px){
-            display: none;
-            }
-            @media (max-width: 1440px){
-            display: none;
-            }
-            @media (max-width: 1024px){
-            display: inherit;
-            }
-            @media (max-width: 768px){
-            display: inherit;
-            }
-            @media (max-width: 425px){
-            display: inherit;
-            }
-            @media (max-width: 375px){
-            display: inherit;
-            }
-            @media (max-width: 230px){
-            display: inherit;
-            }
+    @media (max-width: 1440px) {
+      padding-left: 15rem;
+      border-right: 6px solid rgb(253, 211, 0);
+      text-align: initial;
     }
-    .div_mayor_cont{
-        padding: 0%;
-        // padding-bottom:4rem;
+    @media (max-width: 1024px) {
+      padding-left: 9rem;
+      border-right: 6px solid rgb(253, 211, 0);
+      text-align: initial;
     }
-    .cont_texto_casos{
-        @media (max-width: 2560px){
-            padding:6rem;
-            margin-top: 6rem;
-        }
-        @media (max-width: 1440px){
-            padding:6rem;
-            margin-top: 6rem;
-        }
-        @media (max-width: 1024px){
-            padding:6rem;
-            margin-top: 6rem;
-        }
-        @media (max-width: 768px){
-            padding:5rem;
-            margin-top: 1rem;
-        }
-        @media (max-width: 425px){
-            padding:1rem;
-            margin-top: 3rem;
-        }
-        @media (max-width: 375px){
-            padding:1rem;
-            margin-top: 3rem;
-        }
-        @media (max-width: 230px){
-            padding:1rem;
-            margin-top: 3rem;
-        }
+    @media (max-width: 768px) {
+      padding-left: 8%;
+      border-right: 6px solid rgb(253, 211, 0);
+      text-align: center;
     }
-    .titulo_principal_casos{
-        font-weight: 700;
-        color:black
+    @media (max-width: 425px) {
+      padding-left: initial;
+      border-right: initial;
+      text-align: center;
     }
-    .cont_img_casos{
-        padding: 0%;
+    @media (max-width: 360px) {
+      padding-left: initial;
+      border-right: initial;
+      text-align: center;
     }
-    .tamaño_img_casos{
-        width: 100%;
-         height:100%
+  }
+  .linea_azul_div {
+    margin-top: 3rem;
+    height: 100%;
+
+    @media (max-width: 2560px) {
+      padding-left: 15rem;
+      border-right: 6px solid rgba(52, 240, 255, 1);
+      text-align: initial;
     }
+    @media (max-width: 1440px) {
+      padding-left: 15rem;
+      border-right: 6px solid rgba(52, 240, 255, 1);
+      text-align: initial;
+    }
+    @media (max-width: 1024px) {
+      padding-left: 9rem;
+      border-right: 6px solid rgba(52, 240, 255, 1);
+      text-align: initial;
+    }
+    @media (max-width: 768px) {
+      padding-left: 8%;
+      border-right: 6px solid rgba(62, 250, 197, 1);
+      text-align: center;
+    }
+    @media (max-width: 425px) {
+      padding-left: initial;
+      border-right: initial;
+      text-align: center;
+    }
+    @media (max-width: 360px) {
+      padding-left: initial;
+      border-right: initial;
+      text-align: center;
+    }
+  }
+
+  .tama_img_casos {
+    width: 150px;
+    height: 149px;
+  }
+  .titulo_uno_casos {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: black;
+    @media (max-width: 2560px) {
+      margin-top: 5rem;
+    }
+    @media (max-width: 1440px) {
+      margin-top: 5rem;
+    }
+    @media (max-width: 1024px) {
+      margin-top: 5rem;
+    }
+    @media (max-width: 768px) {
+      margin-top: 1rem;
+    }
+    @media (max-width: 425px) {
+      margin-top: 1rem;
+    }
+    @media (max-width: 360px) {
+      margin-top: 1rem;
+    }
+  }
+  .titulo_dos_casos {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: black;
+    @media (max-width: 2560px) {
+      margin-top: 3rem;
+    }
+    @media (max-width: 1440px) {
+      margin-top: 3rem;
+    }
+    @media (max-width: 1024px) {
+      margin-top: 3rem;
+    }
+    @media (max-width: 768px) {
+      margin-top: 1rem;
+    }
+    @media (max-width: 425px) {
+      margin-top: 1rem;
+    }
+    @media (max-width: 360px) {
+      margin-top: 1rem;
+    }
+  }
+  .titulo_tres_casos {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: black;
+    @media (max-width: 2560px) {
+      margin-top: 40px;
+    }
+    @media (max-width: 1440px) {
+      margin-top: 40px;
+    }
+    @media (max-width: 1024px) {
+      margin-top: 40px;
+    }
+    @media (max-width: 768px) {
+      margin-top: 1rem;
+    }
+    @media (max-width: 425px) {
+      margin-top: 1rem;
+    }
+    @media (max-width: 360px) {
+      margin-top: 1rem;
+    }
+  }
+  .espacios_entre_parrafo {
+    margin-bottom: 0%;
+  }
 }
-#seccionquinta_casos{
-    background-color: #3FFAC5;
-    position: initial;
-    background-size: contain;
-    background-position: left;
-    width: 100% !important;
-    height: 100% !important;
-    background-repeat: no-repeat;
+#seccioncuatro_casos {
+  // background-color: #73FBD5;
+  position: initial;
+  background-size: contain;
+  background-position: right;
+  width: 100% !important;
+  height: 100% !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url(../images/caso4.png);
+
+  @media (max-width: 2560px) {
+    background-attachment: fixed;
+    background-image: url(../images/caso4.png);
+  }
+  @media (max-width: 1440px) {
+    background-attachment: fixed;
+    background-image: url(../images/caso4.png);
+  }
+  @media (max-width: 1024px) {
+    background-attachment: inherit;
+    background-image: inherit;
+  }
+  @media (max-width: 768px) {
+    background-attachment: inherit;
+    background-image: inherit;
+  }
+  @media (max-width: 425px) {
+    background-attachment: inherit;
+    background-image: inherit;
+  }
+  @media (max-width: 375px) {
+    background-attachment: inherit;
+    background-image: inherit;
+  }
+  @media (max-width: 230px) {
+    background-attachment: inherit;
+    background-image: inherit;
+  }
+  .imagen_tabled_caos {
+    @media (max-width: 2560px) {
+      display: none;
+    }
+    @media (max-width: 1440px) {
+      display: none;
+    }
+    @media (max-width: 1024px) {
+      display: inherit;
+    }
+    @media (max-width: 768px) {
+      display: inherit;
+    }
+    @media (max-width: 425px) {
+      display: inherit;
+    }
+    @media (max-width: 375px) {
+      display: inherit;
+    }
+    @media (max-width: 230px) {
+      display: inherit;
+    }
+  }
+  .div_mayor_cont {
+    padding: 0%;
+    // padding-bottom:4rem;
+  }
+  .cont_texto_casos {
+    @media (max-width: 2560px) {
+      padding: 6rem;
+      margin-top: 6rem;
+    }
+    @media (max-width: 1440px) {
+      padding: 6rem;
+      margin-top: 6rem;
+    }
+    @media (max-width: 1024px) {
+      padding: 6rem;
+      margin-top: 6rem;
+    }
+    @media (max-width: 768px) {
+      padding: 5rem;
+      margin-top: 1rem;
+    }
+    @media (max-width: 425px) {
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+    @media (max-width: 375px) {
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+    @media (max-width: 230px) {
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  }
+  .titulo_principal_casos {
+    font-weight: 700;
+    color: black;
+  }
+  .cont_img_casos {
+    padding: 0%;
+  }
+  .tamaño_img_casos {
+    width: 100%;
+    height: 100%;
+  }
+}
+#seccionquinta_casos {
+  background-color: #3ffac5;
+  position: initial;
+  background-size: contain;
+  background-position: left;
+  width: 100% !important;
+  height: 100% !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url(../images/caso5.jpg);
+  background-color: #3ffac5;
+  @media (max-width: 2560px) {
     background-attachment: fixed;
     background-image: url(../images/caso5.jpg);
-    background-color: #3FFAC5;
-    @media (max-width: 2560px){
-        background-attachment: fixed;
-        background-image: url(../images/caso5.jpg);
+  }
+  @media (max-width: 1440px) {
+    background-attachment: fixed;
+    background-image: url(../images/caso5.jpg);
+  }
+  @media (max-width: 1024px) {
+    background-attachment: inherit;
+    background-image: inherit;
+  }
+  @media (max-width: 768px) {
+    background-attachment: inherit;
+    background-image: inherit;
+  }
+  @media (max-width: 425px) {
+    background-attachment: inherit;
+    background-image: inherit;
+  }
+  @media (max-width: 375px) {
+    background-attachment: inherit;
+    background-image: inherit;
+  }
+  @media (max-width: 230px) {
+    background-attachment: inherit;
+    background-image: inherit;
+  }
+  .imagen_tabled_caos {
+    @media (max-width: 2560px) {
+      display: none;
     }
-    @media (max-width: 1440px){
-        background-attachment: fixed;
-        background-image: url(../images/caso5.jpg);
+    @media (max-width: 1440px) {
+      display: none;
     }
-    @media (max-width: 1024px){
-        background-attachment: inherit;
-        background-image: inherit;
+    @media (max-width: 1024px) {
+      display: inherit;
     }
-    @media (max-width: 768px){
-        background-attachment: inherit;
-        background-image: inherit;
+    @media (max-width: 768px) {
+      display: inherit;
     }
-    @media (max-width: 425px){
-        background-attachment: inherit;
-        background-image: inherit;
+    @media (max-width: 425px) {
+      display: inherit;
     }
-    @media (max-width: 375px){
-        background-attachment: inherit;
-        background-image: inherit;
+    @media (max-width: 375px) {
+      display: inherit;
     }
-    @media (max-width: 230px){
-        background-attachment: inherit;
-        background-image: inherit;
+    @media (max-width: 230px) {
+      display: inherit;
     }
-    .imagen_tabled_caos{
-        @media (max-width: 2560px){
-            display: none;
-            }
-            @media (max-width: 1440px){
-            display: none;
-            }
-            @media (max-width: 1024px){
-            display: inherit;
-            }
-            @media (max-width: 768px){
-            display: inherit;
-            }
-            @media (max-width: 425px){
-            display: inherit;
-            }
-            @media (max-width: 375px){
-            display: inherit;
-            }
-            @media (max-width: 230px){
-            display: inherit;
-            }
+  }
+  .div_mayor_cont {
+    padding: 0%;
+    // padding-bottom:4rem;
+  }
+  .cont_img_casos {
+    padding: 0%;
+  }
+  .tamaño_img_casos {
+    width: 100%;
+    height: 100%;
+  }
+  .cont_texto_casos {
+    @media (max-width: 2560px) {
+      padding: 6rem;
+      margin-top: 6rem;
     }
-    .div_mayor_cont{
-        padding: 0%;
-        // padding-bottom:4rem;
+    @media (max-width: 1440px) {
+      padding: 6rem;
+      margin-top: 6rem;
     }
-    .cont_img_casos{
-        padding: 0%;
+    @media (max-width: 1024px) {
+      padding: 6rem;
+      margin-top: 6rem;
     }
-    .tamaño_img_casos{
-        width: 100%;
-         height:100%
+    @media (max-width: 768px) {
+      padding: 5rem;
+      margin-top: 1rem;
     }
-    .cont_texto_casos{
-        @media (max-width: 2560px){
-            padding:6rem;
-            margin-top: 6rem;
-        }
-        @media (max-width: 1440px){
-            padding:6rem;
-            margin-top: 6rem;
-        }
-        @media (max-width: 1024px){
-            padding:6rem;
-            margin-top: 6rem;
-        }
-        @media (max-width: 768px){
-            padding:5rem;
-            margin-top: 1rem;
-        }
-        @media (max-width: 425px){
-            padding:1rem;
-            margin-top: 0rem;
-        }
-        @media (max-width: 375px){
-            padding:1rem;
-            margin-top: 0rem;
-        }
-        @media (max-width: 230px){
-            padding:1rem;
-            margin-top: 0rem;
-        }
+    @media (max-width: 425px) {
+      padding: 1rem;
+      margin-top: 0rem;
     }
-    .titulo_principal_casos{
-        font-weight: 700;
-        color:black
+    @media (max-width: 375px) {
+      padding: 1rem;
+      margin-top: 0rem;
     }
+    @media (max-width: 230px) {
+      padding: 1rem;
+      margin-top: 0rem;
+    }
+  }
+  .titulo_principal_casos {
+    font-weight: 700;
+    color: black;
+  }
 }
 
-#seccionsexta_casos{
-    background-color: #3FFAC5;
-    position: initial;
-    background-size: contain;
-    background-position: right;
-    width: 100% !important;
-    height: 100% !important;
-    background-repeat: no-repeat;
+#seccionsexta_casos {
+  background-color: #3ffac5;
+  position: initial;
+  background-size: contain;
+  background-position: right;
+  width: 100% !important;
+  height: 100% !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url(../images/caso6.jpg);
+  background-color: #3ffac5;
+  @media (max-width: 2560px) {
     background-attachment: fixed;
     background-image: url(../images/caso6.jpg);
-    background-color: #3FFAC5;
-    @media (max-width: 2560px){
-        background-attachment: fixed;
-        background-image: url(../images/caso6.jpg);
+  }
+  @media (max-width: 1440px) {
+    background-attachment: fixed;
+    background-image: url(../images/caso6.jpg);
+  }
+  @media (max-width: 1024px) {
+    background-attachment: inherit;
+    background-image: inherit;
+  }
+  @media (max-width: 768px) {
+    background-attachment: inherit;
+    background-image: inherit;
+  }
+  @media (max-width: 425px) {
+    background-attachment: inherit;
+    background-image: inherit;
+  }
+  @media (max-width: 375px) {
+    background-attachment: inherit;
+    background-image: inherit;
+  }
+  @media (max-width: 230px) {
+    background-attachment: inherit;
+    background-image: inherit;
+  }
+  .imagen_tabled_caos {
+    @media (max-width: 2560px) {
+      display: none;
     }
-    @media (max-width: 1440px){
-        background-attachment: fixed;
-        background-image: url(../images/caso6.jpg);
+    @media (max-width: 1440px) {
+      display: none;
     }
-    @media (max-width: 1024px){
-        background-attachment: inherit;
-        background-image: inherit;
+    @media (max-width: 1024px) {
+      display: inherit;
     }
-    @media (max-width: 768px){
-        background-attachment: inherit;
-        background-image: inherit;
+    @media (max-width: 768px) {
+      display: inherit;
     }
-    @media (max-width: 425px){
-        background-attachment: inherit;
-        background-image: inherit;
+    @media (max-width: 425px) {
+      display: inherit;
     }
-    @media (max-width: 375px){
-        background-attachment: inherit;
-        background-image: inherit;
+    @media (max-width: 375px) {
+      display: inherit;
     }
-    @media (max-width: 230px){
-        background-attachment: inherit;
-        background-image: inherit;
+    @media (max-width: 230px) {
+      display: inherit;
     }
-    .imagen_tabled_caos{
-        @media (max-width: 2560px){
-            display: none;
-            }
-            @media (max-width: 1440px){
-            display: none;
-            }
-            @media (max-width: 1024px){
-            display: inherit;
-            }
-            @media (max-width: 768px){
-            display: inherit;
-            }
-            @media (max-width: 425px){
-            display: inherit;
-            }
-            @media (max-width: 375px){
-            display: inherit;
-            }
-            @media (max-width: 230px){
-            display: inherit;
-            }
-    }
-    .div_mayor_cont{
-        padding: 0%;
-        // padding-bottom:4rem;
-    }
+  }
+  .div_mayor_cont {
+    padding: 0%;
+    // padding-bottom:4rem;
+  }
 
-    .cont_texto_casos{
-        @media (max-width: 2560px){
-            padding:6rem;
-            margin-top: 6rem;
-        }
-        @media (max-width: 1440px){
-            padding:6rem;
-            margin-top: 6rem;
-        }
-        @media (max-width: 1024px){
-            padding:6rem;
-            margin-top: 6rem;
-        }
-        @media (max-width: 768px){
-            padding:5rem;
-            margin-top: 1rem;
-        }
-        @media (max-width: 425px){
-            padding:1rem;
-            margin-top: 0rem;
-        }
-        @media (max-width: 375px){
-            padding:1rem;
-            margin-top: 0rem;
-        }
-        @media (max-width: 230px){
-            padding:1rem;
-            margin-top: 0rem;
-        }
+  .cont_texto_casos {
+    @media (max-width: 2560px) {
+      padding: 6rem;
+      margin-top: 6rem;
     }
+    @media (max-width: 1440px) {
+      padding: 6rem;
+      margin-top: 6rem;
+    }
+    @media (max-width: 1024px) {
+      padding: 6rem;
+      margin-top: 6rem;
+    }
+    @media (max-width: 768px) {
+      padding: 5rem;
+      margin-top: 1rem;
+    }
+    @media (max-width: 425px) {
+      padding: 1rem;
+      margin-top: 0rem;
+    }
+    @media (max-width: 375px) {
+      padding: 1rem;
+      margin-top: 0rem;
+    }
+    @media (max-width: 230px) {
+      padding: 1rem;
+      margin-top: 0rem;
+    }
+  }
 
-    .titulo_principal_casos{
-        font-weight: 700;
-        color:black
-    }
-    .cont_img_casos{
-        padding: 0%;
-    }
-    .tamaño_img_casos{
-        width: 100%;
-         height:100%
-    }
+  .titulo_principal_casos {
+    font-weight: 700;
+    color: black;
+  }
+  .cont_img_casos {
+    padding: 0%;
+  }
+  .tamaño_img_casos {
+    width: 100%;
+    height: 100%;
+  }
 }
 
-#seccionseptima_casos{
-    .tamaño_btn_casos{
-        padding: 8px !important;
-        @media (max-width: 2560px){
-            width: 345px !important;
-        }
-        @media (max-width: 1440px){
-            width: 345px !important;
-        }
-        @media (max-width: 1024px){
-            width: 345px !important;
-        }
-        @media (max-width: 768px){
-            width: 345px !important;
-        }
-        @media (max-width: 425px){
-            width: 345px !important;
-        }
-        @media (max-width: 375px){
-            width: 328px !important;
-        }
-        @media (max-width: 230px){
-            width: 328px !important;
-        }
+#seccionseptima_casos {
+  .tamaño_btn_casos {
+    padding: 8px !important;
+    @media (max-width: 2560px) {
+      width: 345px !important;
     }
-    .primer_titulo{
-        text-align: center;
-        margin-top: 5rem;
+    @media (max-width: 1440px) {
+      width: 345px !important;
     }
-    .tamaño_primer_titulo{
-        font-weight: 700;
-         font-size:44px;
+    @media (max-width: 1024px) {
+      width: 345px !important;
     }
-    .cont_seg_cont{
-        text-align: center;
+    @media (max-width: 768px) {
+      width: 345px !important;
     }
-    .tamaño_segundo_titulo{
-        font-weight: 700;
-        font-size:25px !important;
-        color:black;
-        margin-top: 3%;
-        @media (max-width: 2560px){
-            margin: 0% 23%;
-        }
-        @media (max-width: 1440px){
-            margin: 0% 23%;
-        }
-        @media (max-width: 1024px){
-            margin: 0% 23%;
-        }
-        @media (max-width: 768px){
-            margin: 0% 10%;
-        }
-        @media (max-width: 425px){
-            margin: 0% 0%;
-        }
-        @media (max-width: 375px){
-            margin: 0% 0%;
-        }
-        @media (max-width: 230px){
-            margin: 0% 0%;
-        }
+    @media (max-width: 425px) {
+      width: 345px !important;
     }
-    .cont_btn_casos{
-        text-align: center;
-        margin-bottom:5rem;
-        @media (max-width: 2560px){
-            margin-top: 4%;
-        }
-        @media (max-width: 1440px){
-            margin-top: 4%;
-        }
-        @media (max-width: 1024px){
-            margin-top: 4%;
-        }
-        @media (max-width: 768px){
-            margin-top: 4%;
-        }
-        @media (max-width: 425px){
-            margin-top: 7%;
-        }
-        @media (max-width: 375px){
-            margin-top: 7%;
-        }
-        @media (max-width: 230px){
-            margin-top: 7%;
-        }
+    @media (max-width: 375px) {
+      width: 328px !important;
     }
-    .container_btn_casos{
+    @media (max-width: 230px) {
+      width: 328px !important;
+    }
+  }
+  .primer_titulo {
+    text-align: center;
+    margin-top: 5rem;
+  }
+  .tamaño_primer_titulo {
+    font-weight: 700;
+    font-size: 44px;
+  }
+  .cont_seg_cont {
+    text-align: center;
+  }
+  .tamaño_segundo_titulo {
+    font-weight: 700;
+    font-size: 25px !important;
+    color: black;
+    margin-top: 3%;
+    @media (max-width: 2560px) {
+      margin: 0% 23%;
+    }
+    @media (max-width: 1440px) {
+      margin: 0% 23%;
+    }
+    @media (max-width: 1024px) {
+      margin: 0% 23%;
+    }
+    @media (max-width: 768px) {
+      margin: 0% 10%;
+    }
+    @media (max-width: 425px) {
+      margin: 0% 0%;
+    }
+    @media (max-width: 375px) {
+      margin: 0% 0%;
+    }
+    @media (max-width: 230px) {
+      margin: 0% 0%;
+    }
+  }
+  .cont_btn_casos {
+    text-align: center;
+    margin-bottom: 5rem;
+    @media (max-width: 2560px) {
+      margin-top: 4%;
+    }
+    @media (max-width: 1440px) {
+      margin-top: 4%;
+    }
+    @media (max-width: 1024px) {
+      margin-top: 4%;
+    }
+    @media (max-width: 768px) {
+      margin-top: 4%;
+    }
+    @media (max-width: 425px) {
+      margin-top: 7%;
+    }
+    @media (max-width: 375px) {
+      margin-top: 7%;
+    }
+    @media (max-width: 230px) {
+      margin-top: 7%;
+    }
+  }
+  .container_btn_casos {
     background-color: black;
     color: white !important;
     padding: 1%;
@@ -936,59 +867,59 @@
     border-radius: 0rem;
     font-size: 14px !important;
     font-family: "OpenSans-Regular";
-    &:hover{
-        background-color: white;
-        color: black !important;
+    &:hover {
+      background-color: white;
+      color: black !important;
     }
-    }
+  }
 }
-#seccion_intermedia{
-    background-color:#3FFAC5;
-    padding: 0%;
+#seccion_intermedia {
+  background-color: #3ffac5;
+  padding: 0%;
 }
-.caso_especial_img{
-  @media (max-width: 2560px){
+.caso_especial_img {
+  @media (max-width: 2560px) {
     display: inherit;
-}
-@media (max-width: 1440px){
-  display: inherit;
-}
-@media (max-width: 1024px){
+  }
+  @media (max-width: 1440px) {
+    display: inherit;
+  }
+  @media (max-width: 1024px) {
     display: none;
-}
-@media (max-width: 768px){
-  display: none !important;
-}
-@media (max-width: 425px){
-  display: none !important;
-}
-@media (max-width: 375px){
-  display: none !important;
-}
-@media (max-width: 230px){
-  display: none !important;
-}
-}
-.caso_especial_img2{
-  @media (max-width: 2560px){
+  }
+  @media (max-width: 768px) {
     display: none !important;
+  }
+  @media (max-width: 425px) {
+    display: none !important;
+  }
+  @media (max-width: 375px) {
+    display: none !important;
+  }
+  @media (max-width: 230px) {
+    display: none !important;
+  }
 }
-@media (max-width: 1440px){
-  display: none !important;
-}
-@media (max-width: 1024px){
-  display: none !important;
-}
-@media (max-width: 768px){
-  display: inherit !important;
-}
-@media (max-width: 425px){
-  display: inherit !important;
-}
-@media (max-width: 375px){
-  display: inherit !important;
-}
-@media (max-width: 230px){
-  display: inherit !important;
-}
+.caso_especial_img2 {
+  @media (max-width: 2560px) {
+    display: none !important;
+  }
+  @media (max-width: 1440px) {
+    display: none !important;
+  }
+  @media (max-width: 1024px) {
+    display: none !important;
+  }
+  @media (max-width: 768px) {
+    display: inherit !important;
+  }
+  @media (max-width: 425px) {
+    display: inherit !important;
+  }
+  @media (max-width: 375px) {
+    display: inherit !important;
+  }
+  @media (max-width: 230px) {
+    display: inherit !important;
+  }
 }

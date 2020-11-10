@@ -97,7 +97,7 @@
     <!-- Cuarta seccion -->
     <section id="cuarta_seccion_demo">
         <div class="col-12 d-flex justify-content-center borde">
-            <div class="col-lg-9 col-md-12 col-12 mt-4 mb-4 borde" id="div_padre_texto_demo_tres">
+            <div class="col-lg-10 col-md-12 col-12 mt-4 mb-4 borde" id="div_padre_texto_demo_tres">
                 <p class="titulo_seccion_tres_demo">INSTRUCCIONES GENERALES</p>
                 <p>- Califica según su realidad cada iniciativa de innovación de 1 a 5 siendo 1 un aspecto a reforzar y 5 una fortaleza</p>
                 <p>- Asegúrate de calificar todas las iniciativas, puesto que afectará el perfil innovador total</p>

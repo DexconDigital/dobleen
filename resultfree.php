@@ -89,6 +89,13 @@
         padding: 14px;
         text-decoration: none;
     }
+
+    div.tabla .item2 {
+        display: inline-block;
+        color: white;
+        padding: 14px;
+        text-decoration: none;
+    }
 </style>
 
 <body id="seccionfree">
@@ -203,14 +210,14 @@
     <!-- fin logo Dobleen -->
     <section>
         <div class="col-12">
-            <h1 class="cont_titulo_free">Reporte Perfil Inovador</h1>
+            <h1 class="cont_titulo_free">Reporte Perfil Innovador</h1>
         </div>
     </section>
     <!-- tabla -->
     <section>
         <div class="container">
             <div class="col-12 d-flex  text-center tabla">
-                <div class="col-lg-3 col-md-3 col-6 p-0 borde_free item">
+                <div class="col-lg-3 col-md-4 col-8 p-0 borde_free item">
                     <div class="col-12 color_verde">
                         <span>Palanca</span>
                     </div>
@@ -224,11 +231,11 @@
                         <span>Experiencia</span>
                     </div>
                     <div class="col-12 color_blanco">
-                        <span>Total perfil Inovador</span>
+                        <span>Total perfil Innovador</span>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-3 col-5 p-0 borde_free item">
+                <div class="col-lg-3 col-md-2 col-5 p-0 borde_free item">
                     <div class="col-12 color_verde">
                         <span>Resultado</span>
                     </div>
@@ -290,6 +297,102 @@
     <section>
         <div id="container" class="mt-5" style="width:100%; height:400px;"></div>
     </section>
+
+
+    <!-- tabla descrip-->
+    <section class="resultados_tabla_free">
+        <div class="container">
+            <div class="col-12 d-flex tabla">
+                <div class="col-lg-3 col-md-4 col-8 p-0 borde_free item2">
+                    <div class="col-12 color_amarillo espacio_estandar_tabla">
+                        <span class="negrita">Configuración</span>
+                    </div>
+                    <div class="col-12 color_amarillo_free A_esp_uno">
+                        <span>de 0% a 11%</span>
+                    </div>
+                    <div class="col-12 color_blanco A_esp_dos">
+                        <span>de 11,01% a 23%</span>
+                    </div>
+                    <div class="col-12 color_amarillo_free A_esp_tres">
+                        <span>de 23,01% a 35%</span>
+                    </div>
+
+
+                    <div class=" col-12 color_verde espacio_estandar_tabla">
+                        <span class="negrita">Oferta</span>
+                    </div>
+                    <div class=" col-12 color_negro_free V_esp_uno">
+                        <span>de 0% a 5%</span>
+                    </div>
+                    <div class=" col-12 color_blanco V_esp_dos">
+                        <span>de 5,01% a 10%</span>
+                    </div>
+                    <div class=" col-12 color_negro_free V_esp_tres">
+                        <span>de 10,015% a 15%</span>
+                    </div>
+
+
+                    <div class=" col-12 color_azul espacio_estandar_tabla">
+                        <span class="negrita">Experiencia</span>
+                    </div>
+                    <div class=" col-12 color_azul_free Az_esp_uno">
+                        <span>de 0% a 16%</span>
+                    </div>
+                    <div class=" col-12 color_blanco Az_esp_dos">
+                        <span>de 16,01% a 33%</span>
+                    </div>
+                    <div class=" col-12 color_azul_free Az_esp_tres">
+                        <span>de 33,01% a 50%</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-9 col-md-12 col-12 p-0 borde_free item2">
+                    <div class="col-12 color_amarillo espacio_estandar_tabla">
+                        <span>&nbsp&nbsp</span>
+                    </div>
+                    <div class="col-12 color_amarillo_free">
+                        <span class="text-wrap">Tienes una base, pero debes reflexionar sobre cómo puedes mejorar, descubre cómo.</span>
+                    </div>
+                    <div class="col-12 color_blanco">
+                        <span class="text-wrap">No esta mal, tu puntaje es promedio en comparación con otras empresas de tu industria, conoce como puedes optimizar</span>
+                    </div>
+                    <div class="col-12 color_amarillo_free">
+                        <span class="text-wrap">Buen trabajo, pero hay todavía espacio para mejorar, podemos desarrollar contigo innovaciones, descubre cómo .</span>
+                    </div>
+
+
+                    <div class="col-12 color_verde espacio_estandar_tabla">
+                        <span>&nbsp&nbsp</span>
+                    </div>
+                    <div class="col-12 color_negro_free">
+                        <span class="text-wrap"> Tienes una base, pero debes reflexionar sobre cómo puedes mejorar, descubre cómo.</span>
+                    </div>
+                    <div class="col-12 color_blanco">
+                        <span class="text-wrap"> No esta mal, tu puntaje es promedio en comparación con otras empresas de tu industria, conoce como puedes optimizar.</span>
+                    </div>
+                    <div class="col-12 color_negro_free">
+                        <span class="text-wrap"> Buen trabajo, pero hay todavía espacio para mejorar, podemos desarrollar contigo innovaciones, descubre cómo.</span>
+                    </div>
+
+
+                    <div class="col-12 color_azul espacio_estandar_tabla">
+                        <span>&nbsp&nbsp</span>
+                    </div>
+                    <div class="col-12 color_azul_free">
+                        <span class="text-wrap"> Tienes una base, pero debes reflexionar sobre cómo puedes mejorar, descubre cómo.</span>
+                    </div>
+                    <div class="col-12 color_blanco">
+                        <span class="text-wrap"> No esta mal, tu puntaje es promedio en comparación con otras empresas de tu industria, conoce como puedes optimizar.</span>
+                    </div>
+                    <div class="col-12 color_azul_free">
+                        <span class="text-wrap"> Buen trabajo, pero hay todavía espacio para mejorar, podemos desarrollar contigo innovaciones, descubre cómo.</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
 
     <section id="descrip_resultfree">
         <div class="col-12 d-flex justify-content-center pt-5">

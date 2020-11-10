@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Envio | Dobleen</title>
+    <title>Confirmación | Dobleen</title>
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/menu.css">
@@ -110,9 +110,11 @@
 
 </body>
 
-<script>
+<?php $url2 = $_GET['var']; ?>
+
+<script type="text/javascript">
     function redirec() {
-        window.location = "../index.php";
+        window.location = "<?php echo $url2; ?>";
     }
     setTimeout("redirec()", 4000)
 </script>

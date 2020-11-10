@@ -15,7 +15,7 @@ while($res = $resultado->fetch(PDO::FETCH_ASSOC)){
         $id_usuario="{$res['id_usuario']}";
         $nombre="{$res['empresa']}";
         $nit="0";
-        $estado="free";
+        $estado="free"; 
         $fecha="{$res['fecha']}";
 
 }
@@ -28,5 +28,3 @@ while($res = $resultado->fetch(PDO::FETCH_ASSOC)){
      echo  "<script language='javascript'>
             window.location.href='../demo.php'
            </script>";
-
-?>

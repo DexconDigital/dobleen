@@ -11,9 +11,9 @@ $response = $recaptcha->verify($_POST['g-recaptcha-response']);
 
 if ($response->isSuccess()) {
 
-    existeuser();
+    enviar();
 } else {
 
 
-    echo "<script>alert('¡Captcha Invalido! , Es necesario completar el Captcha.');window.location.href='../index.php'</script>";
+    echo "<script>alert('¡Captcha Invalido! , Es necesario completar el Captcha.');window.location.href='../contacto.php'</script>";
 }

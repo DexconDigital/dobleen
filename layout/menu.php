@@ -66,7 +66,7 @@
                 <li><a href="https://www.dexcondigital.com/tiendavirtual" target="_blanck">Tienda</a></li>
                 <li><a href="metodologia.php">Método</a></li>
                 <li><a class="text-break" href="casos.php">Caso de Estudio</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="contacto.php">Contacto</a></li>
             </ul>
         </nav>
     </div>

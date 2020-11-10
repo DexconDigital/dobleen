@@ -1,3 +1,6 @@
+<?php
+$url_pagina = $_SERVER["REQUEST_URI"];
+?>
 <section id="footer">
     <div class="">
         <div class="col-12 d-flex flex-wrap pt-3 espacio_footer">
@@ -45,6 +48,9 @@
                             <input type="text" class="form-control form hover_btn3" name="telefono" aria-describedby="emailHelp" placeholder="Teléfono">
                         </div>
                     </div>
+                    <select name="urlpagina" style="display:none">
+                        <option value=" <?php echo $url_pagina ?>"> <?php echo $url_pagina; ?></option>
+                    </select>
                     <div class="col-lg-3 col-md-3 col-12">
                         <div class="form-group">
                             <button type="submit" class="form-control form negrita hover_btn_enviar" aria-describedby="emailHelp">Suscribirse</button>
@@ -54,7 +60,7 @@
             </form>
         </div>
         <div class="text-center mt-4 copi_footer">
-            <p>Copyright 2020 <a class="color_copi" href="">Dexcon Digital - Dexcon Consultores SAS</a> - Todos los derechos reservados</p>
+            <p>Copyright 2020 <a class="color_copi" href="https://www.dexcondigital.com/" target="_blank">Dexcon Digital - Dexcon Consultores SAS</a> - Todos los derechos reservados</p>
         </div>
     </div>
 </section>
