@@ -80,29 +80,6 @@ while ($field = $result->fetch(PDO::FETCH_ASSOC)){
     $RC13 = ($analisis_predictivo / $N);
     $R13 = round($RC13,3);
     
-    // echo $R1."<BR>";
-    // echo $R2."<BR>";
-    // echo $R3."<BR>";
-    // echo $R4."<BR>";
-    // echo $R5."<BR>";
-    // echo $R6."<BR>";
-    // echo $R7."<BR>";
-    // echo $R8."<BR>";
-    // echo $R19."<BR>";
-    // echo $R10."<BR>";
-    // echo $R11."<BR>";
-    // echo $R12."<BR>";
-    // echo $R13."<BR>";
-    // echo $R14."<BR>";
-    // echo $R15."<BR>";
-    // echo $R16."<BR>";
-    // echo $R17."<BR>";
-    // echo $R18."<BR>";
-    // echo $R19."<BR>";
-    // echo $R20."<BR>";
-    // echo $R21."<BR>";
-
-
     $RSPROC = $R1 + $R2 + $R3 + $R4 + $R5 + $R6 + $R7 + $R8 + $R9 + $R10 + $R11 + $R12 + $R13;
     $RCPROC = ($RSPROC / 5) ;
     $RCTPROC = round($RCPROC,3);
@@ -111,12 +88,6 @@ while ($field = $result->fetch(PDO::FETCH_ASSOC)){
     $EstPROC = 7.0;
     $EstCPROC = number_format($EstPROC* 1,2);
     $VarPROC = ($EstPROC - $RTPROC);
-    
-    
-    
-    
-
-
 }
 
 ?>

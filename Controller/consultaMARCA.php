@@ -56,12 +56,11 @@ while ($field = $result->fetch(PDO::FETCH_ASSOC)) {
     $RC8 = ($certificacion / $NMARCA);
     $R8 = round($RC8, 3);
 
-
     $RSMARCA = $R1 + $R2 + $R3 + $R4 + $R5 + $R6 + $R7 + $R8;
     $RCMARCA = ($RSMARCA / 5);
     $RCTMARCA = round($RCMARCA, 2);
     $RTMARCA = number_format($RCTMARCA * 100, 2);
-    $EstMARCA = 8.0;
+    $EstMARCA = 10.0; //8.0
     $EstMARCAT = number_format($EstMARCA * 1, 2);
     $VarMARCA = ($EstMARCAT - $RTMARCA);
 }

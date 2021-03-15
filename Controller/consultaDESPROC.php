@@ -79,7 +79,7 @@ while ($field = $result->fetch(PDO::FETCH_ASSOC)) {
     $RCDESPROC = ($RSDESPROC / 5);
     $RCTDESPROC = round($RCDESPROC, 3);
     $RTDESPROC = number_format($RCTDESPROC * 100, 2);
-    $EstDESPROC = 8.0;
+    $EstDESPROC = 7.5;//8.0
     $EstDESPROCT = number_format($EstDESPROC * 1, 2);
     $VarDESPROC = ($EstDESPROCT - $RTDESPROC);
 }

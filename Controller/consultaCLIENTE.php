@@ -68,14 +68,11 @@ while ($field = $result->fetch(PDO::FETCH_ASSOC)) {
     $RC10 = ($estatus_y_reconocimiento / $NCLIENTE);
     $R10 = round($RC10, 4);
 
-
-
-
     $RSCLIENTE = $R1 + $R2 + $R3 + $R4 + $R5 + $R6 + $R7 + $R8 + $R9 + $R10;
     $RCCLIENTE = ($RSCLIENTE / 5);
     $RCTCLIENTE = round($RCCLIENTE, 2);
     $RTCLIENTE = number_format($RCTCLIENTE * 100, 2);
-    $EstCLIENTE = 8.0;
+    $EstCLIENTE = 13.0; //8.0
     $EstCLIENTET = number_format($EstCLIENTE * 1, 2);
     $VarCLIENTE = ($EstCLIENTET - $RTCLIENTE);
 }

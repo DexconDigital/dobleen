@@ -79,7 +79,7 @@ while ($field = $result->fetch(PDO::FETCH_ASSOC)) {
     $RCSERVI = ($RSSERVI / 5);
     $RCTSERVI = round($RCSERVI, 2);
     $RTSERVI = number_format($RCTSERVI * 100, 2);
-    $EstSERVI = 8.0;
+    $EstSERVI = 10.0; //8.0
     $EstSERVIT = number_format($EstSERVI * 1, 2);
     $VarSERVI = ($EstSERVIT - $RTSERVI);
     // echo $VarSERVI . "<br>";
