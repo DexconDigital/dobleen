@@ -52,23 +52,23 @@
     <?php $TOTALOFERTAC = $DESPROC + $SISPROC; ?>
     <?php $TOTALOFERTA =  number_format($TOTALOFERTAC * 1, 2); ?>
     <?php $VarOferta = $EstandarOferta ?>
+    <?php $VariaOferta =  $VarOferta - $TOTALOFERTA ?>
     <?php $DesviaOferta =  $TOTALOFERTA - $VarOferta ?>
-
-
 
     <!-- configuracion -->
     <?php $TOTALCONFIC = $MDG + $RED + $EST + $PROC  ?>
     <?PHP $TOTALCONFI = number_format($TOTALCONFIC * 1, 2); ?>
     <?php $VarConfi =  $EstandarConfi ?>
+    <?php $VariaConfi = $VarConfi - $TOTALCONFI ?>
     <?php $DesviaConfi = $TOTALCONFI - $VarConfi  ?>
-
 
     <!-- Experiencia -->
     <?php $TOTALEXPEC = $MARCA + $CANAL + $CLIENTE + $SERVI ?>
     <?PHP $TOTALEXPE = number_format($TOTALEXPEC * 1, 2); ?>
     <?php $VarExpe = $EstandarExpe ?>
+    <?php $VariaExpe =  $VarExpe - $TOTALEXPE  ?>
     <?php $DesviaExpe = $TOTALEXPE - $VarExpe  ?>
-
+    
     <!-- Sumas -->
     <?php $TOTALUSERC = $TOTALOFERTA + $TOTALCONFI + $TOTALEXPE ?>
     <?PHP $TOTALUSER = number_format($TOTALUSERC * 1, 2); ?>
@@ -180,14 +180,14 @@
     <!-- menu -->
 
     <!-- texto Dobleen -->
-    <section class="mt-15  d-flex justify-content-start container">
+    <section class="mt-3  d-flex justify-content-start container">
         <h1 class="display-2">Mi cuenta</h1>
     </section>
     <!-- texto Dobleen fin -->
 
 
     <!-- Contenido inicio -->
-    <section class="bg-overlay mt-5">
+    <section class="bg-overlay mt-3">
         <div class="container p-5">
             <div class="row">
                 <div class="col-md-3 col-sm-12">
@@ -246,7 +246,7 @@
                                     <th scope="col">Palanca</th>
                                     <th scope="col">Resultado</th>
                                     <th scope="col">Estandar</th>
-                                    <th scope="col">variación</th>
+                                    <th scope="col">Desviación</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -298,33 +298,33 @@
                                     <tbody>
                                         <tr class="color_negro_free">
                                             <td scope="row">Palanca: Configuración</td>
-                                            <td><?php echo $TOTALCONFI ?>%</td>
-                                            <td><?php echo $VarConfi ?>%</td>
-                                            <td></td>
+                                            <td><?php echo $TOTALCONFI; ?>%</td>
+                                            <td><?php echo $VarConfi; ?>%</td>
+                                            <td><?php echo $VariaConfi; ?>%</td>
                                         </tr>
                                         <tr class="color_blanco">
                                             <td scope="row">Modelo de Ganancias</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td><?php echo $MDG; ?>%</td>
+                                            <td><?php echo $EstMDG; ?>%</td>
+                                            <td><?php echo $VARM; ?>%</td>
                                         </tr>
                                         <tr class="color_negro_free">
                                             <td scope="row">Red</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td><?php echo $RED; ?>%</td>
+                                            <td><?php echo $EstRED; ?>%</td>
+                                            <td><?php echo $VRED; ?>%</td>
                                         </tr>
                                         <tr class="color_blanco">
                                             <td scope="row">Estructura</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td><?php echo $EST; ?>%</td>
+                                            <td><?php echo $EstEST; ?>%</td>
+                                            <td><?php echo $VEST; ?>%</td>
                                         </tr>
                                         <tr class="color_negro_free">
                                             <td scope="row">Procesos</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td><?php echo $PROC; ?>%</td>
+                                            <td><?php echo $EstPROC; ?>%</td>
+                                            <td><?php echo $VPROC; ?>%</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -346,21 +346,21 @@
                                     <tbody>
                                         <tr class="color_negro_free">
                                             <td scope="row">Palanca: Oferta</td>
-                                            <td><?php echo $TOTALOFERTA ?>%</td>
-                                            <td><?php echo $VarOferta ?>%</td>
-                                            <td></td>
+                                            <td><?php echo $TOTALOFERTA; ?>%</td>
+                                            <td><?php echo $VarOferta; ?>%</td>
+                                            <td><?php echo $VariaOferta; ?>%</td>
                                         </tr>
                                         <tr class="color_blanco">
                                             <td scope="row">Desempeño de Procesos</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td><?php echo $DESPROC; ?>%</td>
+                                            <td><?php echo $EstDESPROC; ?>%</td>
+                                            <td><?php echo $VRDESPROC; ?>%</td>
                                         </tr>
                                         <tr class="color_negro_free">
                                             <td scope="row">Sistema de Productos</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td><?php echo $SISPROC; ?>%</td>
+                                            <td><?php echo $EstSISPROC; ?>%</td>
+                                            <td><?php echo $VRSISPROC; ?>%</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -382,33 +382,33 @@
                                     <tbody>
                                         <tr class="color_negro_free">
                                             <td scope="row">Palanca: Experiencias</td>
-                                            <td><?php echo $TOTALEXPE ?>%</td>
-                                            <td><?php echo $VarExpe ?>%</td>
-                                            <td></td>
+                                            <td><?php echo $TOTALEXPE; ?>%</td>
+                                            <td><?php echo $VarExpe; ?>%</td>
+                                            <td><?php echo $VariaExpe; ?>%</td>
                                         </tr>
                                         <tr class="color_blanco">
                                             <td scope="row">Servicios</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td><?php echo $SERVI; ?>%</td>
+                                            <td><?php echo $EstSERVI; ?>%</td>
+                                            <td><?php echo $VarSERVI; ?>%</td>
                                         </tr>
                                         <tr class="color_negro_free">
                                             <td scope="row">Canales</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td><?php echo $CANAL; ?>%</td>
+                                            <td><?php echo $EstCANAL; ?>%</td>
+                                            <td><?php echo $VarCANAL; ?>%</td>
                                         </tr>
                                         <tr class="color_blanco">
                                             <td scope="row">Marca</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td><?php echo $MARCA; ?>%</td>
+                                            <td><?php echo $EstMARCA; ?>%</td>
+                                            <td><?php echo $VarMARCA; ?>%</td>
                                         </tr>
                                         <tr class="color_negro_free">
                                             <td scope="row">Compromiso con el Cliente</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td><?php echo $CLIENTE; ?>%</td>
+                                            <td><?php echo $EstCLIENTE; ?>%</td>
+                                            <td><?php echo $VarCLIENTE; ?>%</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -448,9 +448,23 @@
         </div>
     </section>
     <!-- Contenido Fin -->
-
+    
+    <!-- Reserva cita -->
+    <section id="cita">
+        <div class="container mt-4">
+            <h1 class="text-left pl-5">Reservar Cita</h1>
+        </div>
+        <div class="section_cita bg-aqua">
+            <div class="container  pt-4 d-flex justify-content-center">
+                <iframe sandbox="allow-same-origin allow-forms allow-popups allow-scripts allow-pointer-lock" class="_3HLqS border-0" title="htmlComp-iframe" name="htmlComp-iframe" width="600px" height="618px" data-src="" src="https://dexcondigital.appointlet.com/b/dexcondigital"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- Reserva cita fin -->
+    
     <!-- Septima seccion -->
     <?php include 'layout/footer.php' ?>
+    
     <!-- Septima seccion -->
     <?php include 'layout/archivosfooter.php' ?>
 </body>
@@ -459,287 +473,19 @@
 <script src="js/export-data.js"></script>
 <script src="js/accessibility.js"></script>
 <script>
-    Highcharts.setOptions({
-        chart: {
-            style: {
-                fontFamily: 'OpenSans-Regular'
-            },
-        },
-        lang: {
-            downloadCSV: "Descarga CSV",
-            viewFullscreen: "Ver en pantalla completa",
-            downloadXLS: "Descargar XLS",
-            printChart: "Tabla de impresión",
-            downloadPNG: "Descargar imagen PNG",
-            downloadJPEG: "Descargar imagen JPEG",
-            downloadPDF: "Descargar PDF",
-            downloadSVG: "Descargar imagen SGV",
-            viewData: "Ver tabla de datos"
-        }
-    });
+    Highcharts.setOptions({chart:{style:{fontFamily:'OpenSans-Regular'},},lang:{downloadCSV:"Descarga CSV",viewFullscreen:"Ver en pantalla completa",downloadXLS:"Descargar XLS",printChart:"Tabla de impresión",downloadPNG:"Descargar imagen PNG",downloadJPEG:"Descargar imagen JPEG",downloadPDF:"Descargar PDF",downloadSVG:"Descargar imagen SGV",viewData:"Ver tabla de datos"}});
+    
     // Grafica lineal #1
-    Highcharts.chart('container', {
-        chart: {
-            type: 'line',
-        },
-        legend: {
-            itemStyle: {
-                color: 'white'
-            },
-            itemHoverStyle: {
-                color: 'white'
-            },
-        },
-        title: {
-            text: ''
-        },
-        subtitle: {
-            text: ''
-        },
-        xAxis: {
-            categories: ['Configuración', 'Oferta', 'Experiencias'],
-            labels: {
-                style: {
-                    color: 'white'
-                }
-            }
-        },
-        plotOptions: {
-            line: {
-                dataLabels: {
-                    enabled: true
-                },
-                enableMouseTracking: false
-            }
-        },
-        series: [{
-            name: 'Estandar',
-            color: '#34F0FF',
-            data: [<?php echo $VarConfi ?>, <?php echo $VarOferta ?>, <?php echo $VarExpe ?>],
-            zones: [{
-                color: '#34F0FF'
-            }]
-        }, {
-            name: 'Resultado',
-            color: '#86F200',
-            data: [<?php echo $TOTALCONFI  ?>, <?php echo $TOTALOFERTA ?>, <?php echo $TOTALEXPE ?>],
-            zones: [{
-                color: '#86F200'
-            }],
-        }]
-    });
+    Highcharts.chart('container',{chart:{type:'line',},legend:{itemStyle:{color:'white'},itemHoverStyle:{color:'white'},},title:{text:''},subtitle:{text:''},xAxis:{categories:['Configuración','Oferta','Experiencias'],labels:{style:{color:'white'}}},plotOptions:{line:{dataLabels:{enabled:true},enableMouseTracking:false}},series:[{name:'Estandar',color:'#34F0FF',data:[<?php echo $VarConfi?>,<?php echo $VarOferta?>,<?php echo $VarExpe?>],zones:[{color:'#34F0FF'}]},{name:'Resultado',color:'#86F200',data:[<?php echo $TOTALCONFI?>,<?php echo $TOTALOFERTA?>,<?php echo $TOTALEXPE?>],zones:[{color:'#86F200'}],}]});
 
     // Grafica Barras #1
-    var chart = Highcharts.chart('barras1', {
-        chart: {
-            type: 'column'
-        },
-        legend: {
-            itemStyle: {
-                color: 'white'
-            },
-            itemHoverStyle: {
-                color: 'white'
-            },
-        },
-        title: {
-            text: ''
-        },
-        subtitle: {
-
-            text: ''
-        },
-        yAxis: {
-            title: {
-                text: 'Resultado'
-            }
-
-        },
-        tooltip: {
-            style: {
-                color: '#fff'
-            },
-            valueDecimals: 0,
-            backgroundColor: '#454545',
-            borderColor: '#454545',
-            borderRadius: 10,
-            borderWidth: 3,
-        },
-        xAxis: {
-
-            categories: ['Palanca: Configuración', 'Modelo de Ganancias', 'Red', 'Estructura', 'Procesos'],
-            labels: {
-                style: {
-                    color: 'white'
-                }
-            }
-        },
-
-        plotOptions: {
-            line: {
-                dataLabels: {
-                    enabled: true
-                },
-                enableMouseTracking: false
-            }
-        },
-        series: [{
-            name: 'Resultado',
-            color: '#34F0FF',
-            data: [<?php echo $TOTALCONFI  ?>, 0, 0, 0, 0],
-            zones: [{
-                color: '#34F0FF'
-            }],
-        }, {
-            name: 'Estandar',
-            type: 'line',
-            color: '#86F200',
-            data: [<?php echo $VarConfi  ?>, 0, 0, 0, 0],
-            zones: [{
-                color: '#86F200'
-            }],
-        }]
-
-    });
+    var chart=Highcharts.chart('barras1',{chart:{type:'column'},legend:{itemStyle:{color:'white'},itemHoverStyle:{color:'white'},},title:{text:''},subtitle:{text:''},yAxis:{title:{text:'Resultado'}},tooltip:{style:{color:'#fff'},valueDecimals:0,backgroundColor:'#454545',borderColor:'#454545',borderRadius:10,borderWidth:3,},xAxis:{categories:['Palanca: Configuración','Modelo de Ganancias','Red','Estructura','Procesos'],labels:{style:{color:'white'}}},plotOptions:{line:{dataLabels:{enabled:true},enableMouseTracking:false}},series:[{name:'Resultado',color:'#34F0FF',data:[<?php echo $TOTALCONFI.','.$MDG.','.$RED.','.$EST.','.$PROC;?>],zones:[{color:'#34F0FF'}],},{name:'Estandar',type:'line',color:'#86F200',data:[<?php echo $VarConfi.','.$EstMDG.','.$EstRED.','.$EstEST.','.$EstPROC;?>],zones:[{color:'#86F200'}],}]});
+    
     // Grafica Barras #2
-    var chart = Highcharts.chart('barras2', {
-        chart: {
-            type: 'column'
-        },
-        legend: {
-            itemStyle: {
-                color: 'white'
-            },
-            itemHoverStyle: {
-                color: 'white'
-            },
-        },
-        title: {
-            text: ''
-        },
-        subtitle: {
-
-            text: ''
-        },
-        yAxis: {
-            title: {
-                text: 'Resultado'
-            }
-        },
-        tooltip: {
-            style: {
-                color: '#fff'
-            },
-            valueDecimals: 0,
-            backgroundColor: '#454545',
-            borderColor: '#454545',
-            borderRadius: 10,
-            borderWidth: 3,
-        },
-        xAxis: {
-
-            categories: ['Palanca: Oferta', 'Desempeño de Procesos', 'Sistema de Productos'],
-            labels: {
-                style: {
-                    color: 'white'
-                }
-            }
-        },
-        plotOptions: {
-            line: {
-                dataLabels: {
-                    enabled: true
-                },
-                enableMouseTracking: false
-            }
-        },
-        series: [{
-            name: 'Resultado',
-            color: '#34F0FF',
-            data: [<?php echo $TOTALOFERTA; ?>, 0, 0],
-            zones: [{
-                color: '#34F0FF'
-            }],
-        }, {
-            name: 'Estandar',
-            type: 'line',
-            color: '#86F200',
-            data: [<?php echo $VarOferta; ?>, 0, 0],
-            zones: [{
-                color: '#86F200'
-            }],
-        }]
-
-    });
+    var chart=Highcharts.chart('barras2',{chart:{type:'column'},legend:{itemStyle:{color:'white'},itemHoverStyle:{color:'white'},},title:{text:''},subtitle:{text:''},yAxis:{title:{text:'Resultado'}},tooltip:{style:{color:'#fff'},valueDecimals:0,backgroundColor:'#454545',borderColor:'#454545',borderRadius:10,borderWidth:3,},xAxis:{categories:['Palanca: Oferta','Desempeño de Procesos','Sistema de Productos'],labels:{style:{color:'white'}}},plotOptions:{line:{dataLabels:{enabled:true},enableMouseTracking:false}},series:[{name:'Resultado',color:'#34F0FF',data:[<?php echo $TOTALOFERTA.','.$DESPROC.','.$SISPROC;?>],zones:[{color:'#34F0FF'}],},{name:'Estandar',type:'line',color:'#86F200',data:[<?php echo $VarOferta.','.$EstDESPROC.','.$EstSISPROC;?>],zones:[{color:'#86F200'}],}]});
+    
     // Grafica Barras #3
-    var chart = Highcharts.chart('barras3', {
-        chart: {
-            type: 'column'
-        },
-        legend: {
-            itemStyle: {
-                color: 'white'
-            },
-            itemHoverStyle: {
-                color: 'white'
-            },
-        },
-        title: {
-            text: ''
-        },
-        subtitle: {
-
-            text: ''
-        },
-        yAxis: {
-            title: {
-                text: 'Resultado'
-            }
-        },
-        tooltip: {
-            style: {
-                color: '#fff'
-            },
-            valueDecimals: 0,
-            backgroundColor: '#454545',
-            borderColor: '#454545',
-            borderRadius: 10,
-            borderWidth: 3,
-        },
-        xAxis: {
-            categories: ['Palanca: Experiencias', 'Servicios', 'Canales', 'Marca', 'Compromiso con el Cliente'],
-            labels: {
-                style: {
-                    color: 'white'
-                }
-            }
-        },
-        plotOptions: {
-            line: {
-                dataLabels: {
-                    enabled: true
-                },
-                enableMouseTracking: false
-            }
-        },
-        series: [{
-            name: 'Resultado',
-            color: '#34F0FF',
-            data: [<?php echo $TOTALEXPE; ?>, 0, 0, 0],
-            zones: [{
-                color: '#34F0FF'
-            }],
-        }, {
-            name: 'Estandar',
-            type: 'line',
-            color: '#86F200',
-            data: [<?php echo $VarExpe; ?>, 0, 0, 0],
-            zones: [{
-                color: '#86F200'
-            }],
-        }]
-
-    });
+    var chart=Highcharts.chart('barras3',{chart:{type:'column'},legend:{itemStyle:{color:'white'},itemHoverStyle:{color:'white'},},title:{text:''},subtitle:{text:''},yAxis:{title:{text:'Resultado'}},tooltip:{style:{color:'#fff'},valueDecimals:0,backgroundColor:'#454545',borderColor:'#454545',borderRadius:10,borderWidth:3,},xAxis:{categories:['Palanca: Experiencias','Servicios','Canales','Marca','Compromiso con el Cliente'],labels:{style:{color:'white'}}},plotOptions:{line:{dataLabels:{enabled:true},enableMouseTracking:false}},series:[{name:'Resultado',color:'#34F0FF',data:[<?php echo $TOTALEXPE.','.$SERVI.','.$CANAL.','.$MARCA.','.$CLIENTE;?>],zones:[{color:'#34F0FF'}],},{name:'Estandar',type:'line',color:'#86F200',data:[<?php echo $VarExpe.','.$EstSERVI.','.$EstCANAL.','.$EstMARCA.','.$EstCLIENTE;?>],zones:[{color:'#86F200'}],}]});
 
 </script>
 <script>
