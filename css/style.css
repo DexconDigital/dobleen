@@ -9126,6 +9126,10 @@ button.bg-dark:focus {
     width: 50% !important;
 }
 
+.w-70 {
+    width: 70% !important
+}
+
 .w-75 {
     width: 75% !important;
 }
@@ -11973,8 +11977,8 @@ h1 {
 
 @media (max-width: 768px) {
     .lista_menu {
-        -webkit-column-count: 2;
-        column-count: 2;
+        -webkit-column-count: 1;
+        column-count: 1;
     }
 }
 
@@ -12126,7 +12130,7 @@ h1 {
 @media (max-width: 768px) {
     .overlay nav {
         top: 59%;
-        left: 15%;
+        align-content: center;
     }
 }
 
@@ -12230,7 +12234,7 @@ h1 {
 .cajamenudos {
     position: fixed;
     right: 9%;
-    top: 4.5%;
+    top: 4.35%;
     height: 2px;
     width: 35px;
     cursor: pointer;
@@ -12254,14 +12258,13 @@ h1 {
 
 @media (max-width: 1024px) {
     .cajamenudos {
-        right: 15%;
+        right: 10.5%;
     }
 }
 
 @media (max-width: 768px) {
     .cajamenudos {
-
-        right: 24%;
+        right: 20%;
     }
 }
 
@@ -14325,54 +14328,6 @@ input {
     background-color: #B7B8B5;
 }
 
-@media (max-width: 2560px) {
-    .tamaño_logo_dexc {
-        width: 60%;
-        height: 70px;
-    }
-}
-
-@media (max-width: 1440px) {
-    .tamaño_logo_dexc {
-        width: 60%;
-        height: 70px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .tamaño_logo_dexc {
-        width: 60%;
-        height: 53px;
-    }
-}
-
-@media (max-width: 768px) {
-    .tamaño_logo_dexc {
-        width: 80%;
-        height: 54px;
-    }
-}
-
-@media (max-width: 425px) {
-    .tamaño_logo_dexc {
-        width: 50%;
-        height: 100%;
-    }
-}
-
-@media (max-width: 375px) {
-    .tamaño_logo_dexc {
-        width: 50%;
-        height: 100%;
-    }
-}
-
-@media (max-width: 230px) {
-    .tamaño_logo_dexc {
-        width: 60%;
-        height: 100%;
-    }
-}
 
 @media (max-width: 2560px) {
     .espacio_footer {
@@ -20464,7 +20419,7 @@ bac #contacto .check {
 }
 
 .bg-azul-pastel {
-    background-color: #34F0FF; 
+    background-color: #34F0FF;
 }
 
 .bg-amarillo-pastel {
@@ -20472,7 +20427,7 @@ bac #contacto .check {
 }
 
 .bg-aqua {
-    background-color: #3efac5; 
+    background-color: #3efac5;
 }
 
 .bg-darkblue {
@@ -20480,11 +20435,11 @@ bac #contacto .check {
 }
 
 .bg-gris {
-    background-color: #869dae; 
+    background-color: #869dae;
 }
 
 .bg-gris-oscuro {
-    background-color: #808080; 
+    background-color: #808080;
 }
 
 .bg-overlay {
@@ -20510,3 +20465,14 @@ bac #contacto .check {
 .fm-regular {
     font-family: "OpenSans-Regular" !important;
 }
+
+.img-8 {
+    width: 8rem !important;
+}
+
+.fs-2 {
+    font-size: 0.8rem !important;
+}
+
+
+
