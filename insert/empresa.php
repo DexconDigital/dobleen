@@ -37,20 +37,22 @@ function activaRedirect()
     $correo = $_REQUEST['correo'];
     $empresa = $_REQUEST['empresa'];
     $fecha = $_REQUEST["fecha"];
+    $clave = md5($_REQUEST["clave"]);
+    $confirmarclave = md5($_REQUEST["confirmarclave"]);
     $fecha = date("Y-m-d");
+    if($clave == $confirmarclave) {
+        $con = Conect();
+        $pdoQuery = "INSERT INTO usuario ( nombre , telefono , correo , empresa, fecha, clave) VALUES (:nombre , :telefono , :correo , :empresa, :fecha , :clave)";
+        $pdoResult = $con->prepare($pdoQuery);
+        $pdoExec = $pdoResult->execute(array(':nombre' => $nombre, ':telefono' => $telefono, ':correo' => $correo, ':empresa' => $empresa, ':fecha' => $fecha, ':clave' => $clave));
 
-
-
-
-    $con = Conect();
-    $pdoQuery = "INSERT INTO usuario ( nombre , telefono , correo , empresa, fecha) VALUES (:nombre , :telefono , :correo , :empresa, :fecha)";
-    $pdoResult = $con->prepare($pdoQuery);
-    $pdoExec = $pdoResult->execute(array(':nombre' => $nombre, ':telefono' => $telefono, ':correo' => $correo, ':empresa' => $empresa, ':fecha' => $fecha));
-
-
-    echo  "<script language='javascript'>
+        echo  "<script language='javascript'>
             window.location.href='usuarios.php'
            </script>";
+    } else{
+        echo "<script>alert('¡Las contraseñas NO coinciden! , Intenta otra vez, Gracias.');window.location.href='../index.php'</script>";
+    }
+    
 }
 
 
