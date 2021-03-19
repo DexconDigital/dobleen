@@ -5,6 +5,14 @@ require_once 'conexion.php';
 $con = Conect();
 $array = array();
 
+$validacion = "ORDER BY id DESC LIMIT 1";
+if($varsesion != null || $varsesion != ''){
+    $validacion;
+}
+if (isset($varsesion->id_usuario)){
+    $validacion = "WHERE id_usuario = ".$varsesion->id_usuario;
+}
+
 $consult = "SELECT 
 fusiones_y_adquisiciones,
 consolidacion,
@@ -17,7 +25,7 @@ franquiciamiento,
 cooperacion,
 lanzamiento_de_plataformas_de_la_competencia,
 colaboracion
-from red ORDER BY id DESC LIMIT 1";
+from red ".$validacion;
 
 $result = $con->prepare($consult);
 $result ->execute(array());

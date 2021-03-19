@@ -5,6 +5,14 @@ require_once 'conexion.php';
 $con = Conect();
 $array = array();
 
+$validacion = "ORDER BY id DESC LIMIT 1";
+if($varsesion != null || $varsesion != ''){
+    $validacion;
+}
+if (isset($varsesion->id_usuario)){
+    $validacion = "WHERE id_usuario = ".$varsesion->id_usuario;
+}
+
 $consult = "SELECT 
 premium,
 definido_por_el_usuario,
@@ -26,7 +34,7 @@ conexiones,
 precios_agrupados,
 subasta,
 desagregar_precios,
-riesgo_compartido from modelo_de_ganancias ORDER BY id DESC LIMIT 1";
+riesgo_compartido from modelo_de_ganancias ".$validacion;
 
 $result = $con->prepare($consult);
 $result->execute(array());

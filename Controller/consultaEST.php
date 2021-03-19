@@ -5,6 +5,14 @@ require_once 'conexion.php';
 $con = Conect();
 $array = array();
 
+$validacion = "ORDER BY id DESC LIMIT 1";
+if($varsesion != null || $varsesion != ''){
+    $validacion;
+}
+if (isset($varsesion->id_usuario)){
+    $validacion = "WHERE id_usuario = ".$varsesion->id_usuario;
+}
+
 $consult = "SELECT 
 dise_organizacional,
 sistema_de_incentivos,
@@ -16,7 +24,7 @@ gerencia_descentralizada,
 gestion_del_conocimiento,
 aprovechamiento_de_activos_de_otras_comp,
 estandarizacion_de_activos
-from estructura ORDER BY id DESC LIMIT 1";
+from estructura ".$validacion;
 
 $result = $con->prepare($consult);
 $result->execute(array());

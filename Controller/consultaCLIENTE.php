@@ -5,6 +5,14 @@ require_once 'conexion.php';
 $con = Conect();
 $array = array();
 
+$validacion = "ORDER BY id DESC LIMIT 1";
+if($varsesion != null || $varsesion != ''){
+    $validacion;
+}
+if (isset($varsesion->id_usuario)){
+    $validacion = "WHERE id_usuario = ".$varsesion->id_usuario;
+}
+
 $consult = "SELECT 
 Automatizacion_de_procesos,
 simplificacion_de_experiencias,
@@ -16,7 +24,7 @@ comunidad_y_pertenencia,
 personalizacion,
 personalidad_y_humanizacion,
 estatus_y_reconocimiento
-from compromiso_del_cliente ORDER BY id DESC LIMIT 1";
+from compromiso_del_cliente ".$validacion;
 
 $result = $con->prepare($consult);
 $result->execute(array());

@@ -5,6 +5,14 @@ require_once 'conexion.php';
 $con = Conect();
 $array = array();
 
+$validacion = "ORDER BY id DESC LIMIT 1";
+if($varsesion != null || $varsesion != ''){
+    $validacion;
+}
+if (isset($varsesion->id_usuario)){
+    $validacion = "WHERE id_usuario = ".$varsesion->id_usuario;
+}
+
 $consult = "SELECT 
 diversificacion,
 tienda_principal,
@@ -17,7 +25,8 @@ venta_cruzada,
 bajo_demanda,
 contexto_especifico,
 centro_de_experiencias
-from canales ORDER BY id DESC LIMIT 1";
+from canales ".$validacion;
+
 
 $result = $con->prepare($consult);
 $result->execute(array());

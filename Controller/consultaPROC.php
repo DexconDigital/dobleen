@@ -5,6 +5,14 @@ require_once 'conexion.php';
 $con = Conect();
 $array = array();
 
+$validacion = "ORDER BY id DESC LIMIT 1";
+if($varsesion != null || $varsesion != ''){
+    $validacion;
+}
+if (isset($varsesion->id_usuario)){
+    $validacion = "WHERE id_usuario = ".$varsesion->id_usuario;
+}
+
 $consult = "SELECT 
 estandarizacion_de_procesos,
 localizacion,
@@ -19,7 +27,7 @@ dis_estrategico,
 propiedad_intelectual,
 generacion_por_el_usuario,
 analisis_predictivo
-from procesos ORDER BY id DESC LIMIT 1";
+from procesos ".$validacion;
 
 $result = $con->prepare($consult);
 $result ->execute(array());
