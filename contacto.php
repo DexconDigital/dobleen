@@ -2,6 +2,7 @@
 require_once 'variables/captcha.php';
 $WebK = Web_Key;
 $url_pagina = $_SERVER["REQUEST_URI"];
+$varsesion = '';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -11,6 +12,7 @@ $url_pagina = $_SERVER["REQUEST_URI"];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | Dobleen</title>
     <?php include 'layout/archivosheader.php' ?>
+    <?php include 'variables/terminarsesion.php' ?>
 </head>
 
 <style>

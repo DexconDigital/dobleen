@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultados | Dobleen</title>
-    <?php include 'layout/archivosheader.php' ?>
     <?php include 'variables/seguridad.php' ?>
+    <?php include 'layout/archivosheader.php' ?>
+
     <!-- Datos de Modelo de Gestion -->
     <?php $MDG = $RT;
     $VARM = $VarMDG;

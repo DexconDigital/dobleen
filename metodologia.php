@@ -1,6 +1,7 @@
 <?php
 require_once 'variables/captcha.php';
 $WebK = Web_Key;
+$varsesion = '';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -10,7 +11,7 @@ $WebK = Web_Key;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metodología | Dobleen</title>
     <?php include 'layout/archivosheader.php' ?>
-    <?php include 'variables/validaterminar.php' ?>
+    <?php include 'variables/terminarsesion.php' ?>
 </head>
 
 <body>

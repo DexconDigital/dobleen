@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultados | Dobleen</title>
+    <?php include 'variables/seguridad.php' ?>
     <?php include 'layout/archivosheader.php' ?>
-    <?php //include 'variables/seguridad.php' ?>
     <!-- Datos de Modelo de Gestion -->
     <?php $MDG = $RT;
     $VARM = $VarMDG;
@@ -93,12 +93,13 @@
         <div class="overlay color_negro" id="overlay">
             <nav class="overlay-menu ">
                 <ul class="lista_menu">
-                    <li><a href="index.php">Inicio</a></li>
                     <!-- <li><a href="demo.php">Demo</a></li> -->
                     <li><a href="https://www.dexcondigital.com/tiendavirtual" target="_blanck">Tienda</a></li>
                     <li><a href="metodologia.php">Método</a></li>
-                    <li><a class="text-break" href="casos.php">Caso de Estudio</a></li>
                     <li><a href="#">Contacto</a></li>
+                    <li><a class="text-break" href="casos.php">Caso de Estudio</a></li>
+                    <li><a href="index.php">Salir</a></li>
+
                 </ul>
             </nav>
         </div>
@@ -195,14 +196,14 @@
                     <h3 class="text-light">Descargas</h3>
                     <div class="bg-verde-pastel pt-1 mb-3 container">
                         <h6 class="font-weight-bold fm-regular">REPORTE DE INNOVACIÓN</h6>
-                        <a class="btn btn-negro btn-block font-weight-bold rounded-0 mb-3">Descargar</a>
+                        <a class="btn btn-negro btn-block font-weight-bold rounded-0 mb-3" href="archivos/canvas%20innovacion.pdf" target="_blank">Descargar</a>
                     </div>
                     <div class="bg-azul-pastel pt-1 mb-3 container">
                         <h6 class="font-weight-bold fm-regular">MANUAL DE USO DOBLEEN</h6>
-                        <a class="btn btn-negro btn-block font-weight-bold rounded-0 mb-3">Descargar</a>
+                        <a class="btn btn-negro btn-block font-weight-bold rounded-0 mb-3" href="archivos/Manual-dobleen2.pdf" target="_blank">Descargar</a>
                     </div>
                     <div class="bg-amarillo-pastel pt-1 mb-4 container">
-                        <h6 class="font-weight-bold fm-regular">MANUAL DE USO DOBLEEN</h6>
+                        <h6 class="font-weight-bold fm-regular">LAYOUT DE INNOVACIÓN</h6>
                         <a class="btn btn-negro btn-block font-weight-bold rounded-0 mb-3">Descargar</a>
                     </div>
                     <!-- Seguimiento -->

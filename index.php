@@ -1,17 +1,18 @@
 <?php
 require_once 'variables/captcha.php';
 $WebK = Web_Key;
-
+$varsesion = '';
 
 ?>
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio | Dobleen</title>
     <?php include 'layout/archivosheader.php' ?>
-    <?php include 'variables/validaterminar.php' ?>
+    <?php include 'variables/terminarsesion.php' ?>
 
 </head>
 
@@ -53,7 +54,6 @@ $WebK = Web_Key;
                 </div>
 
             </div>
-        </div>
         </div>
     </section>
     <!-- fin primera seccion -->
@@ -173,7 +173,7 @@ $WebK = Web_Key;
     </section>
     <!-- fin quinta cuarta seccion -->
     <!-- sexta seccion -->
-    <section class="">
+    <section class="" id="demo">
         <div class=" espacio_entre_seccion2">
             <div class="col-12  d-flex flex-wrap p-0">
                 <div class="imagen_numero4 "></div>
@@ -218,9 +218,8 @@ $WebK = Web_Key;
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-
-                <div class="modal-body">
-                    <form action="insert/empresa.php" method="POST" autocomplete="off">
+                <form action="insert/empresa.php" method="POST" autocomplete="off">
+                    <div class="modal-body">
                         <div class="col-12 d-flex flex-wrap mb-4">
                             <div class="col-lg-6 col-md-6 col-12">
                                 <div class="form-group">
@@ -243,6 +242,19 @@ $WebK = Web_Key;
                                 </div>
                                 <input type="hidden" id="fecha" name="fecha">
                             </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1" class="sub tipo_regular">Clave:</label>
+                                    <input type="password" class="form-control" name="clave" aria-describedby="emailHelp" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1" class="sub tipo_regular">Confirmar clave:</label>
+                                    <input type="password" class="form-control" name="confirmarclave" aria-describedby="emailHelp" required>
+                                </div>
+                            </div>
+                            
                         </div>
                         <div class="d-flex align-items-baseline mb-2 mt-2">
                             <input type="checkbox" class="d-flex align-items-center justify-content-center mr-2" required>
@@ -251,16 +263,16 @@ $WebK = Web_Key;
                         <div class="g-recaptcha" data-sitekey="<?php echo $WebK ?>" required></div>
                         <div class="col-12 mb-4"><small id="tituloHepl" class="form-text text-muted tipo_regular">Este campo es obligatorio</small></div>
 
-                </div>
-                <div class="modal-footer">
-                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-                    <button type="submit" class="container_btn negrita btn tamaño_standar">Seguir</button>
-                </div>
+                    </div>
+                    <div class="modal-footer">
+                        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                        <button type="submit" class="container_btn negrita btn tamaño_standar">Seguir</button>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
-    <!-- modal demo -->
+    
     <!-- Septima seccion -->
     <?php include 'layout/footer.php' ?>
     <!-- Septima seccion -->
