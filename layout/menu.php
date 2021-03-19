@@ -59,14 +59,15 @@
     </div>
 
     <div class="overlay" id="overlay">
-        <nav class="overlay-menu ">
-            <ul class="lista_menu">
-                <li><a href="index.php">Inicio</a></li>
+        <nav class="overlay-menu">
+            <ul class="lista_menu ml-4 ">
+                <li><a  class="h3" href="index.php">Inicio</a></li>
                 <!-- <li><a href="demo.php">Demo</a></li> -->
                 <li><a href="https://www.dexcondigital.com/tiendavirtual" target="_blanck">Tienda</a></li>
                 <li><a href="metodologia.php">Método</a></li>
                 <li><a class="text-break" href="casos.php">Caso de Estudio</a></li>
                 <li><a href="contacto.php">Contacto</a></li>
+                <li><a href="!#" data-toggle="modal" data-target="#login">Ingresar</a></li>
             </ul>
         </nav>
     </div>
@@ -145,3 +146,45 @@
         </div>
     </div>
 </section>
+
+<!-- modal demo -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row d-flex justify-content-center">
+                            <div class="card form-holder border-0">
+                                <div class="card-body fm-regular">
+                                    <form id="contact-form" action="" method="post">
+                                        <div id="mensaje"></div>
+                                        <div class="form-group ">
+                                            <label>Correo</label>
+                                            <input type="text" name="correo" class="form-control" placeholder="Ej. usuario@dominio.com" required/>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Contraseña</label>
+                                            <input type="password" name="clave" class="form-control" placeholder="Contraseña" required/>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-8 text-left">
+                                                <a href="#" class="btn btn-link fs-2">¿Olvidaste la contraseña?</a>
+                                            </div>
+                                            <div class="col-4 text-right mt-1">
+                                                <button type="submit" class="btn btn-negro enviar">Entrar</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
