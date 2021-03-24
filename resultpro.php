@@ -196,7 +196,7 @@
                     <h3 class="text-light">Descargas</h3>
                     <div class="bg-verde-pastel pt-1 mb-3 container">
                         <h6 class="font-weight-bold fm-regular">REPORTE DE INNOVACIÓN</h6>
-                        <a class="btn btn-negro btn-block font-weight-bold rounded-0 mb-3" href="archivos/canvas%20innovacion.pdf" target="_blank">Descargar</a>
+                        <a class="btn btn-negro btn-block font-weight-bold rounded-0 mb-3 disabled">Descargar</a>
                     </div>
                     <div class="bg-azul-pastel pt-1 mb-3 container">
                         <h6 class="font-weight-bold fm-regular">MANUAL DE USO DOBLEEN</h6>
@@ -204,7 +204,7 @@
                     </div>
                     <div class="bg-amarillo-pastel pt-1 mb-4 container">
                         <h6 class="font-weight-bold fm-regular">LAYOUT DE INNOVACIÓN</h6>
-                        <a class="btn btn-negro btn-block font-weight-bold rounded-0 mb-3">Descargar</a>
+                        <a class="btn btn-negro btn-block font-weight-bold rounded-0 mb-3" href="archivos/canvas%20innovacion.pdf" target="_blank">Descargar</a>
                     </div>
                     <!-- Seguimiento -->
                     <h3 class="text-light mb-4">Seguimiento</h3>
@@ -216,17 +216,17 @@
                     <h3 class="text-light mb-4">Serie Podcast</h3>
                     <div class="bg-darkblue pt-1 mb-4 container">
                         <h6 class="font-weight-bold fm-regular">SERIE PODCAST EL CEREBRO EN EL DESVÁN</h6>
-                        <a class="btn btn-negro btn-block font-weight-bold rounded-0 mb-3">Ir a serie</a>
+                        <a class="btn btn-negro btn-block font-weight-bold rounded-0 mb-3" href="podcast.php">Ir a serie</a>
                     </div>
                     <!-- Agenda -->
                     <h3 class="text-light">Mi Agenda</h3>
                     <div class="bg-gris pt-1 mb-3 container">
                         <h6 class="font-weight-bold fm-regular">SOLICITAR CITA WORKSHOP INNOVACIÓN</h6>
-                        <a class="btn btn-negro btn-block font-weight-bold rounded-0 mb-3">Solicitar</a>
+                        <a class="btn btn-negro btn-block font-weight-bold rounded-0 mb-3" href="#cita">Solicitar</a>
                     </div>
                     <div class="bg-gris-oscuro pt-1 mb-3 container">
-                        <h6 class="font-weight-bold fm-regular">SOLICITAR CITA ASESORÍA-COACHING</h6>
-                        <a class="btn btn-negro btn-block font-weight-bold rounded-0 mb-3">Solicitar</a>
+                        <h6 class="font-weight-bold fm-regular" >SOLICITAR CITA ASESORÍA-COACHING</h6>
+                        <a class="btn btn-negro btn-block font-weight-bold rounded-0 mb-3" href="#cita">Solicitar</a>
                     </div>
                 </div>
                 <div class="col-md-9 col-sm-12 bg-container">
@@ -456,8 +456,8 @@
             <h1 class="text-left pl-5">Reservar Cita</h1>
         </div>
         <div class="section_cita bg-aqua">
-            <div class="container  pt-4 d-flex justify-content-center">
-                <iframe sandbox="allow-same-origin allow-forms allow-popups allow-scripts allow-pointer-lock" class="_3HLqS border-0" title="htmlComp-iframe" name="htmlComp-iframe" width="600px" height="618px" data-src="" src="https://dexcondigital.appointlet.com/b/dexcondigital"></iframe>
+            <div class="container  pt-4 pb-4 d-flex justify-content-center">
+                <iframe sandbox="allow-same-origin allow-forms allow-popups allow-scripts allow-pointer-lock" class="_3HLqS bg-light border-0" title="htmlComp-iframe" name="htmlComp-iframe" width="600px" height="618px" data-src="" src="https://dexcondigital.appointlet.com/b/dexcondigital"></iframe>
             </div>
         </div>
     </section>
