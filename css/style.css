@@ -20408,6 +20408,21 @@ bac #contacto .check {
     #contacto .cont_captcha {
         margin-left: inherit;
     }
+
+    .pdc-img-div {
+        width: 12rem !important;
+        margin-left: 6rem !important;
+    }
+}
+
+@media (max-width: 280px) {
+    .pdc-w {
+        width: 17rem !important;
+    }
+
+    .pdc-img-div {
+        margin-left: 5rem !important;
+    }
 }
 
 .mt-15 {
@@ -20474,3 +20489,33 @@ bac #contacto .check {
     font-size: 0.8rem !important;
 }
 
+/* podcast styles */
+.pdc-aling-center {
+    float: none;
+    margin: 0 auto;
+}
+
+.pdc-img-div {
+    width: 14rem;
+    margin-left: 8rem;
+    margin-top: 10rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.pdc-w {
+    width: 24rem;
+}
+
+.pdc-bg {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,11,1) 0%, rgba(255,115,0,1) 100%) !important;
+}
+
+.sonido{
+    filter: invert(100%);
+}
+
+.sonido:focus {
+  outline: none;
+  box-shadow: none;
+}
