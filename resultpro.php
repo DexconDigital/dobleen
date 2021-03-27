@@ -216,7 +216,7 @@
                     <h3 class="text-light mb-4">Serie Podcast</h3>
                     <div class="bg-darkblue pt-1 mb-4 container">
                         <h6 class="font-weight-bold fm-regular">SERIE PODCAST EL CEREBRO EN EL DESVÁN</h6>
-                        <a class="btn btn-negro btn-block font-weight-bold rounded-0 mb-3" href="podcast.php">Ir a serie</a>
+                        <a class="btn btn-negro btn-block font-weight-bold rounded-0 mb-3" href="serie.php">Ir a serie</a>
                     </div>
                     <!-- Agenda -->
                     <h3 class="text-light">Mi Agenda</h3>
@@ -230,7 +230,7 @@
                     </div>
                 </div>
                 <div class="col-md-9 col-sm-12 bg-container">
-                    <div id="titulo">
+                    <div id="titulo" class="mt-3">
                         <div class="col-12 text-center logo_free">
                             <img src="images/LOGO-DOBLEEN.png" class="dimencion tamañp_logo_free" alt="">
                         </div>

@@ -28,7 +28,6 @@
                     <!-- <li><a href="demo.php">Demo</a></li> -->
                     <li><a href="https://www.dexcondigital.com/tiendavirtual" target="_blanck">Tienda</a></li>
                     <li><a href="resultpro.php">Mi panel</a></li>
-                    <li><a href="serie.php">Serie</a></li>
                     <li><a href="metodologia.php">Método</a></li>
                     <li><a href="#">Contacto</a></li>
                     <li><a class="text-break" href="casos.php">Caso de Estudio</a></li>
@@ -114,72 +113,37 @@
     </section>
     <!-- menu -->
 
-    <!-- podcast -->
-    <section class="mt-5">
-        <h2 class="fm-regular d-flex justify-content-center episodio">Nombre del episodio</h2>
-        <div class="container-fluid mt-4">
+    <!-- serie -->
+    <section class="mt-4 bg-overlay">
+        <div class="container mt-4 text-light">
             <div class="row">
-                <div class="col-sm-12 col-lg-6">
-                    <div class="row">
-                        <div class="pdc-w pdc-aling-center">
-                            <div class="col-md-12 d-flex justify-content-between p-3">
-                                <span>PODCAST</span>
-                                <span>T01-EP-<span class="epsdo"></span></span>
-                            </div>
-                            <div class="col-md-12  d-flex justify-content-center">
-                                <img src="images/no_image.png" class="container imagen pdc-img">
-                                <div class="pdc-img-div p-3 position-absolute fm-regular">
-                                    <p class="p-0 m-0 font-weight-bold nombre">Nombre.</p>
-                                    <p class="p-0 m-0">Podcast</p>
-                                </div>
-                            </div>
-                            <div class="col-md-12  p-3">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <span class="serie">Nombre de la serie</span>
-                                    </div>
-                                    <div class="col-6 text-right">
-                                        <span class="autor">@dexcondigital</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-6 col-6 text-left">
+                    <img src="images/logoDD-blanco-app.png" class="img-8" alt="">
                 </div>
-                <div class="col-sm-12 col-lg-6 bg-azul-pastel">
-                    <div class="m-5">
-                        <div class="fm-regular descripcion">Descripción del Episodio</div>
-                    </div>
+                <div class="col-md-6 col-6 text-right">
+                    <img src="images/LOGO-DOBLEEN-blanco.png" class="img-13" alt="">
                 </div>
             </div>
-            <div class="p-5">
-                <div class="container">
-                    <div id="audio"></div>
-                    <div id="seccion_audio"></div>
-                </div>
-            </div>
-
-        </div>
-        <div class="p-5 container container-fluid">
-            <div class="row">
-                <div class="col-6 d-flex justify-content-center mt-2">
-                    <a id="anterior" class="text-left" href="#">
-                        <b class="p-0 m-0 fm-regular"><i class="fas fa-angle-left"></i> ANTERIOR</b>
-                        <p class="p-0 m-0" id="ant_text">Nombre del episodio</p>
-                    </a>
-                </div>
-                <div class="col-6 d-flex justify-content-center mt-2">
-                    <a id="siguiente" class="text-left" href="#">
-                        <b class="p-0 m-0 fm-regular">SIGUIENTE <i class="fas fa-angle-right"></i></b>
-                        <p class="p-0 m-0" id="sig_text">Nombre del episodio</p>
-                    </a>
+            <div class="text-center pb-5">
+                <div class="introduccion fm-regular">
+                    <h1 class="fm-regular text-white serie">SERIE PODCAST - NOMBRE SERIE</h1>
+                    <label class="autor"></label>
+                    <p class="mt-2 intro"></p>
                 </div>
             </div>
         </div>
     </section>
+    <!-- serie fin -->
 
-    <!-- podcast fin -->
+    <!-- Capitulos -->
+    <section class="mt-2">
+        <div class="container">
+             <!-- Capitulos -->
+            <div class="row episodios">
+
+            </div>
+        </div>
+    </section>
     <!-- Septima seccion -->
     <?php include 'layout/footer.php' ?>
 
