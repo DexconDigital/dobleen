@@ -20545,6 +20545,10 @@ bac #contacto .check {
     background-color: #808080;
 }
 
+.bg-amarillo {
+    background-color: rgb(253,211,0);
+}
+
 .bg-overlay {
     background-color: rgb(28, 28, 28);
 }
@@ -20562,6 +20566,30 @@ bac #contacto .check {
     color: white !important;
     cursor: pointer;
     font-size: 1rem;
+}
+
+.btn.btn-verde {
+    background-color: black;
+    color: white !important;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn.btn-cyan {
+    background-color: black;
+    color: white !important;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn.btn-verde:hover {
+    background-color: #85f100;
+    color: black !important;
+}
+
+.btn.btn-cyan:hover {
+    background-color: #34F0FF;
+    color: black !important;
 }
 
 .btn.btn-negro:hover {
@@ -20718,4 +20746,13 @@ bac #contacto .check {
 
 #dur:focus {
     box-shadow: none !important;
+}
+/* Fin podcast styles */
+
+.filter-invert {
+    filter: invert();
+}
+
+.borderless td, .borderless th {
+    border: none;
 }
