@@ -183,79 +183,91 @@
 
     <!-- contenido Dobleen -->
     <section class="mt-5 container">
-        <div class="row d-flex ">
+        <div class="row mt-5">
             <div class="col-6 ">
-                <h1 class="">Seguimiento de Resultados</h1>
+                <h1 class="text-left">Seguimiento de Resultados</h1>
             </div>
-            <div class="col-6 d-flex justify-content-end">
-                <img src="images/LOGO-DOBLEEN-blanco.png" class="img-8 filter-invert " alt="">
+            <div class="col-6 text-right">
+                <img src="images/logo-dobleen-black.png" class="img-8" alt="">
             </div>
         </div>
         <!-- tabla -->
         <div id="accordion" class="mt-5">
             <?php 
-            foreach ($tipos as $tipo) {?>
+            foreach ($tipos as $tipo) {
+                $color = ($tipo == "Configuración") ? "negro" : "";
+                $color.= ($tipo == "Oferta") ? "verde" : "";
+                $color.= ($tipo == "Experiencias") ? "cyan" : "";?>
                 <div class="card mb-0">
-                    <button class="btn btn-negro" data-toggle="collapse" data-target="#<?php echo $tipo; ?>" aria-expanded="true" data-parent="#accordion">
+                    <button class="btn btn-<?php echo $color; ?> font-weight-bold" data-toggle="collapse" data-target="#<?php echo $tipo; ?>" aria-expanded="true" data-parent="#accordion">
                         <?php echo $tipo; ?>
                     </button>
                 </div>
-                <?php 
+                <div id='<?php echo "contenidos_{$tipo}"; ?>'>
+                    <?php 
+                    for ($i = 0; $i <= 9; $i++) {
+                        foreach($impulsores as $impulsor) {
+                            $impul_vac = str_replace(' ', '', $impulsor);
+                            foreach($arreglos[$i] as $key => $value) {
+                                if ($value['impulsores'] == $impulsor && $value['tipo'] == $tipo) { ?>
+                                    <div id="<?php echo $tipo; ?>" class="card collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                        <button class="btn btn-light text-dark text-left" data-toggle="collapse" data-target="#<?php echo "{$impul_vac}_fechas"; ?>" aria-expanded="true">
+                                            <?php echo $impulsor;  ?>
+                                        </button>
 
-                for ($i = 0; $i <= 9; $i++) {
-                    foreach($impulsores as $impulsor) {
-                        $impul_vac = str_replace(' ', '', $impulsor);
-                        foreach($arreglos[$i] as $key => $value) {
-                            if ($value['impulsores'] == $impulsor && $value['tipo'] == $tipo) { ?>
-                                <div id="<?php echo $tipo; ?>" class="card collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                    <button class="btn btn-link" data-toggle="collapse" data-target="#<?php echo "{$impul_vac}_fechas"; ?>" aria-expanded="true">
-                                        <?php echo $impulsor;  ?>
-                                    </button>
-                                    
-                                    <div id="<?php echo "{$impul_vac}_fechas"; ?>" class="collapse multi-collapse container" data-toggle="collapse">
-                                        <div class="row">
+                                        <div id="<?php echo "{$impul_vac}_fechas"; ?>" class="collapse multi-collapse m-3" data-parent='<?php echo "#contenidos_{$tipo}"; ?>' data-toggle="collapse">
                                             <?php 
-                                            foreach ($value as $key2 => $value2) {
-                                                if($key2 !== "tipo" && $key2 !== "impulsores") {
-                                                    $fecha = $value2['fecha']; ?>
-                                                    <button class='card btn btn-negro col text-center border border-light' data-toggle='collapse' data-target='#<?php echo "{$impul_vac}_{$fecha}" ?>' aria-expanded='true'>Fecha: <?php echo $fecha; ?></button>
+                                            $primer_val = $value[0];
+                                            foreach ($primer_val as $key2 => $value2) {
+                                                $fecha = $primer_val['fecha'];
+                                                //echo "<pre>";print_r($key2);echo "</pre>";
+                                                if($key2 != "fecha") {  
+                                                    $index_simp = str_replace(' ', '', $key2);
+                                                    $index = ucfirst($key2); ?>
+                                                    <div class="card p-3">
+                                                        <div class="row ">
+                                                            <span class="col-sm-3 p-2 m-0 my-auto"><?php echo $index; ?></span>
+                                                            <div class="col-sm text-center p-2 mt-auto">
+                                                                <span>Puntaje inicial</span>
+                                                                <div class="bg-amarillo p-2"><span><?php echo $value2; ?></span></div>
+                                                            </div>
+                                                            <div class="col-sm text-center p-2 mt-auto">
+                                                                <span>Fecha evaluación inicial</span>
+                                                                <div class="bg-amarillo p-2"><span><?php echo $fecha; ?></span></div>
+                                                            </div>
+                                                            <?php 
+                                                            unset($value[0]);
+                                                            unset($value["tipo"]);
+                                                            unset($value["impulsores"]);
+                                                            $total_cont = count($value);
+                                                            $arreglo_seguimiento = $value[$total_cont];
+                                                            foreach ($arreglo_seguimiento as $key3 => $value3) {
+                                                                if ($key3 === $key2) { ?>
+                                                                    <div class="col-sm text-center p-2 mt-auto">
+                                                                        <span class="h-25">Puntaje seguimiento</span>
+                                                                        <div class="bg-azul-pastel p-2"><span><?php echo $value3; ?></span></div>
+                                                                    </div>
+                                                                    <div class="col-sm text-center p-2 mt-auto">
+                                                                        <span>Fecha evaluación seguimiento</span>
+                                                                        <div class="bg-azul-pastel p-2"><span><?php echo $arreglo_seguimiento["fecha"]; ?></span></div>
+                                                                    </div>
+                                                                <?php 
+                                                                }
+                                                            } ?>
+                                                        </div>
+                                                    </div>
                                                 <?php 
                                                 }
                                             } ?>
                                         </div>
-                                        <div id="contenidos">
-                                            <?php 
-                                            foreach ($value as $key2 => $value2) {
-                                                if($key2 !== "tipo" && $key2 !== "impulsores") {
-                                                    $fecha = $value2['fecha']; ?>
-                                                    <div id="<?php echo "{$impul_vac}_{$fecha}" ?>" class="collapse m-3 multi-collapse" data-toggle="collapse" data-parent="#contenidos">
-                                                            <?php 
-                                                            foreach ($value2 as $llave => $valor) {
-                                                                if($llave != "fecha") {  
-                                                                    $index_simp = str_replace(' ', '', $llave);
-                                                                    $index = ucfirst($llave); ?>
-
-                                                                    <button class='card btn btn-link  btn-block text-center' data-toggle='collapse' data-target='#puntaje_<?php echo "{$impul_vac}_{$index_simp}" ?>' aria-expanded='true'>
-                                                                        <?php echo $index ?>
-                                                                    </button>
-
-                                                                    <div id='puntaje_<?php echo "{$impul_vac}_{$index_simp}" ?>' class="collapse w-100" data-toggle="collapse">
-                                                                        <div class="card btn btn-block text-left bg-negro text-light">Puntaje: <?php echo $valor ?></div>
-                                                                    </div>
-                                                            <?php }
-                                                            } ?>
-                                                    </div>
-                                                <?php
-                                                }
-                                            } ?>
-                                        </div>
                                     </div>
-                                </div>
-                            <?php
+                                <?php
+                                }
                             }
                         }
-                    }
-                }
+                    }  ?>
+                </div>
+                <?php 
             } ?>
         </div>
         <!-- tabla -->
