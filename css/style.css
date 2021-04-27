@@ -3694,6 +3694,10 @@ input[type="button"].btn-block {
     left: auto;
 }
 
+.reproductor {
+    max-width: 100%;
+}
+
 @media (min-width: 576px) {
     .dropdown-menu-sm-left {
         right: auto;
@@ -3703,6 +3707,10 @@ input[type="button"].btn-block {
     .dropdown-menu-sm-right {
         right: 0;
         left: auto;
+    }
+    
+    .reproductor {
+        max-width: 100%;
     }
 }
 
@@ -3716,6 +3724,9 @@ input[type="button"].btn-block {
         right: 0;
         left: auto;
     }
+    .reproductor {
+        max-width: 100%;
+    }
 }
 
 @media (min-width: 992px) {
@@ -3728,6 +3739,14 @@ input[type="button"].btn-block {
         right: 0;
         left: auto;
     }
+    
+    .reproductor {
+        max-width: 85%;
+    }
+    
+    .w-11-rem {
+        width: 10rem !important;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -3739,6 +3758,10 @@ input[type="button"].btn-block {
     .dropdown-menu-xl-right {
         right: 0;
         left: auto;
+    }
+    
+    .reproductor {
+        max-width: 50%;
     }
 }
 
@@ -20613,8 +20636,16 @@ bac #contacto .check {
     font-size: 1rem !important;
 }
 
+.fs-12-px {
+    font-size: 12px !important;
+}
+
 .fs-2 {
     font-size: 0.8rem !important;
+}
+
+.fs-1-2 {
+    font-size: 1.2rem !important;
 }
 
 .cursor-pointer {
@@ -20678,8 +20709,8 @@ bac #contacto .check {
     color: gray !important;
 }
 
-.w-10-rem {
-    width: 10rem !important;
+.w-11-rem {
+    width: 11rem !important;
 }
 
 .btn_play {
