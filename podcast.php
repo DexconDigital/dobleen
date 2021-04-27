@@ -154,7 +154,7 @@
                 </div>
             </div>
             <div class="p-5">
-                <div class="container">
+                <div class="container reproductor">
                     <div id="audio"></div>
                     <div id="seccion_audio"></div>
                 </div>

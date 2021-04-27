@@ -124,10 +124,10 @@
                     <img src="images/LOGO-DOBLEEN-blanco.png" class="img-13" alt="">
                 </div>
             </div>
-            <div class="text-center pb-5">
-                <div class="introduccion fm-regular">
-                    <h1 class="fm-regular text-white serie">SERIE PODCAST - NOMBRE SERIE</h1>
-                    <label class="autor"></label>
+            <div class="text-center pb-5 d-flex justify-content-center">
+                <div class="introduccion fm-regular w-50">
+                    <h1 class="fm-regular text-white serie font-weight-normal"></h1>
+                    <label class="autor p-4"></label>
                     <p class="mt-2 intro"></p>
                 </div>
             </div>
@@ -139,7 +139,7 @@
     <section class="mt-2">
         <div class="container">
              <!-- Capitulos -->
-            <div class="row episodios">
+            <div class="row episodios_serie">
 
             </div>
         </div>
