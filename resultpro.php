@@ -210,7 +210,7 @@
                     <h3 class="text-light mb-4">Seguimiento</h3>
                     <div class="bg-aqua pt-1 mb-4 container">
                         <h6 class="font-weight-bold fm-regular">SEGUIMIENTO RESULTADOS</h6>
-                        <a class="btn btn-negro btn-block font-weight-bold rounded-0 mb-3">Hacer seguimiento</a>
+                        <a class="btn btn-negro btn-block font-weight-bold rounded-0 mb-3" href="seguimiento.php">Hacer seguimiento</a>
                     </div>
                     <!-- Podcast -->
                     <h3 class="text-light mb-4">Serie Podcast</h3>
@@ -489,8 +489,4 @@
     var chart=Highcharts.chart('barras3',{chart:{type:'column'},legend:{itemStyle:{color:'white'},itemHoverStyle:{color:'white'},},title:{text:''},subtitle:{text:''},yAxis:{title:{text:'Resultado'}},tooltip:{style:{color:'#fff'},valueDecimals:0,backgroundColor:'#454545',borderColor:'#454545',borderRadius:10,borderWidth:3,},xAxis:{categories:['Palanca: Experiencias','Servicios','Canales','Marca','Compromiso con el Cliente'],labels:{style:{color:'white'}}},plotOptions:{line:{dataLabels:{enabled:true},enableMouseTracking:false}},series:[{name:'Resultado',color:'#34F0FF',data:[<?php echo $TOTALEXPE.','.$SERVI.','.$CANAL.','.$MARCA.','.$CLIENTE;?>],zones:[{color:'#34F0FF'}],},{name:'Estandar',type:'line',color:'#86F200',data:[<?php echo $VarExpe.','.$EstSERVI.','.$EstCANAL.','.$EstMARCA.','.$EstCLIENTE;?>],zones:[{color:'#86F200'}],}]});
 
 </script>
-<script>
-
-</script>
-
 </html>
