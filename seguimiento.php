@@ -74,7 +74,8 @@
     <?PHP $TOTALUSER = number_format($TOTALUSERC * 1, 2); ?>
     <?php $TOTALESTANDAR = $VarExpe + $VarOferta + $VarConfi ?>
     <?php $TOTALDESVIACION = $DesviaConfi + $DesviaExpe + $DesviaOferta; ?>
-    <?php $arreglos = array ($field1, $field2, $field3, $field4, $field5, $field6, $field7, $field8, $field9, $field10); ?>
+    <?php $arreglos = array ($field1, $field2, $field3, $field4, $field5, $field6, $field7, $field8, $field9, $field10);
+    //echo "<pre>";print_r($arreglos);echo "</pre>";?>
 
 </head>
 
@@ -240,19 +241,21 @@
                                                             unset($value["tipo"]);
                                                             unset($value["impulsores"]);
                                                             $total_cont = count($value);
-                                                            $arreglo_seguimiento = $value[$total_cont];
-                                                            foreach ($arreglo_seguimiento as $key3 => $value3) {
-                                                                if ($key3 === $key2) { ?>
-                                                                    <div class="col-sm text-center p-2 mt-auto">
-                                                                        <span class="h-25">Puntaje seguimiento</span>
-                                                                        <div class="bg-azul-pastel p-2"><span><?php echo $value3; ?></span></div>
-                                                                    </div>
-                                                                    <div class="col-sm text-center p-2 mt-auto">
-                                                                        <span>Fecha evaluación seguimiento</span>
-                                                                        <div class="bg-azul-pastel p-2"><span><?php echo $arreglo_seguimiento["fecha"]; ?></span></div>
-                                                                    </div>
-                                                                <?php 
-                                                                }
+                                                            $arreglo_seguimiento = (isset($value[$total_cont])) ? $value[$total_cont] : "";
+                                                            if ($arreglo_seguimiento != "") {
+                                                               foreach ($arreglo_seguimiento as $key3 => $value3) {
+                                                                    if ($key3 === $key2) { ?>
+                                                                        <div class="col-sm text-center p-2 mt-auto">
+                                                                            <span class="h-25">Puntaje seguimiento</span>
+                                                                            <div class="bg-azul-pastel p-2"><span><?php echo $value3; ?></span></div>
+                                                                        </div>
+                                                                        <div class="col-sm text-center p-2 mt-auto">
+                                                                            <span>Fecha evaluación seguimiento</span>
+                                                                            <div class="bg-azul-pastel p-2"><span><?php echo $arreglo_seguimiento["fecha"]; ?></span></div>
+                                                                        </div>
+                                                                    <?php 
+                                                                    }
+                                                                } 
                                                             } ?>
                                                         </div>
                                                     </div>
@@ -272,7 +275,7 @@
         </div>
         <!-- tabla -->
         <div class="mt-5 d-flex justify-content-center">
-            <a class="btn btn-negro font-weight-bold rounded-0 w-25  mb-3 disabled" href="#!">Descargar</a>
+            <button id="reporte_anual" class="btn btn-negro font-weight-bold rounded-0 w-25  mb-3">Descargar</button>
         </div>
     </section>
     <!-- contenido Dobleen fin -->

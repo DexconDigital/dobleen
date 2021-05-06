@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultados | Dobleen</title>
     <?php include 'variables/seguridad.php' ?>
-    <?php include 'layout/archivosheader.php' ?>
+    <?php 
+    
+    include 'layout/archivosheader.php' ?>
     <!-- Datos de Modelo de Gestion -->
     <?php $MDG = $RT;
     $VARM = $VarMDG;
@@ -22,7 +24,7 @@
     <!-- Datos de Procesos -->
     <?php $ESTPROC = $EstCPROC;
     $PROC = $RTPROC;
-    $VPROC = $VarPROC ?>
+    $VPROC = $VarPROC; ?>
 
     <!-- Desempeño del producto -->
     <?php $DESPROC = $RTDESPROC;
@@ -37,43 +39,68 @@
     ?>
 
     <!-- Servicio -->
-    <?php $SERVI = $RTSERVI ?>
+    <?php $SERVI = $RTSERVI; ?>
 
     <!-- Marca -->
-    <?php $MARCA = $RTMARCA ?>
+    <?php $MARCA = $RTMARCA; ?>
 
     <!-- Canal -->
-    <?php $CANAL = $RTCANAL ?>
+    <?php $CANAL = $RTCANAL; ?>
 
     <!-- Cliente -->
-    <?php $CLIENTE = $RTCLIENTE ?>
+    <?php $CLIENTE = $RTCLIENTE; ?>
 
     <!-- OFERTA -->
     <?php $TOTALOFERTAC = $DESPROC + $SISPROC; ?>
     <?php $TOTALOFERTA =  number_format($TOTALOFERTAC * 1, 2); ?>
-    <?php $VarOferta = $EstandarOferta ?>
-    <?php $VariaOferta =  $VarOferta - $TOTALOFERTA ?>
-    <?php $DesviaOferta =  $TOTALOFERTA - $VarOferta ?>
+    <?php $VarOferta = $EstandarOferta; ?>
+    <?php $VariaOferta =  $VarOferta - $TOTALOFERTA; ?>
+    <?php $DesviaOferta =  $TOTALOFERTA - $VarOferta; ?>
 
     <!-- configuracion -->
-    <?php $TOTALCONFIC = $MDG + $RED + $EST + $PROC  ?>
+    <?php $TOTALCONFIC = $MDG + $RED + $EST + $PROC; ?>
     <?PHP $TOTALCONFI = number_format($TOTALCONFIC * 1, 2); ?>
-    <?php $VarConfi =  $EstandarConfi ?>
-    <?php $VariaConfi = $VarConfi - $TOTALCONFI ?>
-    <?php $DesviaConfi = $TOTALCONFI - $VarConfi  ?>
+    <?php $VarConfi =  $EstandarConfi; ?>
+    <?php $VariaConfi = $VarConfi - $TOTALCONFI; ?>
+    <?php $DesviaConfi = $TOTALCONFI - $VarConfi; ?>
 
     <!-- Experiencia -->
-    <?php $TOTALEXPEC = $MARCA + $CANAL + $CLIENTE + $SERVI ?>
+    <?php $TOTALEXPEC = $MARCA + $CANAL + $CLIENTE + $SERVI; ?>
     <?PHP $TOTALEXPE = number_format($TOTALEXPEC * 1, 2); ?>
-    <?php $VarExpe = $EstandarExpe ?>
-    <?php $VariaExpe =  $VarExpe - $TOTALEXPE  ?>
-    <?php $DesviaExpe = $TOTALEXPE - $VarExpe  ?>
+    <?php $VarExpe = $EstandarExpe; ?>
+    <?php $VariaExpe =  $VarExpe - $TOTALEXPE; ?>
+    <?php $DesviaExpe = $TOTALEXPE - $VarExpe; ?>
     
     <!-- Sumas -->
-    <?php $TOTALUSERC = $TOTALOFERTA + $TOTALCONFI + $TOTALEXPE ?>
+    <?php $TOTALUSERC = $TOTALOFERTA + $TOTALCONFI + $TOTALEXPE; ?>
     <?PHP $TOTALUSER = number_format($TOTALUSERC * 1, 2); ?>
-    <?php $TOTALESTANDAR = $VarExpe + $VarOferta + $VarConfi ?>
-    <?php $TOTALDESVIACION = $DesviaConfi + $DesviaExpe + $DesviaOferta ?>
+    <?php $TOTALESTANDAR = $VarExpe + $VarOferta + $VarConfi; ?>
+    <?php $TOTALDESVIACION = $DesviaConfi + $DesviaExpe + $DesviaOferta;?>
+    
+    <?php
+    $total_anios = array ($anios1, $anios2, $anios3, $anios4, $anios5, $anios6, $anios7, $anios8, $anios9, $anios10); 
+    $aniossumArray = [];
+    $total_anio = 0;
+    foreach ($total_anios as $key => $value) {
+        foreach ($value as $llave =>$valor) {
+            foreach ($valor as $llav =>$val) {
+                foreach ($val as $llav_fech =>$val_fech) {
+                    if ($llav_fech == "fecha"){
+                        foreach ( $val_fech as $v_f ){
+                            foreach ($v_f as $llave_final => $valor_final){
+                                if(!array_key_exists($llave_final, $aniossumArray)) {
+                                    $aniossumArray[$llave_final] = 0;
+                                }
+                                $aniossumArray[$llave_final] += $valor_final;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } 
+    //echo "<pre>";print_r($total_anios);echo "</pre>";
+?>
 
 </head>
 
@@ -196,7 +223,7 @@
                     <h3 class="text-light">Descargas</h3>
                     <div class="bg-verde-pastel pt-1 mb-3 container">
                         <h6 class="font-weight-bold fm-regular">REPORTE DE INNOVACIÓN</h6>
-                        <a class="btn btn-negro btn-block font-weight-bold rounded-0 mb-3 disabled">Descargar</a>
+                        <a id="reporte_general" class="btn btn-negro btn-block font-weight-bold rounded-0 mb-3">Descargar</a>
                     </div>
                     <div class="bg-azul-pastel pt-1 mb-3 container">
                         <h6 class="font-weight-bold fm-regular">MANUAL DE USO DOBLEEN</h6>
@@ -461,15 +488,21 @@
             </div>
         </div>
     </section>
+    
+    <section id="graficas_reporte" class="d-none">
+        <div id="consolidado" class="chartblanco"></div>
+        <div id="palanca" class="chartblanco"></div>
+        <div id="impulsor" class="chartblanco"></div>
+        <div id="oferta_grap" class="chartblanco"></div>
+        <div id="experiencia_grap" class="chartblanco"></div>
+        <div id="rating" class="chartblanco"></div>
+    </section>
     <!-- Reserva cita fin -->
-    
-    <!-- Septima seccion -->
-    <?php include 'layout/footer.php' ?>
-    
-    <!-- Septima seccion -->
-    <?php include 'layout/archivosfooter.php' ?>
 </body>
+    
+    
 <script src="js/highcharts.js"></script>
+<script src="js/highcharts-more.js"></script>
 <script src="js/exporting.js"></script>
 <script src="js/export-data.js"></script>
 <script src="js/accessibility.js"></script>
@@ -480,13 +513,164 @@
     Highcharts.chart('container',{chart:{type:'line',},legend:{itemStyle:{color:'white'},itemHoverStyle:{color:'white'},},title:{text:''},subtitle:{text:''},xAxis:{categories:['Configuración','Oferta','Experiencias'],labels:{style:{color:'white'}}},plotOptions:{line:{dataLabels:{enabled:true},enableMouseTracking:false}},series:[{name:'Estandar',color:'#34F0FF',data:[<?php echo $VarConfi?>,<?php echo $VarOferta?>,<?php echo $VarExpe?>],zones:[{color:'#34F0FF'}]},{name:'Resultado',color:'#86F200',data:[<?php echo $TOTALCONFI?>,<?php echo $TOTALOFERTA?>,<?php echo $TOTALEXPE?>],zones:[{color:'#86F200'}],}]});
 
     // Grafica Barras #1
-    var chart=Highcharts.chart('barras1',{chart:{type:'column'},legend:{itemStyle:{color:'white'},itemHoverStyle:{color:'white'},},title:{text:''},subtitle:{text:''},yAxis:{title:{text:'Resultado'}},tooltip:{style:{color:'#fff'},valueDecimals:0,backgroundColor:'#454545',borderColor:'#454545',borderRadius:10,borderWidth:3,},xAxis:{categories:['Palanca: Configuración','Modelo de Ganancias','Red','Estructura','Procesos'],labels:{style:{color:'white'}}},plotOptions:{line:{dataLabels:{enabled:true},enableMouseTracking:false}},series:[{name:'Resultado',color:'#34F0FF',data:[<?php echo $TOTALCONFI.','.$MDG.','.$RED.','.$EST.','.$PROC;?>],zones:[{color:'#34F0FF'}],},{name:'Estandar',type:'line',color:'#86F200',data:[<?php echo $VarConfi.','.$EstMDG.','.$EstRED.','.$EstEST.','.$EstPROC;?>],zones:[{color:'#86F200'}],}]});
+    var chart1=Highcharts.chart('barras1',{chart:{type:'column'},legend:{itemStyle:{color:'white'},itemHoverStyle:{color:'white'},},title:{text:''},subtitle:{text:''},yAxis:{title:{text:'Resultado'}},tooltip:{style:{color:'#fff'},valueDecimals:0,backgroundColor:'#454545',borderColor:'#454545',borderRadius:10,borderWidth:3,},xAxis:{categories:['Palanca: Configuración','Modelo de Ganancias','Red','Estructura','Procesos'],labels:{style:{color:'white'}}},plotOptions:{line:{dataLabels:{enabled:true},enableMouseTracking:false}},series:[{name:'Resultado',color:'#34F0FF',data:[<?php echo $TOTALCONFI.','.$MDG.','.$RED.','.$EST.','.$PROC;?>],zones:[{color:'#34F0FF'}],},{name:'Estandar',type:'line',color:'#86F200',data:[<?php echo $VarConfi.','.$EstMDG.','.$EstRED.','.$EstEST.','.$EstPROC;?>],zones:[{color:'#86F200'}],}]});
     
     // Grafica Barras #2
-    var chart=Highcharts.chart('barras2',{chart:{type:'column'},legend:{itemStyle:{color:'white'},itemHoverStyle:{color:'white'},},title:{text:''},subtitle:{text:''},yAxis:{title:{text:'Resultado'}},tooltip:{style:{color:'#fff'},valueDecimals:0,backgroundColor:'#454545',borderColor:'#454545',borderRadius:10,borderWidth:3,},xAxis:{categories:['Palanca: Oferta','Desempeño de Procesos','Sistema de Productos'],labels:{style:{color:'white'}}},plotOptions:{line:{dataLabels:{enabled:true},enableMouseTracking:false}},series:[{name:'Resultado',color:'#34F0FF',data:[<?php echo $TOTALOFERTA.','.$DESPROC.','.$SISPROC;?>],zones:[{color:'#34F0FF'}],},{name:'Estandar',type:'line',color:'#86F200',data:[<?php echo $VarOferta.','.$EstDESPROC.','.$EstSISPROC;?>],zones:[{color:'#86F200'}],}]});
+    var chart2=Highcharts.chart('barras2',{chart:{type:'column'},legend:{itemStyle:{color:'white'},itemHoverStyle:{color:'white'},},title:{text:''},subtitle:{text:''},yAxis:{title:{text:'Resultado'}},tooltip:{style:{color:'#fff'},valueDecimals:0,backgroundColor:'#454545',borderColor:'#454545',borderRadius:10,borderWidth:3,},xAxis:{categories:['Palanca: Oferta','Desempeño de Procesos','Sistema de Productos'],labels:{style:{color:'white'}}},plotOptions:{line:{dataLabels:{enabled:true},enableMouseTracking:false}},series:[{name:'Resultado',color:'#34F0FF',data:[<?php echo $TOTALOFERTA.','.$DESPROC.','.$SISPROC;?>],zones:[{color:'#34F0FF'}],},{name:'Estandar',type:'line',color:'#86F200',data:[<?php echo $VarOferta.','.$EstDESPROC.','.$EstSISPROC;?>],zones:[{color:'#86F200'}],}]});
     
     // Grafica Barras #3
-    var chart=Highcharts.chart('barras3',{chart:{type:'column'},legend:{itemStyle:{color:'white'},itemHoverStyle:{color:'white'},},title:{text:''},subtitle:{text:''},yAxis:{title:{text:'Resultado'}},tooltip:{style:{color:'#fff'},valueDecimals:0,backgroundColor:'#454545',borderColor:'#454545',borderRadius:10,borderWidth:3,},xAxis:{categories:['Palanca: Experiencias','Servicios','Canales','Marca','Compromiso con el Cliente'],labels:{style:{color:'white'}}},plotOptions:{line:{dataLabels:{enabled:true},enableMouseTracking:false}},series:[{name:'Resultado',color:'#34F0FF',data:[<?php echo $TOTALEXPE.','.$SERVI.','.$CANAL.','.$MARCA.','.$CLIENTE;?>],zones:[{color:'#34F0FF'}],},{name:'Estandar',type:'line',color:'#86F200',data:[<?php echo $VarExpe.','.$EstSERVI.','.$EstCANAL.','.$EstMARCA.','.$EstCLIENTE;?>],zones:[{color:'#86F200'}],}]});
+    var chart3=Highcharts.chart('barras3',{chart:{type:'column'},legend:{itemStyle:{color:'white'},itemHoverStyle:{color:'white'},},title:{text:''},subtitle:{text:''},yAxis:{title:{text:'Resultado'}},tooltip:{style:{color:'#fff'},valueDecimals:0,backgroundColor:'#454545',borderColor:'#454545',borderRadius:10,borderWidth:3,},xAxis:{categories:['Palanca: Experiencias','Servicios','Canales','Marca','Compromiso con el Cliente'],labels:{style:{color:'white'}}},plotOptions:{line:{dataLabels:{enabled:true},enableMouseTracking:false}},series:[{name:'Resultado',color:'#34F0FF',data:[<?php echo $TOTALEXPE.','.$SERVI.','.$CANAL.','.$MARCA.','.$CLIENTE;?>],zones:[{color:'#34F0FF'}],},{name:'Estandar',type:'line',color:'#86F200',data:[<?php echo $VarExpe.','.$EstSERVI.','.$EstCANAL.','.$EstMARCA.','.$EstCLIENTE;?>],zones:[{color:'#86F200'}],}]});
+    
+    //consolidado 
+    var consolidado = Highcharts.chart('consolidado', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Total perfil innovador'
+        },
+        xAxis: {
+            visible: false
+        },
+        colors: ['#34F0FF', '#85f100', '#fdd300'],  
+        plotOptions: {
+            column: {
+                colorByPoint: true,
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        series: [{
+            showInLegend: false,
+            data: [<?php echo "{$TOTALUSER},{$TOTALESTANDAR},{$TOTALDESVIACION}"; ?>]
+        }]
+    });
+    
+    //palanca
+    var palanca = Highcharts.chart('palanca', {
+        chart: { polar: true },
+        title: { text: 'Resultados por Palanca de Innovación' },
+        xAxis: { categories: ['Configuración', 'Oferta', 'Experiencia'], 
+               labels: {
+                style: {
+                    fontSize:'15px'
+                }
+            }},
+        series: [{
+            name: 'Resultado',
+            type: 'line',
+            color : '#34F0FF',
+            data: [<?php echo "{$TOTALCONFI},{$TOTALOFERTA},{$TOTALEXPE}"; ?>]
+        },{
+            name: 'Estandar',
+            type: 'line',
+            color : '#85f100',
+            data: [<?php echo "{$VarConfi},{$VarOferta},{$VarExpe}"; ?>]
+        }],
+    });
+    
+    //impulsor
+    var impulsor = Highcharts.chart('impulsor', {
+        chart: { polar: true },
+        title: { text: 'Resultados Configuración' },
+        xAxis: { categories: ['Modelo Ganancias', 'Red', 'Estructura', 'Procesos'], 
+               labels: {
+                style: {
+                    fontSize:'15px'
+                }
+            }},
+        series: [{
+            name: 'Resultado',
+            type: 'line',
+            color : '#34F0FF',
+            data: [<?php echo "{$MDG},{$RED},{$EST},{$PROC}"; ?>]
+        },{
+            name: 'Estandar',
+            type: 'line',
+            color : '#85f100',
+            data: [<?php echo "{$EstMDG},{$EstRED},{$EstEST},{$EstPROC}"; ?>]
+        }],
+    });
+    
+    //oferta
+    var oferta = Highcharts.chart('oferta_grap', {
+        chart: { type: 'bar' },
+        title: { text: 'Resultados Oferta' },
+        xAxis: { categories: ['Sistema de Productos', 'Desempeño de Procesos'], 
+               labels: {
+                style: {
+                    fontSize:'15px'
+                }
+            }},
+        series: [{
+            name: 'Estandar',
+            color : '#34F0FF',
+            data: [<?php echo "{$EstDESPROC},{$EstSISPROC}"; ?>]
+        },{
+            name: 'Resultado',
+            color : '#85f100',
+            data: [<?php echo "{$DESPROC},{$SISPROC}"; ?>]
+        }],
+    });
+    
+    //experiencia
+    var experiencia = Highcharts.chart('experiencia_grap', {
+        chart: { polar: true },
+        title: { text: 'Resultados Experiencia' },
+        xAxis: { categories: ['Servicios', 'Canales', 'Marca', 'Cliente'], 
+               labels: {
+                style: {
+                    fontSize:'15px'
+                }
+            }},
+        series: [{
+            name: 'Resultado',
+            type: 'line',
+            color : '#34F0FF',
+            data: [<?php echo "{$SERVI},{$CANAL},{$MARCA},{$CLIENTE}"; ?>]
+        },{
+            name: 'Estandar',
+            type: 'line',
+            color : '#85f100',
+            data: [<?php echo "{$EstSERVI},{$EstCANAL},{$EstMARCA},{$EstCLIENTE}"; ?>]
+        }],
+    });
+    
+    //rating 
+    var rating = Highcharts.chart('rating', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Evolución del Rating Innovador'
+        },
+        xAxis: { 
+            categories: [ <?php foreach ($aniossumArray as $key => $value) { echo "{$key},"; } ?> ], 
+            labels: {
+                style: {
+                    fontSize:'15px'
+                }
+            }
+        },
+        colors: ['#34F0FF'],  
+        plotOptions: {
+            column: {
+                colorByPoint: true,
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        series: [{
+            showInLegend: false,
+            data: [<?php foreach ($aniossumArray as $value) { echo "{$value},"; } ?>]
+        }]
+    });
 
 </script>
+<!-- Septima seccion -->
+<?php include 'layout/footer.php' ?>
+<!-- Septima seccion -->
+<?php include 'layout/archivosfooter.php' ?>
 </html>
