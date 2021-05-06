@@ -529,151 +529,22 @@
     var chart3=Highcharts.chart('barras3',{chart:{type:'column'},legend:{itemStyle:{color:'white'},itemHoverStyle:{color:'white'},},title:{text:''},subtitle:{text:''},yAxis:{title:{text:'Resultado'}},tooltip:{style:{color:'#fff'},valueDecimals:0,backgroundColor:'#454545',borderColor:'#454545',borderRadius:10,borderWidth:3,},xAxis:{categories:['Palanca: Experiencias','Servicios','Canales','Marca','Compromiso con el Cliente'],labels:{style:{color:'white'}}},plotOptions:{line:{dataLabels:{enabled:true},enableMouseTracking:false}},series:[{name:'Resultado',color:'#34F0FF',data:[<?php echo $TOTALEXPE.','.$SERVI.','.$CANAL.','.$MARCA.','.$CLIENTE;?>],zones:[{color:'#34F0FF'}],},{name:'Estandar',type:'line',color:'#86F200',data:[<?php echo $VarExpe.','.$EstSERVI.','.$EstCANAL.','.$EstMARCA.','.$EstCLIENTE;?>],zones:[{color:'#86F200'}],}]});
     
     //consolidado 
-    var consolidado = Highcharts.chart('consolidado', {
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'Total perfil innovador'
-        },
-        xAxis: {
-            visible: false
-        },
-        colors: ['#34F0FF', '#85f100', '#fdd300'],  
-        plotOptions: {
-            column: {
-                colorByPoint: true,
-                dataLabels: {
-                    enabled: true
-                }
-            }
-        },
-        series: [{
-            showInLegend: false,
-            data: [<?php echo "{$TOTALUSER},{$TOTALESTANDAR},{$TOTALDESVIACION}"; ?>]
-        }]
-    });
+    var consolidado=Highcharts.chart('consolidado',{chart:{type:'column'},title:{text:'Total perfil innovador'},xAxis:{visible:false},colors:['#34F0FF','#85f100','#fdd300'],plotOptions:{column:{colorByPoint:true,dataLabels:{enabled:true}}},series:[{showInLegend:false,data:[<?php echo"{$TOTALUSER},{$TOTALESTANDAR},{$TOTALDESVIACION}";?>]}]});
     
     //palanca
-    var palanca = Highcharts.chart('palanca', {
-        chart: { polar: true },
-        title: { text: 'Resultados por Palanca de Innovación' },
-        xAxis: { categories: ['Configuración', 'Oferta', 'Experiencia'], 
-               labels: {
-                style: {
-                    fontSize:'15px'
-                }
-            }},
-        series: [{
-            name: 'Resultado',
-            type: 'line',
-            color : '#34F0FF',
-            data: [<?php echo "{$TOTALCONFI},{$TOTALOFERTA},{$TOTALEXPE}"; ?>]
-        },{
-            name: 'Estandar',
-            type: 'line',
-            color : '#85f100',
-            data: [<?php echo "{$VarConfi},{$VarOferta},{$VarExpe}"; ?>]
-        }],
-    });
+    var palanca=Highcharts.chart('palanca',{chart:{polar:true},title:{text:'Resultados por Palanca de Innovación'},xAxis:{categories:['Configuración','Oferta','Experiencia'],labels:{style:{fontSize:'15px'}}},series:[{name:'Resultado',type:'line',color:'#34F0FF',data:[<?php echo"{$TOTALCONFI},{$TOTALOFERTA},{$TOTALEXPE}";?>]},{name:'Estandar',type:'line',color:'#85f100',data:[<?php echo"{$VarConfi},{$VarOferta},{$VarExpe}";?>]}],});
     
     //impulsor
-    var impulsor = Highcharts.chart('impulsor', {
-        chart: { polar: true },
-        title: { text: 'Resultados Configuración' },
-        xAxis: { categories: ['Modelo Ganancias', 'Red', 'Estructura', 'Procesos'], 
-               labels: {
-                style: {
-                    fontSize:'15px'
-                }
-            }},
-        series: [{
-            name: 'Resultado',
-            type: 'line',
-            color : '#34F0FF',
-            data: [<?php echo "{$MDG},{$RED},{$EST},{$PROC}"; ?>]
-        },{
-            name: 'Estandar',
-            type: 'line',
-            color : '#85f100',
-            data: [<?php echo "{$EstMDG},{$EstRED},{$EstEST},{$EstPROC}"; ?>]
-        }],
-    });
+    var impulsor=Highcharts.chart('impulsor',{chart:{polar:true},title:{text:'Resultados Configuración'},xAxis:{categories:['Modelo Ganancias','Red','Estructura','Procesos'],labels:{style:{fontSize:'15px'}}},series:[{name:'Resultado',type:'line',color:'#34F0FF',data:[<?php echo"{$MDG},{$RED},{$EST},{$PROC}";?>]},{name:'Estandar',type:'line',color:'#85f100',data:[<?php echo"{$EstMDG},{$EstRED},{$EstEST},{$EstPROC}";?>]}],});
     
     //oferta
-    var oferta = Highcharts.chart('oferta_grap', {
-        chart: { type: 'bar' },
-        title: { text: 'Resultados Oferta' },
-        xAxis: { categories: ['Sistema de Productos', 'Desempeño de Procesos'], 
-               labels: {
-                style: {
-                    fontSize:'15px'
-                }
-            }},
-        series: [{
-            name: 'Estandar',
-            color : '#34F0FF',
-            data: [<?php echo "{$EstDESPROC},{$EstSISPROC}"; ?>]
-        },{
-            name: 'Resultado',
-            color : '#85f100',
-            data: [<?php echo "{$DESPROC},{$SISPROC}"; ?>]
-        }],
-    });
+    var oferta=Highcharts.chart('oferta_grap',{chart:{type:'bar'},title:{text:'Resultados Oferta'},xAxis:{categories:['Sistema de Productos','Desempeño de Procesos'],labels:{style:{fontSize:'15px'}}},series:[{name:'Estandar',color:'#34F0FF',data:[<?php echo"{$EstDESPROC},{$EstSISPROC}";?>]},{name:'Resultado',color:'#85f100',data:[<?php echo"{$DESPROC},{$SISPROC}";?>]}],});
     
     //experiencia
-    var experiencia = Highcharts.chart('experiencia_grap', {
-        chart: { polar: true },
-        title: { text: 'Resultados Experiencia' },
-        xAxis: { categories: ['Servicios', 'Canales', 'Marca', 'Cliente'], 
-               labels: {
-                style: {
-                    fontSize:'15px'
-                }
-            }},
-        series: [{
-            name: 'Resultado',
-            type: 'line',
-            color : '#34F0FF',
-            data: [<?php echo "{$SERVI},{$CANAL},{$MARCA},{$CLIENTE}"; ?>]
-        },{
-            name: 'Estandar',
-            type: 'line',
-            color : '#85f100',
-            data: [<?php echo "{$EstSERVI},{$EstCANAL},{$EstMARCA},{$EstCLIENTE}"; ?>]
-        }],
-    });
+    var experiencia=Highcharts.chart('experiencia_grap',{chart:{polar:true},title:{text:'Resultados Experiencia'},xAxis:{categories:['Servicios','Canales','Marca','Cliente'],labels:{style:{fontSize:'15px'}}},series:[{name:'Resultado',type:'line',color:'#34F0FF',data:[<?php echo"{$SERVI},{$CANAL},{$MARCA},{$CLIENTE}";?>]},{name:'Estandar',type:'line',color:'#85f100',data:[<?php echo"{$EstSERVI},{$EstCANAL},{$EstMARCA},{$EstCLIENTE}";?>]}],});
     
     //rating 
-    var rating = Highcharts.chart('rating', {
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'Evolución del Rating Innovador'
-        },
-        xAxis: { 
-            categories: [ <?php foreach ($generalArray as $key => $value) { echo "{$key},"; } ?> ], 
-            labels: {
-                style: {
-                    fontSize:'15px'
-                }
-            }
-        },
-        colors: ['#34F0FF'],  
-        plotOptions: {
-            column: {
-                colorByPoint: true,
-                dataLabels: {
-                    enabled: true
-                }
-            }
-        },
-        series: [{
-            showInLegend: false,
-            data: [<?php foreach ($generalArray as $value) { echo "{$value},"; } ?>]
-        }]
-    });
+    var rating=Highcharts.chart('rating',{chart:{type:'column'},title:{text:'Evolución del Rating Innovador'},xAxis:{categories:[<?php foreach($generalArray as $key=>$value){echo"{$key},";}?>],labels:{style:{fontSize:'15px'}}},colors:['#34F0FF'],plotOptions:{column:{colorByPoint:true,dataLabels:{enabled:true}}},series:[{showInLegend:false,data:[<?php foreach($generalArray as $value){echo"{$value},";}?>]}]});
 
 </script>
 <!-- Septima seccion -->
