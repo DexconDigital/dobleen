@@ -80,10 +80,13 @@
     <?php
     $total_anios = array ($anios1, $anios2, $anios3, $anios4, $anios5, $anios6, $anios7, $anios8, $anios9, $anios10); 
     $aniossumArray = [];
+    $sumArray = [];
+    $generalArray = [];
     $total_anio = 0;
     foreach ($total_anios as $key => $value) {
         foreach ($value as $llave =>$valor) {
             foreach ($valor as $llav =>$val) {
+                $sumArray[$val['anio']][$val['mes']] = 1;
                 foreach ($val as $llav_fech =>$val_fech) {
                     if ($llav_fech == "fecha"){
                         foreach ( $val_fech as $v_f ){
@@ -98,8 +101,12 @@
                 }
             }
         }
-    } 
-    //echo "<pre>";print_r($total_anios);echo "</pre>";
+    }
+    //divide por la cantidad de meses que haya por año 
+    foreach ($aniossumArray as $aniokey => $aniovalue) {
+        $generalArray[$aniokey] = $aniovalue /(count($sumArray[$aniokey]));
+    }
+    //echo "<pre>";print_r($generalArray);echo "</pre>";
 ?>
 
 </head>
@@ -646,7 +653,7 @@
             text: 'Evolución del Rating Innovador'
         },
         xAxis: { 
-            categories: [ <?php foreach ($aniossumArray as $key => $value) { echo "{$key},"; } ?> ], 
+            categories: [ <?php foreach ($generalArray as $key => $value) { echo "{$key},"; } ?> ], 
             labels: {
                 style: {
                     fontSize:'15px'
@@ -664,7 +671,7 @@
         },
         series: [{
             showInLegend: false,
-            data: [<?php foreach ($aniossumArray as $value) { echo "{$value},"; } ?>]
+            data: [<?php foreach ($generalArray as $value) { echo "{$value},"; } ?>]
         }]
     });
 
