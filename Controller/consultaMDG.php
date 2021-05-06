@@ -39,10 +39,12 @@ riesgo_compartido as 'riesgo compartido' from modelo_de_ganancias {$validacion}"
 
 $result = $con->prepare( $consult );
 $result->execute( array() );
-$field1 = array ( "Modelo de ganancias" => $result->fetchAll( PDO::FETCH_ASSOC ));
+$field1 = array ( "Modelo de ganancias" => $result->fetchAll( PDO::FETCH_ASSOC ) );
 
+$RT = 0;
+$json = "";
 foreach ( $field1 as $key => &$fields ) {
-    foreach ($fields as $field){
+    foreach ( $fields as $field ) {
         $fields['impulsores'] = "Modelo de ganancias";
         $fields['tipo'] = "Configuración";
         $premium = "{$field['premium']}";
@@ -66,6 +68,7 @@ foreach ( $field1 as $key => &$fields ) {
         $desagregar_precios = "{$field['desagregar precios']}";
         $riesgo_compartido = "{$field['riesgo compartido']}";
         $fremmium = "{$field['fremmium']}";
+        $fecha = "{$field['fecha']}";
         $N = 210;
 
         $RC1 = ( $premium / $N );
@@ -135,13 +138,31 @@ foreach ( $field1 as $key => &$fields ) {
         $RC = ( $RS / 5 );
         $RCT = round( $RC, 3 );
         $RT = number_format( $RCT * 100, 2 );
-        $EstMDG = 10.0;
-        $EstCMDG = number_format( $EstMDG * 1, 2 );
-        $VarMDG = ( $EstMDG - $RT );
-        $EstandarConfi = 35;
+
+        $notalanio = '';
+        $notalmes = '';
+        $totanio1 = 0;
+
+        $anio = date( "Y", strtotime( $fecha ) );
+        $mes = date( "m", strtotime( $fecha ) );
+        if ( $notalanio != $anio || $notalmes != $mes ) {
+            $totanio1 = $RT;
+            $notalanio = $anio;
+
+            $notalmes = $mes;
+
+            if ( $notalmes != '' ) {
+                $json .= '{"fecha": [{"'.$notalanio.'" : '.$totanio1.'}], "tabla": "'.$fields['impulsores'].'", "anio": "'.$notalanio.'", "mes": "'.$notalmes.'",  "puntaje": "'.$totanio1.'","tipo" : "'.$fields['tipo'].'" }';
+            }
+        }
     }
 }
-
-$tipos = array ("Configuración", "Oferta", "Experiencias");
-$impulsores = array ("Modelo de ganancias", "Red", "Estructura", "Procesos", "Desempeño del producto", "Sistema de productos", "Servicios", "Canales", "Marca", "Compromiso del cliente");
-
+$EstMDG = 10.0;
+$EstCMDG = number_format( $EstMDG * 1, 2 );
+$VarMDG = ( $EstMDG - $RT );
+$EstandarConfi = 35;
+$json_total = '{"datos" : ['.$json.']}';
+$anios = str_replace( "}{", "},{", $json_total );
+$anios1 = ( json_decode( $anios, true ) );
+$tipos = array ( "Configuración", "Oferta", "Experiencias" );
+$impulsores = array ( "Modelo de ganancias", "Red", "Estructura", "Procesos", "Desempeño del producto", "Sistema de productos", "Servicios", "Canales", "Marca", "Compromiso del cliente" );
