@@ -6,7 +6,6 @@
 <?php include 'Controller/consultaMDG.php' ?>
 <?php include 'Controller/consultaRED.php' ?>
 <?php include 'Controller/consultaEST.php' ?>
-<?php include 'Controller/consultaEST.php' ?>
 <?php include 'Controller/consultaPROC.php' ?>
 <?php include 'Controller/consultaDESPROC.php' ?>
 <?php include 'Controller/consultaSISPROC.php' ?>

@@ -1,7 +1,7 @@
 <?php
 $url_pagina = $_SERVER["REQUEST_URI"];
 ?>
-<footer id="footer">
+<footer id="footer" class="d-flex justify-content-center mt-auto">
     <div class="container pt-4">
         <div class="row">
             <div class="col-md-4 col-sm-12 text-center">

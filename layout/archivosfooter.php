@@ -3,7 +3,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js"></script>
-<script src="js/menu.js"></script>
+<script src="js/menu.js?v=<?php echo uniqid(); ?>"></script>
 <script src="js/all.js"></script>
 <script src="js/simpleParallax.min.js"></script>
 <script src="js/movimientos_img.js"></script>
