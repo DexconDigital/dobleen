@@ -82,7 +82,7 @@ if ( isset( $_POST['llave'] ) == "true" ) {
     $TOTALUSER = number_format( $TOTALUSERC * 1, 2 );
     $TOTALESTANDAR = $VarExpe + $VarOferta + $VarConfi;
     $TOTALDESVIACION = $DesviaConfi + $DesviaExpe + $DesviaOferta;
-
+    
     $empresa = $varsesion->empresa;
     $correo = $varsesion->correo;
     $fecha = date( 'd-m-Y' );
@@ -95,10 +95,13 @@ if ( isset( $_POST['llave'] ) == "true" ) {
     $total_anios = array ( $anios1, $anios2, $anios3, $anios4, $anios5, $anios6, $anios7, $anios8, $anios9, $anios10 );
 
     $aniossumArray = [];
+    $sumArray = [];
+    $generalArray = [];
     $total_innovador = 0;
     foreach ( $total_anios as $key => $value ) {
         foreach ( $value as $llave =>$valor ) {
             foreach ( $valor as $llav =>$val ) {
+                $sumArray[$val['anio']][$val['mes']] = 1;
                 foreach ( $val as $llav_fech =>$val_fech ) {
                     if ( $llav_fech == "fecha" ) {
                         foreach ( $val_fech as $v_f ) {
@@ -115,12 +118,11 @@ if ( isset( $_POST['llave'] ) == "true" ) {
             }
         }
     }
-    $total_innovador = 0;
-    foreach ( $aniossumArray as $value ) {
-        $total_innovador = $value;
+    //divide por la cantidad de meses que haya por año 
+    foreach ($aniossumArray as $aniokey => $aniovalue) {
+        $generalArray[$aniokey] = $aniovalue /(count($sumArray[$aniokey]));
     }
-    $total_inndesv = $total_innovador - $TOTALESTANDAR;
-    krsort( $aniossumArray );
+    krsort( $generalArray );
 
     //Armar pdf
     $header = '<head> 
@@ -172,7 +174,7 @@ if ( isset( $_POST['llave'] ) == "true" ) {
                 <div style='text-align:center;'>
                     <div style='width: 80%; margin: 0 auto;border: 1px solid #0070C0;'>
                         <div style='background-color: #DEEBFF;'>
-                            <h1 style='font-size: 22pt;text-align: center;'>Resultados Evaluación Perfil Innovador</h1> 
+                            <h1 style='font-size: 20pt;text-align: center;'>Resultados Evaluación Perfil Innovador</h1> 
                         </div>
                         <div style='text-align: left;'>
                             <table>
@@ -256,7 +258,7 @@ if ( isset( $_POST['llave'] ) == "true" ) {
                     <img src='../images/logo.png'>
                 </div> 
             </div>
-            <h1 style='font-size: 25pt;text-align: left;margin-bottom:30px;'>Resultados por Impulsor de Innovación</h1> 
+            <h1 style='font-size: 25pt;text-align: left;margin-bottom:30px;'>Resultados por palanca de Innovación</h1> 
             <div style='background-color: #DEEBFF;margin-bottom:20px;'>
                 <div style='font-size: 19pt;text-align: left;padding-left:1%;'>Resultados Consolidados</div> 
             </div>
@@ -444,7 +446,7 @@ if ( isset( $_POST['llave'] ) == "true" ) {
                 <table style='border-collapse: collapse;width:100%;'>
                     <tr>
                         <td style='font-size: 12pt;padding-left: 2%;padding-top:1%;border-bottom: 0.5px solid gray;width:50%;'><b>Puntaje obtenido total:</b></td>
-                        <td style='font-size: 12pt;padding-left: 2%;padding-top:1%;border-bottom: 0.5px solid gray;'>{$total_innovador}%</td>
+                        <td style='font-size: 12pt;padding-left: 2%;padding-top:1%;border-bottom: 0.5px solid gray;'>{$TOTALUSER}%</td>
                     </tr>
                     <tr style='border-bottom: 1pt solid black;'>
                         <td style='font-size: 12pt;padding-left: 2%;padding-top:1%;border-bottom: 0.5px solid gray;'><b>Estándar:</b></td>
@@ -452,14 +454,14 @@ if ( isset( $_POST['llave'] ) == "true" ) {
                     </tr>
                     <tr style='border-bottom: 1pt solid black;'>
                         <td style='font-size: 12pt;padding-left: 2%;padding-top:1%;border-bottom: 0.5px solid gray;'><b>Desviación:</b></td>
-                        <td style='font-size: 12pt;padding-left: 2%;padding-top:1%;border-bottom: 0.5px solid gray;'>{$total_inndesv}%</td>
+                        <td style='font-size: 12pt;padding-left: 2%;padding-top:1%;border-bottom: 0.5px solid gray;'>{$TOTALDESVIACION}%</td>
                     </tr>
                 </table>
             </div>";
     
-    $total_int = $total_innovador;
+    $total_int = $TOTALUSER;
     $color_cab = "red";
-    $total = $total_innovador;
+    $total = $TOTALUSER;
     $nivel = "En desarrollo";
     $nivel_texto = "Procesos no definidos, mal controlados, basados en acciones de innovación reactivas, debe intervenir urgentemente";
 
@@ -521,7 +523,7 @@ if ( isset( $_POST['llave'] ) == "true" ) {
                         <td style='font-size: 12pt;padding-left: 2%;border: 0.5px solid #858796;text-align:center;'><b>Año</b></td>
                         <td style='font-size: 12pt;padding-left: 2%;border: 0.5px solid #858796;text-align:center;'><b>Valor</b></td>
                     </tr>";
-    foreach ( $aniossumArray as $key => $value ) {
+    foreach ( $generalArray as $key => $value ) {
         $page8 .= "<tr>
                     <td style='font-size: 12pt;border: 0.5px solid #858796;width:30%;text-align:left;'>{$key}</td>
                     <td style='font-size: 12pt;border: 0.5px solid #858796;width:30%;text-align:left;'>{$value}/{$TOTALESTANDAR}</td>
@@ -537,7 +539,6 @@ if ( isset( $_POST['llave'] ) == "true" ) {
                     <img src='../images/logo.png'>
                 </div> 
             </div>
-            <h1 style='font-size: 25pt;text-align: left;margin-bottom:30px;'>Resultados por Impulsor de Innovación</h1>
             <div style='background-color: #DEEBFF;margin-bottom:20px;'>
                 <div style='font-size: 19pt;text-align: left;padding-left:1%;'>Interpretación de Resultados</div> 
             </div>
