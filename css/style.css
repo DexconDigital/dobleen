@@ -18861,6 +18861,10 @@ input {
     fill: #303030;
 }
 
+.chartblanco .highcharts-background {
+    fill: white;
+}
+
 .highcharts-plot-border,
 .highcharts-plot-background {
     fill: none;
@@ -19060,10 +19064,6 @@ g.highcharts-series,
 
 /* Series options */
 /* Default colors */
-.highcharts-color-0 {
-    fill: #85f100;
-    stroke: #85f100;
-}
 
 .highcharts-area {
     fill-opacity: 0.75;
