@@ -18,6 +18,9 @@ $(document).ready(function () {
                         $("#mensaje").html('<div class="alert alert-danger" role="alert">ERROR: Usuario/Contraseña no es valido.</div>');
                     } else if (data == 0) {
                         $("#mensaje").html('<div class="alert alert-danger" role="alert">Actuamente no posee la versión pro.</div>');
+                    } else if (data == 2) {
+                        $("#mensaje").remove();
+                        window.location.href = 'resultadmin.php';
                     } else {
                         $("#mensaje").remove();
                         window.location.href = 'resultpro.php';
@@ -63,6 +66,57 @@ $(document).ready(function () {
         });
         return false;
     });
+    
+    $('.reporte_general_total').click(function () {
+        $(this).addClass("disabled").text("Generando...");
+        var id = $(this).attr("data-id");
+        var url = "Controller/Graficas.php";
+        var data = {
+            'llave': true,
+            'id' : id
+        }
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: data,
+            success: function (data) {
+                $("#graficas_reporte_total").html(data);
+                var consolidado_img = consolidado.getSVG();
+                var palanca_img = palanca.getSVG();
+                var impulsor_img = impulsor.getSVG();
+                var oferta_grap_img = oferta.getSVG();
+                var experiencia_img = experiencia.getSVG();
+                var rating_img = rating.getSVG();
+                var url1 = "variables/reporte_general.php";
+                var data1 = {
+                    'llave': true,
+                    'id' : id,
+                    'consolidado_img': consolidado_img,
+                    'palanca_img': palanca_img,
+                    'impulsor_img': impulsor_img,
+                    'oferta_grap_img': oferta_grap_img,
+                    'experiencia_img': experiencia_img,
+                    'rating_img': rating_img
+                }
+                $.ajax({
+                    type: "POST",
+                    url: url1,
+                    data: data1,
+                    success: function (data1) {
+                        var resultado = JSON.parse(data1);
+                        if (resultado.codigo == 1) {
+                            $('.reporte_general_total').removeClass("disabled").text("Descargar");
+                            var a = document.createElement("a");
+                            a.href = resultado.pdf;
+                            a.download = "Reporte_General_" + resultado.nombre + ".pdf";
+                            a.click();
+                        }
+                    }
+                });
+            }
+        });
+        return false;
+    });
 
     $('#reporte_anual').click(function () {
         $(this).attr("disabled", "disabled").text("Generando...");
@@ -78,6 +132,32 @@ $(document).ready(function () {
                 var resultado = JSON.parse(data);
                 if (resultado.codigo == 1) {
                     $('#reporte_anual').removeAttr("disabled").text("Descargar");
+                    var a = document.createElement("a");
+                    a.href = resultado.pdf;
+                    a.download = "Reporte_Anual_" + resultado.nombre + ".pdf";
+                    a.click();
+                }
+            }
+        });
+        return false;
+    });
+    
+    $('.reporte_anual_total').click(function () {
+        $(this).addClass("disabled").text("Generando...");
+        var id = $(this).attr("data-id");
+        var url = "variables/reporte_anual.php";
+        var data = {
+            'llave': true,
+            'id' : id
+        }
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: data,
+            success: function (data) {
+                var resultado = JSON.parse(data);
+                if (resultado.codigo == 1) {
+                    $('.reporte_anual_total').removeClass("disabled").text("Descargar");
                     var a = document.createElement("a");
                     a.href = resultado.pdf;
                     a.download = "Reporte_Anual_" + resultado.nombre + ".pdf";
