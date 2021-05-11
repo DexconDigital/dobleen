@@ -1,7 +1,20 @@
 <?php
 
+
 if ( isset( $_POST['llave'] ) == "true" ) {
-    include '../variables/seguridad.php';
+    if (isset($_POST['id'])) {
+        require_once '../Controller/conexion.php';
+        $con = Conect();
+        $condicion = $_POST['id'];
+        $consult = "SELECT * from usuario where id_usuario = {$condicion}";
+        $resulta = $con->prepare( $consult );
+        $resulta->execute( array() );
+        $varsesion = $resulta->fetch( PDO::FETCH_OBJ );
+
+    } else {
+        include '../variables/seguridad.php';
+    }
+
     include '../Controller/consultaMDG.php';
     include '../Controller/consultaRED.php';
     include '../Controller/consultaEST.php';
@@ -83,8 +96,6 @@ if ( isset( $_POST['llave'] ) == "true" ) {
     $TOTALESTANDAR = $VarExpe + $VarOferta + $VarConfi;
     $TOTALDESVIACION = $DesviaConfi + $DesviaExpe + $DesviaOferta;
 
-    $empresa = $varsesion->empresa;
-    $correo = $varsesion->correo;
     $fecha = date( 'd-m-Y' );
 
     $total_anios = array ( $anios1, $anios2, $anios3, $anios4, $anios5, $anios6, $anios7, $anios8, $anios9, $anios10 );
