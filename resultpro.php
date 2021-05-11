@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultados | Dobleen</title>
     <?php include 'variables/seguridad.php' ?>
-    <?php 
-    if($varsesion->admin == "1"){
-        header('Location:index.php');
-    }
-    include 'layout/archivosheader.php' ?>
+    <?php include 'layout/archivosheader.php' ?>
     <!-- Datos de Modelo de Gestion -->
     <?php
     $MDG = $RT;
