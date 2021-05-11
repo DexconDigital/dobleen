@@ -16,5 +16,10 @@ if (empty($resultado)){
 else{
     session_start();
     $_SESSION['variable'] = $resultado;
-    echo ($resultado->ticket);
+    
+    if ($resultado->admin == "1") {
+        echo 2;
+    }else {
+        echo ($resultado->ticket);
+    }
 }
