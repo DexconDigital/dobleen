@@ -7,10 +7,13 @@
     <title>Resultados | Dobleen</title>
     <?php include 'variables/seguridad.php' ?>
     <?php 
-    
+    if($varsesion->admin == "1"){
+        header('Location:index.php');
+    }
     include 'layout/archivosheader.php' ?>
     <!-- Datos de Modelo de Gestion -->
-    <?php $MDG = $RT;
+    <?php
+    $MDG = $RT;
     $VARM = $VarMDG;
     $ESTM = $EstCMDG; ?>
     <!-- Datos de res -->

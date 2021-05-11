@@ -1,3 +1,6 @@
+ALTER TABLE `usuario` ADD `admin` BOOLEAN NOT NULL DEFAULT FALSE AFTER `ticket`;
+
+
 //Agregar campos clave y ticked (compra) a la tabla usuario
 ALTER TABLE `usuario` ADD `clave` TEXT NULL DEFAULT NULL AFTER `fecha`, ADD `ticket` BOOLEAN NOT NULL DEFAULT FALSE AFTER `clave`;
 
